@@ -1,0 +1,15 @@
+name: Quality Checks
+on: [pull_request]
+jobs:
+  Code:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+      - run: yarn install --immutable
+      - run: yarn run audit
+      - run: yarn run format:check
+      - run: yarn run lint
+      - run: yarn run type
+      - run: yarn run test
+      - run: yarn run build
