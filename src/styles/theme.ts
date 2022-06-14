@@ -5,13 +5,14 @@ const theme = createTheme({
   palette: {
     mode: "dark",
     primary: {
-      main: "#8d6e63",
+      main: "#F16E42",
     },
     secondary: {
-      main: "#e36960",
+      main: "#009476",
     },
     background: {
-      default: "#251a10",
+      default: "#000",
+      paper: "#000",
     },
   },
   typography: {
@@ -48,15 +49,6 @@ const theme = createTheme({
     },
     body1: {
       fontSize: "1.2rem",
-    },
-  },
-  components: {
-    MuiBackdrop: {
-      styleOverrides: {
-        root: {
-          backgroundColor: "rgba(0, 0, 0, 0.8)",
-        },
-      },
     },
   },
 });
