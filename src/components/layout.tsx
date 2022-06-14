@@ -1,27 +1,13 @@
 import { FC, ReactNode } from "react";
-import {
-  AppBar,
-  Box,
-  Grid,
-  IconButton,
-  List,
-  ListItem,
-  Paper,
-  Toolbar,
-  Typography,
-} from "@mui/material";
+import { Box, Grid, List, ListItem, Paper, Typography } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
-import MenuIcon from "@mui/icons-material/Menu";
-import AddIcon from "@mui/icons-material/Add";
-import SearchIcon from "@mui/icons-material/Search";
-import MoreIcon from "@mui/icons-material/MoreVert";
 
 interface Props {
   children: ReactNode;
   page: string;
 }
 
-export const Layout: FC<Props> = ({ children, page }) => {
+export const Layout: FC<Props> = ({ children }) => {
   const theme = useTheme();
 
   return (

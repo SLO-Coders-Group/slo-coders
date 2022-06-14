@@ -1,9 +1,8 @@
-import { Typography, Paper, Box, Link as MuiLink } from "@mui/material";
+import { Typography, Paper, Box, Link } from "@mui/material";
 import type { NextPage } from "next";
 import { useTheme } from "@mui/material/styles";
 import Head from "next/head";
 import { Layout } from "../components/layout";
-import NextLink from "next/link";
 
 const Home: NextPage = () => {
   const theme = useTheme();
@@ -38,7 +37,7 @@ const Home: NextPage = () => {
               mx: 0.5,
             }}
           >
-            Let's show the tech industry what it's like
+            {"Let's show the tech industry what it's like"}
           </Box>
           <Box
             component="span"
@@ -101,7 +100,7 @@ const Home: NextPage = () => {
           <Typography>
             If you share the drive and would like to contribute in some way or
             provide feedback or event ideas. (Yay!) You can email us at{" "}
-            <MuiLink href="mailto:email@email.com">email@email.com</MuiLink>.
+            <Link href="mailto:email@email.com">email@email.com</Link>.
           </Typography>
         </Paper>
       </Layout>
