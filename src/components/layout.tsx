@@ -23,6 +23,7 @@ export const Layout: FC<Props> = ({ children }) => {
           "linear-gradient(45deg, #FFF 25%, transparent 25%), linear-gradient(135deg, #FFF 25%, transparent 25%), linear-gradient(45deg, transparent 75%, #FFF 75%), linear-gradient(135deg, transparent 75%, #FFF 75%)",
         backgroundSize: "80px 80px",
         backgroundPosition: "0 0, 40px 0, 40px -40px, 0px 40px",
+        overflow: "scroll",
       }}
     >
       <Box
