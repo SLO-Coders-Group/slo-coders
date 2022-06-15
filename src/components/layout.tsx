@@ -85,9 +85,12 @@ export const Layout: FC<Props> = ({ children }) => {
               <ListItem dense>Programmer</ListItem>
               <ListItem dense>Front End Developer</ListItem>
               <ListItem dense>Back End Developer</ListItem>
+              <ListItem dense>Mobile Developer</ListItem>
               <ListItem dense>Full Stack Developer</ListItem>
               <ListItem dense>Software Developer</ListItem>
+              <ListItem dense>iOS Developer</ListItem>
               <ListItem dense>Application Programmer</ListItem>
+              <ListItem dense>DevOps Engineer</ListItem>
             </List>
           </Grid>
           <Grid item>
