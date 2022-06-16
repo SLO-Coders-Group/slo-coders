@@ -100,7 +100,10 @@ const Home: NextPage = () => {
           <Typography>
             If you share the drive and would like to contribute in some way or
             provide feedback or event ideas. (Yay!) You can email us at{" "}
-            <Link href="mailto:email@email.com">email@email.com</Link>.
+            <Link href="mailto:contact@slocoders.com">
+              contact@slocoders.com
+            </Link>
+            .
           </Typography>
         </Paper>
       </Layout>
