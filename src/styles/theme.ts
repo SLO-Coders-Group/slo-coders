@@ -51,6 +51,19 @@ const theme = createTheme({
       fontSize: "1.2rem",
     },
   },
+  components: {
+    MuiLink: {
+      styleOverrides: {
+        root: {
+          textDecoration: "none",
+          "&:hover": {
+            textDecoration: "underline",
+            textDecorationColor: "#009476",
+          },
+        },
+      },
+    },
+  },
 });
 
 export default theme;

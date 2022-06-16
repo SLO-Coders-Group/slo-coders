@@ -1,8 +1,17 @@
 import { FC, ReactNode } from "react";
-import { Box, Paper } from "@mui/material";
+import {
+  AppBar,
+  Box,
+  IconButton,
+  Link,
+  Paper,
+  Toolbar,
+  Typography,
+} from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import { Footer } from "./footer";
 import { Header } from "./header";
+import { Navigation } from "./navigation";
 
 interface Props {
   children: ReactNode;
@@ -40,6 +49,9 @@ export const Layout: FC<Props> = ({ children }) => {
         }}
       />
       <Header />
+      <Box sx={{ flexGrow: 1, mb: 2, mx: "auto" }}>
+        <Navigation />
+      </Box>
       <Paper
         elevation={6}
         square

@@ -1,8 +1,9 @@
-import { Typography, Paper, Box, Link } from "@mui/material";
+import { Typography, Paper, Box } from "@mui/material";
 import type { NextPage } from "next";
 import { useTheme } from "@mui/material/styles";
 import Head from "next/head";
 import { Layout } from "../components/layout";
+import { Link } from "../components/link";
 
 const Home: NextPage = () => {
   const theme = useTheme();
@@ -100,7 +101,7 @@ const Home: NextPage = () => {
           <Typography>
             If you share the drive and would like to contribute in some way or
             provide feedback or event ideas. (Yay!) You can email us at{" "}
-            <Link href="mailto:contact@slocoders.com">
+            <Link underline="hover" href="mailto:contact@slocoders.com">
               contact@slocoders.com
             </Link>
             .
