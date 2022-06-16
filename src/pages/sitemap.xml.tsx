@@ -6,7 +6,7 @@ export const getServerSideProps: GetServerSideProps = async ({ res }) => {
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
     <url>
-        <loc>https://www.slocoders.com/</loc>
+        <loc>https://slocoders.com/</loc>
         <priority>1.00</priority>
     </url>
     </urlset>`;

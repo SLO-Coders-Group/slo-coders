@@ -17,11 +17,7 @@ const Home: NextPage = () => {
           name="description"
           content="A community of individuals that love SLO and coding. We promote a healthy work/life balance to help support our community, ourselves, and our industry. We hope to host a wide range of events that brew inspiration and creativity and leave us ready to tackle our next coding challenge."
         />
-        <link
-          key="canonical"
-          rel="canonical"
-          href="https://www.slocoders.com/"
-        />
+        <link key="canonical" rel="canonical" href="https://slocoders.com/" />
       </Head>
       <Layout page="home">
         <Typography
