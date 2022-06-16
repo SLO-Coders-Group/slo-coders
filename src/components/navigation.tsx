@@ -27,6 +27,16 @@ export const Navigation: FC = () => {
             Events
           </Link>
         </Typography>
+        <Typography variant="h6" color="inherit" sx={{ px: 6 }}>
+          <Link
+            color="inherit"
+            href="https://www.meetup.com/slo-coders/?action=join"
+            target="_blank"
+            underline="hover"
+          >
+            Join
+          </Link>
+        </Typography>
       </Toolbar>
     </AppBar>
   );
