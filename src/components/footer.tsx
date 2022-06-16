@@ -51,25 +51,34 @@ export const Footer: FC = () => {
               Software Engineering Student
             </ListItem>
             <ListItem dense sx={listItemStyle}>
+              Application Developer
+            </ListItem>
+            <ListItem dense sx={listItemStyle}>
               Code Enthusiast
             </ListItem>
             <ListItem dense sx={listItemStyle}>
               Programmer
             </ListItem>
             <ListItem dense sx={listItemStyle}>
-              Front End Developer
+              Front-End Developer
             </ListItem>
             <ListItem dense sx={listItemStyle}>
-              Back End Developer
+              DevOps Engineer
+            </ListItem>
+            <ListItem dense sx={listItemStyle}>
+              Back-End Developer
             </ListItem>
             <ListItem dense sx={listItemStyle}>
               Mobile Developer
             </ListItem>
             <ListItem dense sx={listItemStyle}>
-              Full Stack Developer
+              Full-Stack Developer
             </ListItem>
             <ListItem dense sx={listItemStyle}>
               Software Developer
+            </ListItem>
+            <ListItem dense sx={listItemStyle}>
+              Data Developer
             </ListItem>
             <ListItem dense sx={listItemStyle}>
               iOS Developer
@@ -78,7 +87,10 @@ export const Footer: FC = () => {
               Application Programmer
             </ListItem>
             <ListItem dense sx={listItemStyle}>
-              DevOps Engineer
+              Computer Programmer
+            </ListItem>
+            <ListItem dense sx={listItemStyle}>
+              Game Programmer
             </ListItem>
           </List>
         </Grid>
