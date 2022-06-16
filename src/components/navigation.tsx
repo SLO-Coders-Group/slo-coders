@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { AppBar, Toolbar, Typography } from "@mui/material";
+import { AppBar, Box, Toolbar, Typography } from "@mui/material";
 import { Link } from "./link";
 
 export const Navigation: FC = () => {
@@ -16,8 +16,10 @@ export const Navigation: FC = () => {
           <Link underline="hover" color="inherit" href="/">
             Home
           </Link>
-        </Typography>
-        <Typography variant="h6" color="inherit" sx={{ px: 6 }}>
+          <Box component="span" sx={{ px: 5, color: "secondary.main" }}>
+            {" "}
+            •{" "}
+          </Box>
           <Link
             color="inherit"
             href="https://www.meetup.com/slo-coders/events/"
@@ -26,8 +28,10 @@ export const Navigation: FC = () => {
           >
             Events
           </Link>
-        </Typography>
-        <Typography variant="h6" color="inherit" sx={{ px: 6 }}>
+          <Box component="span" sx={{ px: 5, color: "secondary.main" }}>
+            {" "}
+            •{" "}
+          </Box>
           <Link
             color="inherit"
             href="https://www.meetup.com/slo-coders/?action=join"
