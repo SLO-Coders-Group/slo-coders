@@ -1,6 +1,8 @@
 import { FC, ReactNode } from "react";
-import { Box, Grid, List, ListItem, Paper, Typography } from "@mui/material";
+import { Box, Paper } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
+import { Footer } from "./footer";
+import { Header } from "./header";
 
 interface Props {
   children: ReactNode;
@@ -37,23 +39,7 @@ export const Layout: FC<Props> = ({ children }) => {
           top: "0",
         }}
       />
-      <Paper
-        elevation={6}
-        square
-        sx={{
-          px: 8,
-          py: 3,
-          width: "75%",
-          mt: 6,
-          mb: 2,
-          mx: "auto",
-          minWidth: 450,
-        }}
-      >
-        <Typography variant="h1" color="primary" align="center">
-          SLO Coders
-        </Typography>
-      </Paper>
+      <Header />
       <Paper
         elevation={6}
         square
@@ -61,73 +47,7 @@ export const Layout: FC<Props> = ({ children }) => {
       >
         {children}
       </Paper>
-      <Box
-        sx={{
-          backgroundColor: theme.palette.common.white,
-          width: "100%",
-          px: 8,
-          py: 3,
-          boxShadow: `0 0 0 4px ${theme.palette.secondary.main}, 0 0 0 7px white, 0 0 0 10px black`,
-          color: theme.palette.common.black,
-        }}
-      >
-        <Grid container justifyContent="space-evenly">
-          <Grid item>
-            <Typography variant="h5">If you are a</Typography>
-            <List
-              dense
-              disablePadding
-              sx={{ fontSize: theme.typography.body1.fontSize }}
-            >
-              <ListItem dense>Software Engineer</ListItem>
-              <ListItem dense>Web Developer</ListItem>
-              <ListItem dense>Software Engineering Student</ListItem>
-              <ListItem dense>Code Enthusiast</ListItem>
-              <ListItem dense>Programmer</ListItem>
-              <ListItem dense>Front End Developer</ListItem>
-              <ListItem dense>Back End Developer</ListItem>
-              <ListItem dense>Mobile Developer</ListItem>
-              <ListItem dense>Full Stack Developer</ListItem>
-              <ListItem dense>Software Developer</ListItem>
-              <ListItem dense>iOS Developer</ListItem>
-              <ListItem dense>Application Programmer</ListItem>
-              <ListItem dense>DevOps Engineer</ListItem>
-            </List>
-          </Grid>
-          <Grid item>
-            <Typography variant="h5">and live in</Typography>
-            <List
-              dense
-              disablePadding
-              sx={{ fontSize: theme.typography.body1.fontSize }}
-            >
-              <ListItem dense>Atascadero</ListItem>
-              <ListItem dense>Avila Beach</ListItem>
-              <ListItem dense>Cambria</ListItem>
-              <ListItem dense>Cayucos</ListItem>
-              <ListItem dense>Creston</ListItem>
-              <ListItem dense>Grover Beach</ListItem>
-              <ListItem dense>Harmony</ListItem>
-              <ListItem dense>Arroyo Grande</ListItem>
-              <ListItem dense>Los Osos</ListItem>
-              <ListItem dense>Morro Bay</ListItem>
-              <ListItem dense>Nipomo</ListItem>
-              <ListItem dense>Oceano</ListItem>
-              <ListItem dense>Paso Robles</ListItem>
-              <ListItem dense>Pismo Beach</ListItem>
-              <ListItem dense>San Luis Obispo</ListItem>
-              <ListItem dense>San Miguel</ListItem>
-              <ListItem dense>San Simeon</ListItem>
-              <ListItem dense>Santa Margarita</ListItem>
-              <ListItem dense>Shandon</ListItem>
-              <ListItem dense>Templeton</ListItem>
-            </List>
-          </Grid>
-          <Grid item>
-            <Typography variant="h5">{`then we would like to be friends! 🙂`}</Typography>
-          </Grid>
-        </Grid>
-      </Box>
+      <Footer />
     </Box>
   );
 };
