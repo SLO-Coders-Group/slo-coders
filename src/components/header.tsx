@@ -4,14 +4,16 @@ import { minScreenSize } from "../styles/theme";
 
 export const Header: FC = () => {
   const theme = useTheme();
-  const xsBreakpoint = useMediaQuery(theme.breakpoints.down("sm"));
+
+  const xsBreakpoint = useMediaQuery(theme.breakpoints.only("xs"));
+  const smBreakpoint = useMediaQuery(theme.breakpoints.only("sm"));
 
   return (
     <Paper
       elevation={6}
       square
       sx={{
-        px: 8,
+        px: xsBreakpoint ? 4 : smBreakpoint ? 7 : 10,
         py: 3,
         width: "75%",
         mt: 6,
@@ -24,7 +26,9 @@ export const Header: FC = () => {
         variant="h1"
         color="primary"
         align="center"
-        sx={{ fontSize: xsBreakpoint ? "4rem" : undefined }}
+        sx={{
+          fontSize: xsBreakpoint ? "4rem" : smBreakpoint ? "5rem" : "6rem",
+        }}
       >
         SLO Coders
       </Typography>
