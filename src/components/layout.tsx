@@ -1,5 +1,5 @@
 import { FC, ReactNode } from "react";
-import { Box, Paper } from "@mui/material";
+import { Box, Paper, useMediaQuery } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import { Footer } from "./footer";
 import { Header } from "./header";

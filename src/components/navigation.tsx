@@ -2,7 +2,6 @@ import { FC } from "react";
 import {
   AppBar,
   Box,
-  Toolbar,
   Typography,
   useMediaQuery,
   useTheme,
