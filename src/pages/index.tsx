@@ -15,7 +15,7 @@ const Home: NextPage = () => {
         <meta
           key="description"
           name="description"
-          content="A community of individuals that love SLO and coding. We promote a healthy work/life balance to help support our community, ourselves, and our industry. We hope to host a wide range of events that brew inspiration and creativity and leave us ready to tackle our next coding challenge."
+          content="A community of individuals that love SLO and coding. We promote a healthy work/life balance to help support our community, ourselves, and our industry."
         />
         <link key="canonical" rel="canonical" href="https://slocoders.com/" />
       </Head>
@@ -98,7 +98,7 @@ const Home: NextPage = () => {
             gender preference, race, skin color, religion, background,
             schooling, disability, age, etc.
           </Typography>
-          <Typography>
+          <Typography variant="body2">
             If you share the drive and would like to contribute in some way or
             provide feedback or event ideas. (Yay!) You can email us at{" "}
             <Link underline="hover" href="mailto:contact@slocoders.com">

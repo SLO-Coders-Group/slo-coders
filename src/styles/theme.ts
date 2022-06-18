@@ -50,6 +50,10 @@ const theme = createTheme({
     body1: {
       fontSize: "1.2rem",
     },
+    body2: {
+      fontSize: "1rem",
+      fontWeight: 300,
+    },
   },
   components: {
     MuiLink: {
