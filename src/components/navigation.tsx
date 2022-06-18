@@ -1,6 +1,9 @@
 import { FC } from "react";
 import {
   AppBar,
+  Grid,
+  List,
+  ListItem,
   Toolbar,
   Typography,
   useMediaQuery,
@@ -13,16 +16,6 @@ export const Navigation: FC = () => {
 
   const xsBreakpoint = useMediaQuery(theme.breakpoints.only("xs"));
   const smBreakpoint = useMediaQuery(theme.breakpoints.only("sm"));
-
-  const navTypographyStyle = {
-    py: 0.25,
-    "&:after": {
-      content: '"•"',
-      px: xsBreakpoint ? 2 : smBreakpoint ? 4 : 6,
-      color: "secondary.main",
-    },
-    "&:last-child:after": { content: "none", px: 0 },
-  };
 
   return (
     <AppBar
@@ -37,10 +30,12 @@ export const Navigation: FC = () => {
         sx={{
           justifyContent: "center",
           py: 1,
+          columnGap: xsBreakpoint ? 4 : smBreakpoint ? 7 : 10,
+          rowGap: 1,
           flexWrap: "wrap",
         }}
       >
-        <Typography variant="h6" color="inherit" sx={navTypographyStyle}>
+        <Typography variant="h6" color="inherit">
           <Link
             underline="hover"
             sx={{ whiteSpace: "nowrap" }}
@@ -50,7 +45,7 @@ export const Navigation: FC = () => {
             Home
           </Link>
         </Typography>
-        <Typography variant="h6" color="inherit" sx={navTypographyStyle}>
+        <Typography variant="h6" color="inherit">
           <Link
             color="inherit"
             href="https://www.meetup.com/slo-coders/events/"
@@ -61,7 +56,7 @@ export const Navigation: FC = () => {
             Events
           </Link>
         </Typography>
-        <Typography variant="h6" color="inherit" sx={navTypographyStyle}>
+        <Typography variant="h6" color="inherit">
           <Link
             color="inherit"
             href="https://www.meetup.com/slo-coders/?action=join"
@@ -72,7 +67,7 @@ export const Navigation: FC = () => {
             Join
           </Link>
         </Typography>
-        <Typography variant="h6" color="inherit" sx={navTypographyStyle}>
+        <Typography variant="h6" color="inherit">
           <Link
             color="inherit"
             href="/tech-companies"
