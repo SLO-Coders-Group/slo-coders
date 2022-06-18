@@ -60,7 +60,7 @@ export const Layout: FC<Props> = ({ children }) => {
         elevation={6}
         square
         sx={{
-          px: xsBreakpoint ? 4 : smBreakpoint ? 7 : 10,
+          px: xsBreakpoint ? 2 : smBreakpoint ? 7 : 12,
           py: 10,
           mb: 6,
           ...wrapperStyle,
