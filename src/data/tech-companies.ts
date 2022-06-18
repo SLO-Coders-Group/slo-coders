@@ -78,11 +78,18 @@ export const techCompanies: { [key in string]: TechCompaniesType } = {
   matchfire: {
     websiteUrl: "https://matchfire.com/",
     displayName: "Matchfire",
+    glassdoorReviewsUrl:
+      "https://www.glassdoor.com/Reviews/Matchfire-Co-Reviews-E1047702.htm",
+    linkedInJobsUrl: "https://www.linkedin.com/company/matchfire-co-/jobs/",
   },
 
   leftlaneSports: {
     websiteUrl: "https://www.leftlanesports.com/",
     displayName: "Leftlane Sports",
+    glassdoorReviewsUrl:
+      "https://www.glassdoor.com/Reviews/LeftLane-Sports-Reviews-E782565.htm",
+    linkedInJobsUrl:
+      "https://www.linkedin.com/company/leftlanesports.com/jobs/",
   },
 
   landGorilla: {
