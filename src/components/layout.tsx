@@ -4,7 +4,7 @@ import { useTheme } from "@mui/material/styles";
 import { Footer } from "./footer";
 import { Header } from "./header";
 import { Navigation } from "./navigation";
-import { minScreenSize } from "../styles/theme";
+import { wrapperStyle } from "../styles/theme";
 
 interface Props {
   children: ReactNode;
@@ -46,10 +46,9 @@ export const Layout: FC<Props> = ({ children }) => {
         sx={{
           flexGrow: 1,
           mb: 2,
-          mx: "auto",
-          maxWidth: "75%",
+          ...wrapperStyle,
           width: "auto",
-          minWidth: minScreenSize,
+          maxWidth: "75%",
         }}
       >
         <Navigation />
@@ -60,10 +59,8 @@ export const Layout: FC<Props> = ({ children }) => {
         sx={{
           px: 8,
           py: 10,
-          width: "75%",
           mb: 6,
-          mx: "auto",
-          minWidth: minScreenSize,
+          ...wrapperStyle,
         }}
       >
         {children}

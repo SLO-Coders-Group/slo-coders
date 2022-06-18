@@ -1,6 +1,10 @@
 import { createTheme } from "@mui/material/styles";
 
-export const minScreenSize = 320;
+export const wrapperStyle = {
+  width: "75%",
+  mx: "auto",
+  minWidth: 350,
+};
 
 // Create a theme instance.
 const theme = createTheme({
