@@ -14,6 +14,9 @@ interface Props {
 export const Layout: FC<Props> = ({ children }) => {
   const theme = useTheme();
 
+  const xsBreakpoint = useMediaQuery(theme.breakpoints.only("xs"));
+  const smBreakpoint = useMediaQuery(theme.breakpoints.only("sm"));
+
   return (
     <Box
       sx={{
@@ -57,7 +60,7 @@ export const Layout: FC<Props> = ({ children }) => {
         elevation={6}
         square
         sx={{
-          px: 8,
+          px: xsBreakpoint ? 4 : smBreakpoint ? 7 : 10,
           py: 10,
           mb: 6,
           ...wrapperStyle,
