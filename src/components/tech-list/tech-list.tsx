@@ -1,4 +1,4 @@
-import { IconButton, Grid, Typography, lighten, Box } from "@mui/material";
+import { IconButton, Grid, Typography, lighten } from "@mui/material";
 import { FC } from "react";
 import Image from "next/image";
 import { techCompanies } from "../../data/tech-companies";
