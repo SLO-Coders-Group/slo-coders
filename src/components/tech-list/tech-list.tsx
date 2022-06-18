@@ -8,8 +8,12 @@ export const TechList: FC = () => {
   return (
     <Grid container columnSpacing={3} rowSpacing={6}>
       {Object.keys(techCompanies).map((key) => {
-        const { displayName, websiteUrl, linkedInUrlId, glassdoorUrlId } =
-          techCompanies[key];
+        const {
+          displayName,
+          websiteUrl,
+          linkedInJobsUrl,
+          glassdoorReviewsUrl,
+        } = techCompanies[key];
         return (
           <Grid item key={key} xs={12} sm={6} md={4} lg={3}>
             <Typography>{displayName}</Typography>
@@ -18,9 +22,9 @@ export const TechList: FC = () => {
                 {websiteUrl.replace(/^https?:\/\//, "").replace(/\/$/, "")}
               </Link>
             </Typography>
-            {glassdoorUrlId && (
+            {glassdoorReviewsUrl && (
               <Link
-                href={`https://www.glassdoor.com/Reviews/${glassdoorUrlId}.htm`}
+                href={glassdoorReviewsUrl}
                 target="_blank"
                 sx={{
                   display: "block",
@@ -52,9 +56,9 @@ export const TechList: FC = () => {
                 </Typography>
               </Link>
             )}
-            {linkedInUrlId && (
+            {linkedInJobsUrl && (
               <Link
-                href={`https://www.linkedin.com/company/${linkedInUrlId}/jobs/`}
+                href={linkedInJobsUrl}
                 target="_blank"
                 sx={{
                   display: "block",
