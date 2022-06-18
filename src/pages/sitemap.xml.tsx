@@ -9,6 +9,10 @@ export const getServerSideProps: GetServerSideProps = async ({ res }) => {
         <loc>https://slocoders.com/</loc>
         <priority>1.00</priority>
     </url>
+    <url>
+        <loc>https://slocoders.com/tech-companies</loc>
+        <priority>0.80</priority>
+    </url>
     </urlset>`;
 
   res.setHeader("Content-Type", "text/xml");
