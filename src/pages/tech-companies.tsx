@@ -65,7 +65,10 @@ const TechCompanies: NextPage = () => {
               slotechcompanies.com
             </Link>
             . If you would like to contribute, please{" "}
-            <Link href="" target="_blank">
+            <Link
+              href="https://github.dev/lenzi-erickson/slo-coders/blob/main/src/data/tech-companies.ts"
+              target="_blank"
+            >
               create a pull request
             </Link>{" "}
             or contact us at{" "}
