@@ -1,6 +1,5 @@
 import { FC } from "react";
 import { Paper, Typography, useMediaQuery, useTheme } from "@mui/material";
-import { wrapperStyle } from "../styles/theme";
 
 export const Header: FC = () => {
   const theme = useTheme();
@@ -17,7 +16,10 @@ export const Header: FC = () => {
         py: 3,
         mt: 6,
         mb: 2,
-        ...wrapperStyle,
+        // wrapper style
+        width: xsBreakpoint ? "100%" : smBreakpoint ? "85%" : "75%",
+        mx: "auto",
+        minWidth: 350,
       }}
     >
       <Typography

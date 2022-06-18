@@ -4,7 +4,6 @@ import { useTheme } from "@mui/material/styles";
 import { Footer } from "./footer";
 import { Header } from "./header";
 import { Navigation } from "./navigation";
-import { wrapperStyle } from "../styles/theme";
 
 interface Props {
   children: ReactNode;
@@ -49,9 +48,11 @@ export const Layout: FC<Props> = ({ children }) => {
         sx={{
           flexGrow: 1,
           mb: 2,
-          ...wrapperStyle,
+          // wrapper style - modified
+          maxWidth: xsBreakpoint ? "100%" : smBreakpoint ? "85%" : "75%",
+          mx: "auto",
+          minWidth: 350,
           width: "auto",
-          maxWidth: "75%",
         }}
       >
         <Navigation />
@@ -63,7 +64,10 @@ export const Layout: FC<Props> = ({ children }) => {
           px: xsBreakpoint ? 2 : smBreakpoint ? 7 : 12,
           py: 10,
           mb: 6,
-          ...wrapperStyle,
+          // wrapper style
+          width: xsBreakpoint ? "100%" : smBreakpoint ? "85%" : "75%",
+          mx: "auto",
+          minWidth: 350,
         }}
       >
         {children}

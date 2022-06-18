@@ -1,11 +1,5 @@
 import { createTheme } from "@mui/material/styles";
 
-export const wrapperStyle = {
-  width: "75%",
-  mx: "auto",
-  minWidth: 350,
-};
-
 // Create a theme instance.
 const theme = createTheme({
   palette: {
