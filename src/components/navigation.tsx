@@ -1,6 +1,7 @@
 import { FC } from "react";
 import {
   AppBar,
+  Box,
   Toolbar,
   Typography,
   useMediaQuery,
@@ -22,11 +23,12 @@ export const Navigation: FC = () => {
         background: "#FFF",
       }}
     >
-      <Toolbar
-        variant="dense"
+      <Box
         sx={{
+          display: "flex",
           justifyContent: "center",
           py: 1,
+          px: xsBreakpoint ? 4 : smBreakpoint ? 7 : 10,
           columnGap: xsBreakpoint ? 4 : smBreakpoint ? 7 : 10,
           rowGap: 1,
           flexWrap: "wrap",
@@ -74,7 +76,7 @@ export const Navigation: FC = () => {
             Tech Companies
           </Link>
         </Typography>
-      </Toolbar>
+      </Box>
     </AppBar>
   );
 };
