@@ -40,6 +40,13 @@ export const Navigation: FC = () => {
           >
             Join
           </Link>
+          <Box component="span" sx={{ px: 5, color: "secondary.main" }}>
+            {" "}
+            •{" "}
+          </Box>
+          <Link color="inherit" href="/tech-companies" underline="hover">
+            Tech Companies
+          </Link>
         </Typography>
       </Toolbar>
     </AppBar>

@@ -1,13 +1,5 @@
 import { FC, ReactNode } from "react";
-import {
-  AppBar,
-  Box,
-  IconButton,
-  Link,
-  Paper,
-  Toolbar,
-  Typography,
-} from "@mui/material";
+import { Box, Paper } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import { Footer } from "./footer";
 import { Header } from "./header";

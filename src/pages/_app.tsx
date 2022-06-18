@@ -30,7 +30,7 @@ export default function MyApp(properties: MyAppProperties) {
         <meta
           key="description"
           name="description"
-          content="A community of individuals that love SLO and coding. We promote a healthy work/life balance to help support our community, ourselves, and our industry. We hope to host a wide range of events that brew inspiration and creativity and leave us ready to tackle our next coding challenge."
+          content="A community of individuals that love SLO and coding. We promote a healthy work/life balance to help support our community, ourselves, and our industry."
         />
 
         <meta
