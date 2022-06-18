@@ -1,9 +1,6 @@
 import { FC } from "react";
 import {
   AppBar,
-  Grid,
-  List,
-  ListItem,
   Toolbar,
   Typography,
   useMediaQuery,
