@@ -1,5 +1,6 @@
 import { FC } from "react";
 import { Paper, Typography, useMediaQuery, useTheme } from "@mui/material";
+import { minScreenSize } from "../styles/theme";
 
 export const Header: FC = () => {
   const theme = useTheme();
@@ -16,7 +17,7 @@ export const Header: FC = () => {
         mt: 6,
         mb: 2,
         mx: "auto",
-        minWidth: 450,
+        minWidth: minScreenSize,
       }}
     >
       <Typography

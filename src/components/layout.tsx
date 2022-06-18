@@ -4,6 +4,7 @@ import { useTheme } from "@mui/material/styles";
 import { Footer } from "./footer";
 import { Header } from "./header";
 import { Navigation } from "./navigation";
+import { minScreenSize } from "../styles/theme";
 
 interface Props {
   children: ReactNode;
@@ -41,13 +42,29 @@ export const Layout: FC<Props> = ({ children }) => {
         }}
       />
       <Header />
-      <Box sx={{ flexGrow: 1, mb: 2, mx: "auto" }}>
+      <Box
+        sx={{
+          flexGrow: 1,
+          mb: 2,
+          mx: "auto",
+          maxWidth: "75%",
+          width: "auto",
+          minWidth: minScreenSize,
+        }}
+      >
         <Navigation />
       </Box>
       <Paper
         elevation={6}
         square
-        sx={{ px: 8, py: 10, width: "75%", mb: 6, mx: "auto", minWidth: 450 }}
+        sx={{
+          px: 8,
+          py: 10,
+          width: "75%",
+          mb: 6,
+          mx: "auto",
+          minWidth: minScreenSize,
+        }}
       >
         {children}
       </Paper>

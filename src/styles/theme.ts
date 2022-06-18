@@ -1,5 +1,7 @@
 import { createTheme } from "@mui/material/styles";
 
+export const minScreenSize = 320;
+
 // Create a theme instance.
 const theme = createTheme({
   palette: {
