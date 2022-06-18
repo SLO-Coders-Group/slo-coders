@@ -1,7 +1,6 @@
 import { FC } from "react";
 import {
   AppBar,
-  Box,
   Toolbar,
   Typography,
   useMediaQuery,
@@ -11,6 +10,7 @@ import { Link } from "./link";
 
 export const Navigation: FC = () => {
   const theme = useTheme();
+
   const xsBreakpoint = useMediaQuery(theme.breakpoints.only("xs"));
   const smBreakpoint = useMediaQuery(theme.breakpoints.only("sm"));
 
@@ -20,20 +20,19 @@ export const Navigation: FC = () => {
       sx={{
         color: "#000",
         background: "#FFF",
-        width: "75%",
-        minWidth: 450,
-        mx: "auto",
       }}
     >
-      <Toolbar variant="dense" sx={{ justifyContent: "center" }}>
-        <Typography
-          variant="h6"
-          color="inherit"
-          sx={{
-            px: 6,
-            // fontSize: xsBreakpoint ? "1rem" : undefined,
-          }}
-        >
+      <Toolbar
+        variant="dense"
+        sx={{
+          justifyContent: "center",
+          py: 1,
+          columnGap: xsBreakpoint ? 4 : smBreakpoint ? 7 : 10,
+          rowGap: 1,
+          flexWrap: "wrap",
+        }}
+      >
+        <Typography variant="h6" color="inherit">
           <Link
             underline="hover"
             sx={{ whiteSpace: "nowrap" }}
@@ -42,16 +41,8 @@ export const Navigation: FC = () => {
           >
             Home
           </Link>
-          <Box
-            component="span"
-            sx={{
-              px: xsBreakpoint ? 1 : smBreakpoint ? 2.5 : 4,
-              color: "secondary.main",
-            }}
-          >
-            {" "}
-            •{" "}
-          </Box>
+        </Typography>
+        <Typography variant="h6" color="inherit">
           <Link
             color="inherit"
             href="https://www.meetup.com/slo-coders/events/"
@@ -61,16 +52,8 @@ export const Navigation: FC = () => {
           >
             Events
           </Link>
-          <Box
-            component="span"
-            sx={{
-              px: xsBreakpoint ? 1 : smBreakpoint ? 2.5 : 4,
-              color: "secondary.main",
-            }}
-          >
-            {" "}
-            •{" "}
-          </Box>
+        </Typography>
+        <Typography variant="h6" color="inherit">
           <Link
             color="inherit"
             href="https://www.meetup.com/slo-coders/?action=join"
@@ -80,16 +63,8 @@ export const Navigation: FC = () => {
           >
             Join
           </Link>
-          <Box
-            component="span"
-            sx={{
-              px: xsBreakpoint ? 1 : smBreakpoint ? 2.5 : 4,
-              color: "secondary.main",
-            }}
-          >
-            {" "}
-            •{" "}
-          </Box>
+        </Typography>
+        <Typography variant="h6" color="inherit">
           <Link
             color="inherit"
             href="/tech-companies"
