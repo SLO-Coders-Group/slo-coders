@@ -1,88 +1,81 @@
 type TechCompaniesType = {
   displayName: string;
   websiteUrl: string;
-  glassdoorReviewsUrl?: string;
-  linkedInJobsUrl?: string;
+  glassdoorUrlId?: string;
+  linkedInUrlId?: string;
 };
 
 export const techCompanies: { [key in string]: TechCompaniesType } = {
   whiteFoxDefense: {
     displayName: "WhiteFox Defense",
     websiteUrl: "https://www.whitefoxdefense.com/",
-    glassdoorReviewsUrl:
-      "https://www.glassdoor.com/Reviews/WhiteFox-Defense-Technologies-Reviews-E1831870.htm",
-    linkedInJobsUrl:
-      "https://www.linkedin.com/company/whitefox-technologies-limited/jobs/",
+    glassdoorUrlId: "WhiteFox-Defense-Technologies-Reviews-E1831870",
+    linkedInUrlId: "whitefox-technologies-limited",
   },
   trihydroCorporation: {
     displayName: "Trihydro Corporation",
     websiteUrl: "https://www.trihydro.com/",
-    glassdoorReviewsUrl:
-      "https://www.glassdoor.com/Reviews/Trihydro-Reviews-E415353.htm",
-    linkedInJobsUrl:
-      "https://www.linkedin.com/company/trihydro-corporation/jobs/",
+    glassdoorUrlId: "Trihydro-Reviews-E415353",
+    linkedInUrlId: "trihydro-corporation",
   },
   transunion: {
     displayName: "Transunion",
     websiteUrl: "https://www.transunion.com/",
-    glassdoorReviewsUrl:
-      "https://www.glassdoor.com/Reviews/TransUnion-Reviews-E11441.htm",
-    linkedInJobsUrl: "https://www.linkedin.com/company/transunion/jobs/",
+    glassdoorUrlId: "TransUnion-Reviews-E11441",
+    linkedInUrlId: "transunion",
   },
   sriInternational: {
     displayName: "SRI International",
     websiteUrl: "https://www.sri.com/",
-    glassdoorReviewsUrl:
-      "https://www.glassdoor.com/Reviews/SRI-International-Reviews-E3389.htm",
-    linkedInJobsUrl: "https://www.linkedin.com/company/sri-international/jobs/",
+    glassdoorUrlId: "SRI-International-Reviews-E3389",
+    linkedInUrlId: "sri-international",
   },
   silvertracSoftware: {
     websiteUrl: "https://www.silvertracsoftware.com/",
     displayName: "Silvertrac Software",
-    glassdoorReviewsUrl:
-      "https://www.glassdoor.com/Reviews/Silvertrac-Reviews-E3102205.htm",
-    linkedInJobsUrl:
-      "https://www.linkedin.com/company/silver-trac-software-inc/jobs/",
+    glassdoorUrlId: "Silvertrac-Reviews-E3102205",
+    linkedInUrlId: "silver-trac-software-inc",
   },
 
   roopairs: {
     websiteUrl: "https://www.roopairs.com/",
     displayName: "Roopairs",
-    linkedInJobsUrl: "https://www.linkedin.com/company/goroopairs/jobs/",
+    linkedInUrlId: "goroopairs",
   },
 
   publicisSapient: {
     websiteUrl: "https://www.publicissapient.com/",
     displayName: "Publicis Sapient",
-    glassdoorReviewsUrl:
-      "https://www.glassdoor.com/Reviews/Publicis-Sapient-Reviews-E1646026_P2.htm",
-    linkedInJobsUrl: "https://www.linkedin.com/company/publicissapient/jobs/",
+    glassdoorUrlId: "Publicis-Sapient-Reviews-E1646026_P2",
+    linkedInUrlId: "publicissapient",
   },
 
   postalIo: {
     websiteUrl: "https://postal.io/",
     displayName: "Postal.io",
-    glassdoorReviewsUrl:
-      "https://www.glassdoor.com/Reviews/Postal-io-Reviews-E3048879.htm",
-    linkedInJobsUrl: "https://www.linkedin.com/company/postal-io/jobs/",
+    glassdoorUrlId: "Postal-io-Reviews-E3048879",
+    linkedInUrlId: "postal-io",
   },
 
   mindbody: {
     websiteUrl: "https://www.mindbodyonline.com/",
     displayName: "Mindbody",
-    glassdoorReviewsUrl:
-      "https://www.glassdoor.com/Reviews/Mindbody-Reviews-E319289.htm",
-    linkedInJobsUrl: "https://www.linkedin.com/company/mindbody/jobs/",
+    glassdoorUrlId: "Mindbody-Reviews-E319289",
+    linkedInUrlId: "mindbody",
   },
 
   matchfire: {
     websiteUrl: "https://matchfire.com/",
     displayName: "Matchfire",
+    glassdoorUrlId: "Matchfire-Co-Reviews-E1047702",
+    linkedInUrlId: "matchfire-co-",
   },
 
   leftlaneSports: {
     websiteUrl: "https://www.leftlanesports.com/",
     displayName: "Leftlane Sports",
+    glassdoorUrlId: "LeftLane-Sports-Reviews-E782565",
+    linkedInUrlId: "leftlanesports.com",
   },
 
   landGorilla: {
