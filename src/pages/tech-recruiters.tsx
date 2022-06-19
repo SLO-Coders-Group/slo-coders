@@ -1,29 +1,28 @@
-import { Box, Paper, Typography, useTheme } from "@mui/material";
+import { Box, Link, Paper, Typography, useTheme } from "@mui/material";
 import type { NextPage } from "next";
 import Head from "next/head";
 import { Layout } from "../components/layout";
-import { Link } from "../components/link";
-import { TechCompaniesList } from "../components/listings/tech-companies-list";
+import { TechRecruitersList } from "../components/listings/tech-recruiters-list";
 
-const TechCompanies: NextPage = () => {
+const TechRecruiters: NextPage = () => {
   const theme = useTheme();
 
   return (
     <>
       <Head>
-        <title key="title">Tech Companies • SLO Coders</title>
+        <title key="title">Tech recruiters • SLO Coders</title>
         <meta
           key="description"
           name="description"
-          content="A list of tech companies in San Luis Obispo county for all kinds of developers, engineers, and coders to find their dream work home."
+          content="A list of tech recruiters in San Luis Obispo county to help you find your dream job."
         />
         <link
           key="canonical"
           rel="canonical"
-          href="https://slocoders.com/tech-companies"
+          href="https://slocoders.com/tech-recruiters"
         />
       </Head>
-      <Layout page="tech-companies">
+      <Layout page="tech-recruiters">
         <Typography
           variant="h4"
           component="h2"
@@ -42,7 +41,7 @@ const TechCompanies: NextPage = () => {
               mx: 0.5,
             }}
           >
-            Tech Companies in San Luis Obispo County
+            Tech Recruiters in San Luis Obispo County
           </Box>
         </Typography>
         <Paper
@@ -55,19 +54,15 @@ const TechCompanies: NextPage = () => {
           }}
         >
           <Typography mb={4}>
-            We love to help developers, engineers, coders, etc. find their
-            perfect work home in our amazing San Luis Obispo county. Here is a
-            list of all the tech companies we know of.
+            Are you looking for some assistance finding your dream job? Here is
+            a list of some recruiters and recruiting companies in SLO county
+            that can help out!
           </Typography>
           <Typography variant="body2">
-            This page was inspired by{" "}
-            <Link href="https://slotechcompanies.com/" target="_blank">
-              slotechcompanies.com
-            </Link>
-            . If you would like to contribute new data, modify existing
-            listings, or report a mistake, please{" "}
+            If you would like to contribute new data, modify existing listings,
+            or report a mistake, please{" "}
             <Link
-              href="https://github.com/lenzi-erickson/slo-coders/edit/main/src/data/tech-companies.ts"
+              href="https://github.com/lenzi-erickson/slo-coders/edit/main/src/data/tech-recruiters.ts"
               target="_blank"
             >
               create a pull request
@@ -87,11 +82,11 @@ const TechCompanies: NextPage = () => {
             padding: 3,
           }}
         >
-          <TechCompaniesList />
+          <TechRecruitersList />
         </Paper>
       </Layout>
     </>
   );
 };
 
-export default TechCompanies;
+export default TechRecruiters;

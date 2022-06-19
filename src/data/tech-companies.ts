@@ -6,7 +6,7 @@ type TechCompaniesType = {
   // TODO: validate if it's a valid LinkedIn JOBS link somehow
   linkedInJobsUrl?: string;
   // TODO: validate if it's a valid Google Maps link somehow
-  googleMapsUrl?: string;
+  googleMapsUrls?: string[];
 };
 
 export const techCompanies: { [key in string]: TechCompaniesType } = {
@@ -17,7 +17,7 @@ export const techCompanies: { [key in string]: TechCompaniesType } = {
       "https://www.glassdoor.com/Reviews/WhiteFox-Defense-Technologies-Reviews-E1831870.htm",
     linkedInJobsUrl:
       "https://www.linkedin.com/company/whitefox-technologies-limited/jobs/",
-    googleMapsUrl: "https://goo.gl/maps/Tu7JwevNajb9sFFj7",
+    googleMapsUrls: ["https://goo.gl/maps/Tu7JwevNajb9sFFj7"],
   },
   trihydroCorporation: {
     displayName: "Trihydro Corporation",
@@ -26,7 +26,7 @@ export const techCompanies: { [key in string]: TechCompaniesType } = {
       "https://www.glassdoor.com/Reviews/Trihydro-Reviews-E415353.htm",
     linkedInJobsUrl:
       "https://www.linkedin.com/company/trihydro-corporation/jobs/",
-    googleMapsUrl: "https://goo.gl/maps/r24Q8J7qZXTZX3L18",
+    googleMapsUrls: ["https://goo.gl/maps/r24Q8J7qZXTZX3L18"],
   },
   transunion: {
     displayName: "Transunion",
@@ -41,7 +41,7 @@ export const techCompanies: { [key in string]: TechCompaniesType } = {
     glassdoorReviewsUrl:
       "https://www.glassdoor.com/Reviews/SRI-International-Reviews-E3389.htm",
     linkedInJobsUrl: "https://www.linkedin.com/company/sri-international/jobs/",
-    googleMapsUrl: "https://goo.gl/maps/yHUXa6Fo4ofbLL1Z8",
+    googleMapsUrls: ["https://goo.gl/maps/yHUXa6Fo4ofbLL1Z8"],
   },
   silvertracSoftware: {
     websiteUrl: "https://www.silvertracsoftware.com/",
@@ -50,14 +50,14 @@ export const techCompanies: { [key in string]: TechCompaniesType } = {
       "https://www.glassdoor.com/Reviews/Silvertrac-Reviews-E3102205.htm",
     linkedInJobsUrl:
       "https://www.linkedin.com/company/silver-trac-software-inc/jobs/",
-    googleMapsUrl: "https://g.page/Silvertrac?share",
+    googleMapsUrls: ["https://g.page/Silvertrac?share"],
   },
 
   roopairs: {
     websiteUrl: "https://www.roopairs.com/",
     displayName: "Roopairs",
     linkedInJobsUrl: "https://www.linkedin.com/company/goroopairs/jobs/",
-    googleMapsUrl: "https://g.page/roopairs?share",
+    googleMapsUrls: ["https://g.page/roopairs?share"],
   },
 
   publicisSapient: {
@@ -66,7 +66,7 @@ export const techCompanies: { [key in string]: TechCompaniesType } = {
     glassdoorReviewsUrl:
       "https://www.glassdoor.com/Reviews/Publicis-Sapient-Reviews-E1646026_P2.htm",
     linkedInJobsUrl: "https://www.linkedin.com/company/publicissapient/jobs/",
-    googleMapsUrl: "https://goo.gl/maps/a6EQzUv9rFRmaBQh9",
+    googleMapsUrls: ["https://goo.gl/maps/a6EQzUv9rFRmaBQh9"],
   },
 
   postalIo: {
@@ -75,7 +75,7 @@ export const techCompanies: { [key in string]: TechCompaniesType } = {
     glassdoorReviewsUrl:
       "https://www.glassdoor.com/Reviews/Postal-io-Reviews-E3048879.htm",
     linkedInJobsUrl: "https://www.linkedin.com/company/postal-io/jobs/",
-    googleMapsUrl: "https://goo.gl/maps/z1azWFZsiCBYZY2s7",
+    googleMapsUrls: ["https://goo.gl/maps/z1azWFZsiCBYZY2s7"],
   },
 
   mindbody: {
@@ -84,7 +84,7 @@ export const techCompanies: { [key in string]: TechCompaniesType } = {
     glassdoorReviewsUrl:
       "https://www.glassdoor.com/Reviews/Mindbody-Reviews-E319289.htm",
     linkedInJobsUrl: "https://www.linkedin.com/company/mindbody/jobs/",
-    googleMapsUrl: "https://goo.gl/maps/tUfwuvc6c9ckWN9P8",
+    googleMapsUrls: ["https://goo.gl/maps/tUfwuvc6c9ckWN9P8"],
   },
 
   matchfire: {
@@ -93,7 +93,7 @@ export const techCompanies: { [key in string]: TechCompaniesType } = {
     glassdoorReviewsUrl:
       "https://www.glassdoor.com/Reviews/Matchfire-Co-Reviews-E1047702.htm",
     linkedInJobsUrl: "https://www.linkedin.com/company/matchfire-co-/jobs/",
-    googleMapsUrl: "https://goo.gl/maps/np4uZSMrGmqGNmEf6",
+    googleMapsUrls: ["https://goo.gl/maps/np4uZSMrGmqGNmEf6"],
   },
 
   landGorilla: {
@@ -102,7 +102,7 @@ export const techCompanies: { [key in string]: TechCompaniesType } = {
     glassdoorReviewsUrl:
       "https://www.glassdoor.com/Reviews/Land-Gorilla-Reviews-E1282056.htm",
     linkedInJobsUrl: "https://www.linkedin.com/company/land-gorilla/jobs/",
-    googleMapsUrl: "https://goo.gl/maps/A53fDq1RtE1uE7Ng7",
+    googleMapsUrls: ["https://goo.gl/maps/A53fDq1RtE1uE7Ng7"],
   },
 
   iFixit: {
@@ -111,7 +111,7 @@ export const techCompanies: { [key in string]: TechCompaniesType } = {
     glassdoorReviewsUrl:
       "https://www.glassdoor.com/Reviews/iFixit-Reviews-E625163.htm",
     linkedInJobsUrl: "https://www.linkedin.com/company/ifixit/jobs/",
-    googleMapsUrl: "https://g.page/ifixit-san-luis-obispo?share",
+    googleMapsUrls: ["https://g.page/ifixit-san-luis-obispo?share"],
   },
 
   hortau: {
@@ -120,7 +120,7 @@ export const techCompanies: { [key in string]: TechCompaniesType } = {
     glassdoorReviewsUrl:
       "https://www.glassdoor.com/Reviews/Hortau-Reviews-E825934.htm",
     linkedInJobsUrl: "https://www.linkedin.com/company/hortau/jobs/",
-    googleMapsUrl: "https://goo.gl/maps/1DAUt5qDYypHjPBWA",
+    googleMapsUrls: ["https://goo.gl/maps/1DAUt5qDYypHjPBWA"],
   },
 
   haptX: {
@@ -137,7 +137,7 @@ export const techCompanies: { [key in string]: TechCompaniesType } = {
     glassdoorReviewsUrl:
       "https://www.glassdoor.com/Reviews/Bounteous-Reviews-E280921.htm",
     linkedInJobsUrl: "https://www.linkedin.com/company/bounteous/jobs/",
-    googleMapsUrl: "https://goo.gl/maps/BHaGvLN6A4b5DEVBA",
+    googleMapsUrls: ["https://goo.gl/maps/BHaGvLN6A4b5DEVBA"],
   },
 
   gaine: {
@@ -147,7 +147,7 @@ export const techCompanies: { [key in string]: TechCompaniesType } = {
       "https://www.glassdoor.com/Reviews/Gaine-Solutions-Reviews-E429373.htm",
     linkedInJobsUrl:
       "https://www.linkedin.com/company/gaine-solutions-inc/jobs/",
-    googleMapsUrl: "https://goo.gl/maps/qJreVpFzisBnXqBt9",
+    googleMapsUrls: ["https://goo.gl/maps/qJreVpFzisBnXqBt9"],
   },
 
   flumeWater: {
@@ -164,7 +164,7 @@ export const techCompanies: { [key in string]: TechCompaniesType } = {
     glassdoorReviewsUrl:
       "https://www.glassdoor.com/Reviews/Etna-Interactive-Reviews-E466737.htm",
     linkedInJobsUrl: "https://www.linkedin.com/company/etna-interactive/jobs/",
-    googleMapsUrl: "https://g.page/EtnaInteractive?share",
+    googleMapsUrls: ["https://g.page/EtnaInteractive?share"],
   },
 
   entegris: {
@@ -173,7 +173,7 @@ export const techCompanies: { [key in string]: TechCompaniesType } = {
     glassdoorReviewsUrl:
       "https://www.glassdoor.com/Reviews/Entegris-Reviews-E6272.htm",
     linkedInJobsUrl: "https://www.linkedin.com/company/entegris/jobs/",
-    googleMapsUrl: "https://goo.gl/maps/ef4PLS5qiAjj1wdi6",
+    googleMapsUrls: ["https://goo.gl/maps/ef4PLS5qiAjj1wdi6"],
   },
 
   empath: {
@@ -188,7 +188,7 @@ export const techCompanies: { [key in string]: TechCompaniesType } = {
     glassdoorReviewsUrl:
       "https://www.glassdoor.com/Reviews/Dozuki-Reviews-E1649615.htm",
     linkedInJobsUrl: "https://www.linkedin.com/company/dozuki/jobs/",
-    googleMapsUrl: "https://goo.gl/maps/XLExJLLWwv33L6317",
+    googleMapsUrls: ["https://goo.gl/maps/XLExJLLWwv33L6317"],
   },
 
   digitalMarketMedia: {
@@ -198,7 +198,7 @@ export const techCompanies: { [key in string]: TechCompaniesType } = {
       "https://www.glassdoor.com/Reviews/Digital-Market-Media-Reviews-E2956681.htm",
     linkedInJobsUrl:
       "https://www.linkedin.com/company/digital-market-media/jobs/",
-    googleMapsUrl: "https://g.page/digital-market-media?share",
+    googleMapsUrls: ["https://g.page/digital-market-media?share"],
   },
 
   bishopPeakTechnology: {
@@ -208,7 +208,7 @@ export const techCompanies: { [key in string]: TechCompaniesType } = {
       "https://www.glassdoor.com/Reviews/Bishop-Peak-Technology-Reviews-E2076411.htm",
     linkedInJobsUrl:
       "https://www.linkedin.com/company/bishop-peak-technology/jobs/",
-    googleMapsUrl: "https://goo.gl/maps/YSJCFMhovMD22DBHA",
+    googleMapsUrls: ["https://goo.gl/maps/YSJCFMhovMD22DBHA"],
   },
 
   amfMediaGroup: {
@@ -217,7 +217,7 @@ export const techCompanies: { [key in string]: TechCompaniesType } = {
     glassdoorReviewsUrl:
       "https://www.glassdoor.com/Reviews/AMF-Media-Group-Reviews-E333640.htm",
     linkedInJobsUrl: "https://www.linkedin.com/company/amfmediagroup/jobs/",
-    googleMapsUrl: "https://goo.gl/maps/sgsEmihPf32f8cDZ7",
+    googleMapsUrls: ["https://goo.gl/maps/sgsEmihPf32f8cDZ7"],
   },
 
   amazon: {
@@ -226,7 +226,7 @@ export const techCompanies: { [key in string]: TechCompaniesType } = {
     glassdoorReviewsUrl:
       "https://www.glassdoor.com/Reviews/Amazon-Reviews-E6036.htm",
     linkedInJobsUrl: "https://www.linkedin.com/company/amazon/jobs/",
-    googleMapsUrl: "https://goo.gl/maps/y6827rKwnhNPpJ6m7",
+    googleMapsUrls: ["https://goo.gl/maps/y6827rKwnhNPpJ6m7"],
   },
 
   allPeople: {
@@ -235,5 +235,11 @@ export const techCompanies: { [key in string]: TechCompaniesType } = {
     glassdoorReviewsUrl:
       "https://www.glassdoor.com/Reviews/AllPeople-Marketplace-Reviews-E6850419.htm",
     linkedInJobsUrl: "https://www.linkedin.com/company/allpeople/jobs/",
+  },
+
+  edgeAutonomy: {
+    websiteUrl: "https://edgeautonomy.io/",
+    displayName: "Edge Autonomy",
+    linkedInJobsUrl: "https://www.linkedin.com/company/edgeautonomy/jobs/",
   },
 };

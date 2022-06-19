@@ -3,27 +3,27 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import { Layout } from "../components/layout";
 import { Link } from "../components/link";
-import { TechCompaniesList } from "../components/listings/tech-companies-list";
+import { CoworkingSpacesList } from "../components/listings/coworking-spaces-list";
 
-const TechCompanies: NextPage = () => {
+const Coworking: NextPage = () => {
   const theme = useTheme();
 
   return (
     <>
       <Head>
-        <title key="title">Tech Companies • SLO Coders</title>
+        <title key="title">Coworking Spaces • SLO Coders</title>
         <meta
           key="description"
           name="description"
-          content="A list of tech companies in San Luis Obispo county for all kinds of developers, engineers, and coders to find their dream work home."
+          content="A list of coworking spaces in San Luis Obispo county. Because you need coworkers that aren't your cat."
         />
         <link
           key="canonical"
           rel="canonical"
-          href="https://slocoders.com/tech-companies"
+          href="https://slocoders.com/coworking"
         />
       </Head>
-      <Layout page="tech-companies">
+      <Layout page="coworking">
         <Typography
           variant="h4"
           component="h2"
@@ -42,7 +42,7 @@ const TechCompanies: NextPage = () => {
               mx: 0.5,
             }}
           >
-            Tech Companies in San Luis Obispo County
+            Coworking Spaces in San Luis Obispo County
           </Box>
         </Typography>
         <Paper
@@ -55,19 +55,14 @@ const TechCompanies: NextPage = () => {
           }}
         >
           <Typography mb={4}>
-            We love to help developers, engineers, coders, etc. find their
-            perfect work home in our amazing San Luis Obispo county. Here is a
-            list of all the tech companies we know of.
+            {`Do you work remote and need a coworker that isn't your cat? Then try out one of
+            our fabulous co-working spaces here in SLO!`}
           </Typography>
           <Typography variant="body2">
-            This page was inspired by{" "}
-            <Link href="https://slotechcompanies.com/" target="_blank">
-              slotechcompanies.com
-            </Link>
-            . If you would like to contribute new data, modify existing
-            listings, or report a mistake, please{" "}
+            If you would like to contribute new data, modify existing listings,
+            or report a mistake, please{" "}
             <Link
-              href="https://github.com/lenzi-erickson/slo-coders/edit/main/src/data/tech-companies.ts"
+              href="https://github.com/lenzi-erickson/slo-coders/edit/main/src/data/coworking-spaces.ts"
               target="_blank"
             >
               create a pull request
@@ -87,11 +82,11 @@ const TechCompanies: NextPage = () => {
             padding: 3,
           }}
         >
-          <TechCompaniesList />
+          <CoworkingSpacesList />
         </Paper>
       </Layout>
     </>
   );
 };
 
-export default TechCompanies;
+export default Coworking;

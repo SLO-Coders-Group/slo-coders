@@ -27,8 +27,8 @@ export const Navigation: FC = () => {
           display: "flex",
           justifyContent: "center",
           py: 1,
-          px: xsBreakpoint ? 4 : smBreakpoint ? 7 : 10,
-          columnGap: xsBreakpoint ? 4 : smBreakpoint ? 7 : 10,
+          px: xsBreakpoint ? 4 : smBreakpoint ? 6 : 8,
+          columnGap: xsBreakpoint ? 4 : smBreakpoint ? 6 : 8,
           rowGap: 1,
           flexWrap: "wrap",
         }}
@@ -78,6 +78,26 @@ export const Navigation: FC = () => {
             sx={{ whiteSpace: "nowrap" }}
           >
             Tech Companies
+          </Link>
+        </Typography>
+        <Typography variant="h6" color="inherit">
+          <Link
+            color="inherit"
+            href="/tech-recruiters"
+            underline="hover"
+            sx={{ whiteSpace: "nowrap" }}
+          >
+            Tech Recruiters
+          </Link>
+        </Typography>
+        <Typography variant="h6" color="inherit">
+          <Link
+            color="inherit"
+            href="/coworking"
+            underline="hover"
+            sx={{ whiteSpace: "nowrap" }}
+          >
+            Coworking
           </Link>
         </Typography>
       </Box>
