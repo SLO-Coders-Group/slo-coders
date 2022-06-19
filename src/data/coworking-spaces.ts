@@ -15,7 +15,7 @@ export const coworkingSpaces: { [key in string]: CoworkingSpacesType } = {
     ],
   },
   theSandbox: {
-    displayName: "StoryLabs",
+    displayName: "THE SANDBOX",
     websiteUrl: "https://thesandboxpaso.com/",
     googleMapsUrls: ["https://goo.gl/maps/yMchCe8wZMsg3ZWYA"],
   },
