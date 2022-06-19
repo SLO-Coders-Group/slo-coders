@@ -15,6 +15,7 @@ export const TechList: FC = () => {
             websiteUrl,
             linkedInJobsUrl,
             glassdoorReviewsUrl,
+            googleMapsUrl,
           } = techCompanies[key];
           return (
             <Grid item key={key} xs={12} sm={6} md={4} lg={3}>
@@ -24,6 +25,40 @@ export const TechList: FC = () => {
                   {websiteUrl.replace(/^https?:\/\//, "").replace(/\/$/, "")}
                 </Link>
               </Typography>
+              {/* get better icons and use svgs and SvgIcon from MUI */}
+              {googleMapsUrl && (
+                <Link
+                  href={googleMapsUrl}
+                  target="_blank"
+                  sx={{
+                    display: "block",
+                    "&:hover": {
+                      "& .MuiIconButton-root": {
+                        background: lighten("#0e50b4", 0.25),
+                      },
+                    },
+                  }}
+                >
+                  <IconButton
+                    sx={{
+                      background: "#b9312c",
+                    }}
+                  >
+                    <Image
+                      alt="Google Maps"
+                      src="/images/google-maps.png"
+                      width={12}
+                      height={12}
+                    />
+                  </IconButton>
+                  <Typography
+                    variant="body2"
+                    sx={{ display: "inline", marginLeft: 0.5 }}
+                  >
+                    Google Maps Office Location
+                  </Typography>
+                </Link>
+              )}
               {glassdoorReviewsUrl && (
                 <Link
                   href={glassdoorReviewsUrl}
@@ -46,8 +81,8 @@ export const TechList: FC = () => {
                     <Image
                       alt="Glassdoor"
                       src="/images/glassdoor.png"
-                      width={10}
-                      height={10}
+                      width={12}
+                      height={12}
                     />
                   </IconButton>
                   <Typography
@@ -79,8 +114,8 @@ export const TechList: FC = () => {
                     <Image
                       alt="LinkedIn"
                       src="/images/linkedin.png"
-                      width={10}
-                      height={10}
+                      width={12}
+                      height={12}
                     />
                   </IconButton>
                   <Typography
