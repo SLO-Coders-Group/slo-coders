@@ -9,6 +9,14 @@ export const coworkingSpaces: { [key in string]: CoworkingSpacesType } = {
   storyLabs: {
     displayName: "StoryLabs",
     websiteUrl: "https://www.storylabs.work/",
-    googleMapsUrls: ["https://goo.gl/maps/dqfcMJe7JxwPbUHr5"],
+    googleMapsUrls: [
+      "https://goo.gl/maps/dqfcMJe7JxwPbUHr5",
+      "https://goo.gl/maps/rzZqrSWh57js64e78",
+    ],
+  },
+  theSandbox: {
+    displayName: "StoryLabs",
+    websiteUrl: "https://thesandboxpaso.com/",
+    googleMapsUrls: ["https://goo.gl/maps/yMchCe8wZMsg3ZWYA"],
   },
 };

@@ -55,8 +55,8 @@ const TechRecruiters: NextPage = () => {
         >
           <Typography mb={4}>
             Are you looking for some assistance finding your dream job? Here is
-            a list of some recruiters and recruiting companies in SLO county
-            that can help out!
+            a list of some recruiters and recruiting companies that would love
+            to help you find the perfect fit.
           </Typography>
           <Typography variant="body2">
             If you would like to contribute new data, modify existing listings,
