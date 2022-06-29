@@ -1,18 +1,32 @@
-import { FC } from "react";
+import { FC, useState, MouseEvent } from "react";
 import {
   AppBar,
   Box,
+  Menu,
+  MenuItem,
   Typography,
   useMediaQuery,
   useTheme,
+  Link as MuiLink,
 } from "@mui/material";
 import { Link } from "./link";
+import NextLink from "next/link";
 
 export const Navigation: FC = () => {
   const theme = useTheme();
 
   const xsBreakpoint = useMediaQuery(theme.breakpoints.only("xs"));
   const smBreakpoint = useMediaQuery(theme.breakpoints.only("sm"));
+
+  const [anchorElement, setAnchorElement] = useState<null | HTMLElement>(null);
+  const open = Boolean(anchorElement);
+
+  const handleClick = (event: MouseEvent<HTMLAnchorElement>) => {
+    setAnchorElement(event.currentTarget);
+  };
+  const handleClose = () => {
+    setAnchorElement(null);
+  };
 
   return (
     <AppBar
@@ -28,7 +42,7 @@ export const Navigation: FC = () => {
           justifyContent: "center",
           py: 1,
           px: xsBreakpoint ? 4 : smBreakpoint ? 6 : 8,
-          columnGap: xsBreakpoint ? 4 : smBreakpoint ? 6 : 8,
+          columnGap: xsBreakpoint ? 1 : smBreakpoint ? 2 : 4,
           rowGap: 1,
           flexWrap: "wrap",
         }}
@@ -48,6 +62,14 @@ export const Navigation: FC = () => {
             Home
           </Link>
         </Typography>
+        <Box
+          component="span"
+          sx={{
+            color: "secondary.main",
+          }}
+        >
+          •
+        </Box>
         <Typography variant="h6" color="inherit">
           <Link
             color="inherit"
@@ -59,6 +81,14 @@ export const Navigation: FC = () => {
             Events
           </Link>
         </Typography>
+        <Box
+          component="span"
+          sx={{
+            color: "secondary.main",
+          }}
+        >
+          •
+        </Box>
         <Typography variant="h6" color="inherit">
           <Link
             color="inherit"
@@ -70,36 +100,50 @@ export const Navigation: FC = () => {
             Join
           </Link>
         </Typography>
+        <Box
+          component="span"
+          sx={{
+            color: "secondary.main",
+          }}
+        >
+          •
+        </Box>
         <Typography variant="h6" color="inherit">
-          <Link
+          <MuiLink
             color="inherit"
-            href="/tech-companies"
+            onClick={handleClick}
             underline="hover"
             sx={{ whiteSpace: "nowrap" }}
           >
-            Tech Companies
-          </Link>
+            Resources
+          </MuiLink>
         </Typography>
-        <Typography variant="h6" color="inherit">
-          <Link
-            color="inherit"
-            href="/tech-recruiters"
-            underline="hover"
-            sx={{ whiteSpace: "nowrap" }}
-          >
-            Tech Recruiters
-          </Link>
-        </Typography>
-        <Typography variant="h6" color="inherit">
-          <Link
-            color="inherit"
-            href="/coworking"
-            underline="hover"
-            sx={{ whiteSpace: "nowrap" }}
-          >
-            Coworking
-          </Link>
-        </Typography>
+        <Menu
+          anchorEl={anchorElement}
+          open={open}
+          onClose={handleClose}
+          anchorOrigin={{
+            vertical: "bottom",
+            horizontal: "center",
+          }}
+          transformOrigin={{
+            vertical: -10,
+            horizontal: "center",
+          }}
+        >
+          <MenuItem onClick={handleClose}>
+            <NextLink href="/tech-companies">Tech Companies</NextLink>
+          </MenuItem>
+          <MenuItem onClick={handleClose}>
+            <NextLink href="/tech-recruiters">Tech Recruiters</NextLink>
+          </MenuItem>
+          <MenuItem onClick={handleClose}>
+            <NextLink href="/coworking">Coworking Spaces</NextLink>
+          </MenuItem>
+          <MenuItem onClick={handleClose}>
+            <NextLink href="/learning-resources">Learning Resources</NextLink>
+          </MenuItem>
+        </Menu>
       </Box>
     </AppBar>
   );

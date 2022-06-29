@@ -1,14 +1,17 @@
 import { createTheme } from "@mui/material/styles";
 
+const primaryColor = "#F16E42";
+const secondaryColor = "#009476";
+
 // Create a theme instance.
 const theme = createTheme({
   palette: {
     mode: "dark",
     primary: {
-      main: "#F16E42",
+      main: primaryColor,
     },
     secondary: {
-      main: "#009476",
+      main: secondaryColor,
     },
     background: {
       default: "#000",
@@ -62,7 +65,17 @@ const theme = createTheme({
           textDecoration: "none",
           "&:hover": {
             textDecoration: "underline",
-            textDecorationColor: "#009476",
+            textDecorationColor: secondaryColor,
+          },
+        },
+      },
+    },
+    MuiMenu: {
+      styleOverrides: {
+        paper: {
+          "&.MuiPaper-root": {
+            borderRadius: 0,
+            background: secondaryColor,
           },
         },
       },

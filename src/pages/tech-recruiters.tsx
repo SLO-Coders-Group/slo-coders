@@ -4,7 +4,7 @@ import Head from "next/head";
 import { Layout } from "../components/layout";
 import { TechRecruitersList } from "../components/listings/tech-recruiters-list";
 
-const TechRecruiters: NextPage = () => {
+const TechRecruitersPage: NextPage = () => {
   const theme = useTheme();
 
   return (
@@ -89,4 +89,4 @@ const TechRecruiters: NextPage = () => {
   );
 };
 
-export default TechRecruiters;
+export default TechRecruitersPage;
