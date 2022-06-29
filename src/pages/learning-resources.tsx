@@ -15,7 +15,7 @@ const LearningResourcesPage: NextPage = () => {
         <meta
           key="description"
           name="description"
-          content="A set of resources to help you on your journey to become a coder or just to improve your skills"
+          content="A set of resources to help you on your journey to become a coder or improve your coding skills."
         />
         <link
           key="canonical"
