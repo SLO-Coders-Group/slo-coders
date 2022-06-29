@@ -5,7 +5,7 @@ import { Layout } from "../components/layout";
 import { Link } from "../components/link";
 import { TechCompaniesList } from "../components/listings/tech-companies-list";
 
-const TechCompanies: NextPage = () => {
+const TechCompaniesPage: NextPage = () => {
   const theme = useTheme();
 
   return (
@@ -94,4 +94,4 @@ const TechCompanies: NextPage = () => {
   );
 };
 
-export default TechCompanies;
+export default TechCompaniesPage;

@@ -3,27 +3,27 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import { Layout } from "../components/layout";
 import { Link } from "../components/link";
-import { CoworkingSpacesList } from "../components/listings/coworking-spaces-list";
+import { LearningList } from "../components/listings/learning-list";
 
-const CoworkingPage: NextPage = () => {
+const LearningResourcesPage: NextPage = () => {
   const theme = useTheme();
 
   return (
     <>
       <Head>
-        <title key="title">Coworking Spaces • SLO Coders</title>
+        <title key="title">Learning Resources • SLO Coders</title>
         <meta
           key="description"
           name="description"
-          content="A list of coworking spaces in San Luis Obispo county. Because you need coworkers that aren't your cat."
+          content="A set of resources to help you on your journey to become a coder or just to improve your skills"
         />
         <link
           key="canonical"
           rel="canonical"
-          href="https://slocoders.com/coworking"
+          href="https://slocoders.com/learning-resources"
         />
       </Head>
-      <Layout page="coworking">
+      <Layout page="learning-resources">
         <Typography
           variant="h4"
           component="h2"
@@ -42,7 +42,7 @@ const CoworkingPage: NextPage = () => {
               mx: 0.5,
             }}
           >
-            Coworking Spaces in San Luis Obispo County
+            Learning Resources
           </Box>
         </Typography>
         <Paper
@@ -55,14 +55,15 @@ const CoworkingPage: NextPage = () => {
           }}
         >
           <Typography mb={4}>
-            {`Do you work remote and need a coworker that isn't your cat? Then try out one of
-            our fabulous co-working spaces here in SLO!`}
+            If you are just learning to code, looking to learn a new language,
+            or maybe just hoping to keep your skills sharp and current, then
+            check out these resources to help you along your journey.
           </Typography>
           <Typography variant="body2">
             If you would like to contribute new data, modify existing listings,
             or report a mistake, please{" "}
             <Link
-              href="https://github.com/lenzi-erickson/slo-coders/edit/main/src/data/coworking-spaces.ts"
+              href="https://github.com/lenzi-erickson/slo-coders/edit/main/src/data/learning-resources.ts"
               target="_blank"
             >
               create a pull request
@@ -82,11 +83,11 @@ const CoworkingPage: NextPage = () => {
             padding: 3,
           }}
         >
-          <CoworkingSpacesList />
+          <LearningList />
         </Paper>
       </Layout>
     </>
   );
 };
 
-export default CoworkingPage;
+export default LearningResourcesPage;

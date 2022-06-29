@@ -5,7 +5,7 @@ import Head from "next/head";
 import { Layout } from "../components/layout";
 import { Link } from "../components/link";
 
-const Home: NextPage = () => {
+const HomePage: NextPage = () => {
   const theme = useTheme();
 
   return (
@@ -112,4 +112,4 @@ const Home: NextPage = () => {
   );
 };
 
-export default Home;
+export default HomePage;
