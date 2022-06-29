@@ -31,7 +31,7 @@
     "@mui/icons-material": "~5.8.4",
     "@mui/material": "~5.8.6",
     "clsx": "~1.1.1",
-    "next": "~12.1.6",
+    "next": "~12.2.0",
     "react": "~18.2.0",
     "react-dom": "~18.2.0"
   },
@@ -47,7 +47,7 @@
     "@typescript-eslint/parser": "~5.30.0",
     "audit-ci": "~6.3.0",
     "eslint": "~8.18.0",
-    "eslint-config-next": "~12.1.6",
+    "eslint-config-next": "~12.2.0",
     "eslint-config-prettier": "~8.5.0",
     "eslint-plugin-jest": "~26.5.3",
     "eslint-plugin-testing-library": "~5.5.1",
