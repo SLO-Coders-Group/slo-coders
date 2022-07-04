@@ -27,6 +27,7 @@
     "@emotion/react": "~11.9.3",
     "@emotion/server": "~11.4.0",
     "@emotion/styled": "~11.9.3",
+    "@fontsource/fira-code": "~4.5.10",
     "@fontsource/oswald": "~4.5.9",
     "@mui/icons-material": "~5.8.4",
     "@mui/material": "~5.8.6",
