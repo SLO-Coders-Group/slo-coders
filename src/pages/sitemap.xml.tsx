@@ -10,16 +10,20 @@ export const getServerSideProps: GetServerSideProps = async ({ res }) => {
         <priority>1.00</priority>
     </url>
     <url>
-        <loc>https://slocoders.com/tech-companies</loc>
+        <loc>https://slocoders.com/businesses-with-coders</loc>
         <priority>0.90</priority>
     </url>
     <url>
-        <loc>https://slocoders.com/tech-recruiters</loc>
-        <priority>0.70</priority>
+        <loc>https://slocoders.com/recruiters-and-jobs</loc>
+        <priority>0.80</priority>
     </url>
     <url>
-        <loc>https://slocoders.com/coworking</loc>
-        <priority>0.80</priority>
+        <loc>https://slocoders.com/coworking-spaces</loc>
+        <priority>0.50</priority>
+    </url>
+    <url>
+        <loc>https://slocoders.com/learning-resources</loc>
+        <priority>0.10</priority>
     </url>
     </urlset>`;
 

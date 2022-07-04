@@ -1,6 +1,7 @@
 type CoworkingSpacesType = {
   displayName: string;
   websiteUrl: string;
+  websiteDisplayName?: string;
   // TODO: validate if it's a valid Google Maps link somehow
   googleMapsUrls?: string[];
 };

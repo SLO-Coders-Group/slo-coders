@@ -1,6 +1,7 @@
-type TechCompaniesType = {
+type BusinessesWithCodersType = {
   displayName: string;
   websiteUrl: string;
+  websiteDisplayName?: string;
   // TODO: validate if it's a valid Glassdoor REVIEW link somehow
   glassdoorReviewsUrl?: string;
   // TODO: validate if it's a valid LinkedIn JOBS link somehow
@@ -9,7 +10,9 @@ type TechCompaniesType = {
   googleMapsUrls?: string[];
 };
 
-export const techCompanies: { [key in string]: TechCompaniesType } = {
+export const businessesWithCoders: {
+  [key in string]: BusinessesWithCodersType;
+} = {
   whiteFoxDefense: {
     displayName: "WhiteFox Defense",
     websiteUrl: "https://www.whitefoxdefense.com/",
@@ -241,5 +244,29 @@ export const techCompanies: { [key in string]: TechCompaniesType } = {
     websiteUrl: "https://edgeautonomy.io/",
     displayName: "Edge Autonomy",
     linkedInJobsUrl: "https://www.linkedin.com/company/edgeautonomy/jobs/",
+  },
+  crystalEngineering: {
+    displayName: "Crystal Engineering",
+    websiteUrl: "https://www.ametekcalibration.com/",
+    glassdoorReviewsUrl:
+      "https://www.glassdoor.com/Reviews/Crystal-Engineering-Reviews-E904913.htm",
+    linkedInJobsUrl: "https://www.linkedin.com/company/ametek/jobs/",
+    googleMapsUrls: ["https://goo.gl/maps/vRwawV9LZ7w3Bie89"],
+  },
+  levelStudios: {
+    displayName: "Level Studios",
+    websiteUrl: "https://level-studios.com/",
+    glassdoorReviewsUrl:
+      "https://www.glassdoor.com/Reviews/LEVEL-Studios-Reviews-E235464.htm",
+    linkedInJobsUrl: "https://www.linkedin.com/company/level-studios/jobs/",
+    googleMapsUrls: ["https://goo.gl/maps/ZwDPQs43n81shNyx9"],
+  },
+  treesApp: {
+    displayName: "Trees.app",
+    websiteUrl: "https://www.trees.app/",
+    glassdoorReviewsUrl:
+      "https://www.glassdoor.com/Reviews/Trees-Reviews-E4781348.htm",
+    linkedInJobsUrl: "https://www.linkedin.com/company/trees-app/jobs/",
+    googleMapsUrls: ["https://goo.gl/maps/r1uCCusLHyVk82st5"],
   },
 };

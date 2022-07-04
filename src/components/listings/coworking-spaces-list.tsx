@@ -10,14 +10,22 @@ export const CoworkingSpacesList: FC = () => {
       {Object.keys(coworkingSpaces)
         .sort()
         .map((key) => {
-          const { displayName, websiteUrl, googleMapsUrls } =
-            coworkingSpaces[key];
+          const {
+            displayName,
+            websiteUrl,
+            websiteDisplayName,
+            googleMapsUrls,
+          } = coworkingSpaces[key];
           return (
             <Grid item key={key} xs={12} sm={6} md={4} lg={3}>
               <Typography>{displayName}</Typography>
               <Typography variant="body2">
                 <Link color="secondary" href={websiteUrl} target="_blank">
-                  {websiteUrl.replace(/^https?:\/\//, "").replace(/\/$/, "")}
+                  {websiteDisplayName ||
+                    websiteUrl
+                      .replace(/^https?:\/\//, "")
+                      .replace(/\/$/, "")
+                      .split("?")[0]}
                 </Link>
               </Typography>
               {/* get better icons and use svgs and SvgIcon from MUI */}

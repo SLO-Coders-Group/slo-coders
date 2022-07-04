@@ -62,14 +62,6 @@ export const Navigation: FC = () => {
             Home
           </Link>
         </Typography>
-        <Box
-          component="span"
-          sx={{
-            color: "secondary.main",
-          }}
-        >
-          •
-        </Box>
         <Typography variant="h6" color="inherit">
           <Link
             color="inherit"
@@ -81,14 +73,6 @@ export const Navigation: FC = () => {
             Events
           </Link>
         </Typography>
-        <Box
-          component="span"
-          sx={{
-            color: "secondary.main",
-          }}
-        >
-          •
-        </Box>
         <Typography variant="h6" color="inherit">
           <Link
             color="inherit"
@@ -100,20 +84,12 @@ export const Navigation: FC = () => {
             Join
           </Link>
         </Typography>
-        <Box
-          component="span"
-          sx={{
-            color: "secondary.main",
-          }}
-        >
-          •
-        </Box>
         <Typography variant="h6" color="inherit">
           <MuiLink
             color="inherit"
             onClick={handleClick}
             underline="hover"
-            sx={{ whiteSpace: "nowrap" }}
+            sx={{ whiteSpace: "nowrap", cursor: "pointer" }}
           >
             Resources
           </MuiLink>
@@ -132,13 +108,15 @@ export const Navigation: FC = () => {
           }}
         >
           <MenuItem onClick={handleClose}>
-            <NextLink href="/tech-companies">Tech Companies</NextLink>
+            <NextLink href="/businesses-with-coders">
+              Businesses with Coders
+            </NextLink>
           </MenuItem>
           <MenuItem onClick={handleClose}>
-            <NextLink href="/tech-recruiters">Tech Recruiters</NextLink>
+            <NextLink href="/recruiters-and-jobs">Recruiters and Jobs</NextLink>
           </MenuItem>
           <MenuItem onClick={handleClose}>
-            <NextLink href="/coworking">Coworking Spaces</NextLink>
+            <NextLink href="/coworking-spaces">Coworking Spaces</NextLink>
           </MenuItem>
           <MenuItem onClick={handleClose}>
             <NextLink href="/learning-resources">Learning Resources</NextLink>
