@@ -30,14 +30,21 @@ export const Header: FC = () => {
           fontSize: xsBreakpoint ? "4rem" : smBreakpoint ? "5rem" : "6rem",
         }}
       >
-        SLO
+        <Box
+          component="span"
+          sx={{
+            mx: "2rem",
+          }}
+        >
+          SLO
+        </Box>
         <Box
           component="span"
           sx={{
             fontFamily: "Fira Code, Oswald, Arial, Helvetica, sans-serif",
-            transform: "translate(0, .55rem)",
+            transform: "translate(0, -.25rem)",
             display: "inline-block",
-            marginLeft: "2rem",
+            mx: "2rem",
             letterSpacing: "normal",
           }}
         >
