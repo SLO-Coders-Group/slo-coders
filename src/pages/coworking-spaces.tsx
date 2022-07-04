@@ -5,7 +5,7 @@ import { Layout } from "../components/layout";
 import { Link } from "../components/link";
 import { CoworkingSpacesList } from "../components/listings/coworking-spaces-list";
 
-const CoworkingPage: NextPage = () => {
+const CoworkingSpacesPage: NextPage = () => {
   const theme = useTheme();
 
   return (
@@ -20,10 +20,10 @@ const CoworkingPage: NextPage = () => {
         <link
           key="canonical"
           rel="canonical"
-          href="https://slocoders.com/coworking"
+          href="https://slocoders.com/coworking-spaces"
         />
       </Head>
-      <Layout page="coworking">
+      <Layout page="coworking-spaces">
         <Typography
           variant="h4"
           component="h2"
@@ -55,8 +55,10 @@ const CoworkingPage: NextPage = () => {
           }}
         >
           <Typography mb={4}>
-            {`Do you work remote and need a coworker that isn't your cat? Then try out one of
-            our fabulous co-working spaces here in SLO!`}
+            Do you work remote and need some interaction from someone that isn
+            &apos;t your cat? Or maybe you love your kids, but prefer not to
+            have them guest star in every Zoom meeting? Then try out one of our
+            fabulous co-working spaces here in SLO!
           </Typography>
           <Typography variant="body2">
             If you would like to contribute new data, modify existing listings,
@@ -89,4 +91,4 @@ const CoworkingPage: NextPage = () => {
   );
 };
 
-export default CoworkingPage;
+export default CoworkingSpacesPage;

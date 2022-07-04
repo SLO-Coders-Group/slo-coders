@@ -3,7 +3,7 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import { Layout } from "../components/layout";
 import { Link } from "../components/link";
-import { LearningList } from "../components/listings/learning-list";
+import { LearningResourcesList } from "../components/listings/learning-resources-list";
 
 const LearningResourcesPage: NextPage = () => {
   const theme = useTheme();
@@ -83,7 +83,7 @@ const LearningResourcesPage: NextPage = () => {
             padding: 3,
           }}
         >
-          <LearningList />
+          <LearningResourcesList />
         </Paper>
       </Layout>
     </>

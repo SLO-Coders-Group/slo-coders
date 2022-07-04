@@ -3,19 +3,24 @@ import { FC } from "react";
 import { learningResources } from "../../data/learning-resources";
 import { Link } from "../link";
 
-export const LearningList: FC = () => {
+export const LearningResourcesList: FC = () => {
   return (
     <Grid container columnSpacing={3} rowSpacing={6}>
       {Object.keys(learningResources)
         .sort()
         .map((key) => {
-          const { displayName, websiteUrl, description } =
+          const { displayName, websiteUrl, description, websiteDisplayName } =
             learningResources[key];
           return (
             <Grid item key={key} xs={12} md={6}>
-              <Typography>
+              <Typography>{displayName}</Typography>
+              <Typography variant="body2">
                 <Link color="secondary" href={websiteUrl} target="_blank">
-                  {displayName}
+                  {websiteDisplayName ||
+                    websiteUrl
+                      .replace(/^https?:\/\//, "")
+                      .replace(/\/$/, "")
+                      .split("?")[0]}
                 </Link>
               </Typography>
               <Typography variant="body2">{description}</Typography>

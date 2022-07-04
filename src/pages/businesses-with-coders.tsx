@@ -3,27 +3,27 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import { Layout } from "../components/layout";
 import { Link } from "../components/link";
-import { TechCompaniesList } from "../components/listings/tech-companies-list";
+import { BusinessesWithCodersList } from "../components/listings/businesses-with-coders-list";
 
-const TechCompaniesPage: NextPage = () => {
+const BusinessesWithCodersPage: NextPage = () => {
   const theme = useTheme();
 
   return (
     <>
       <Head>
-        <title key="title">Tech Companies • SLO Coders</title>
+        <title key="title">Businesses with Coders • SLO Coders</title>
         <meta
           key="description"
           name="description"
-          content="A list of tech companies in San Luis Obispo county for all kinds of developers, engineers, and coders to find their dream work home."
+          content="A list of businesses with coders in San Luis Obispo county for all kinds of developers, engineers, and coders to find their dream work home."
         />
         <link
           key="canonical"
           rel="canonical"
-          href="https://slocoders.com/tech-companies"
+          href="https://slocoders.com/businesses-with-coders"
         />
       </Head>
-      <Layout page="tech-companies">
+      <Layout page="businesses-with-coders">
         <Typography
           variant="h4"
           component="h2"
@@ -42,7 +42,7 @@ const TechCompaniesPage: NextPage = () => {
               mx: 0.5,
             }}
           >
-            Tech Companies in San Luis Obispo County
+            Businesses with Coders in San Luis Obispo County
           </Box>
         </Typography>
         <Paper
@@ -57,7 +57,7 @@ const TechCompaniesPage: NextPage = () => {
           <Typography mb={4}>
             We love to help developers, engineers, coders, etc. find their
             perfect work home in our amazing San Luis Obispo county. Here is a
-            list of all the tech companies we know of.
+            list of all the businesses with coders we know of.
           </Typography>
           <Typography variant="body2">
             This page was inspired by{" "}
@@ -67,7 +67,7 @@ const TechCompaniesPage: NextPage = () => {
             . If you would like to contribute new data, modify existing
             listings, or report a mistake, please{" "}
             <Link
-              href="https://github.com/lenzi-erickson/slo-coders/edit/main/src/data/tech-companies.ts"
+              href="https://github.com/lenzi-erickson/slo-coders/edit/main/src/data/businesses-with-coders.ts"
               target="_blank"
             >
               create a pull request
@@ -87,11 +87,11 @@ const TechCompaniesPage: NextPage = () => {
             padding: 3,
           }}
         >
-          <TechCompaniesList />
+          <BusinessesWithCodersList />
         </Paper>
       </Layout>
     </>
   );
 };
 
-export default TechCompaniesPage;
+export default BusinessesWithCodersPage;

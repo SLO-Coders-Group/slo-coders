@@ -2,27 +2,27 @@ import { Box, Link, Paper, Typography, useTheme } from "@mui/material";
 import type { NextPage } from "next";
 import Head from "next/head";
 import { Layout } from "../components/layout";
-import { TechRecruitersList } from "../components/listings/tech-recruiters-list";
+import { RecruitersAndJobsList } from "../components/listings/recruiters-and-jobs-list";
 
-const TechRecruitersPage: NextPage = () => {
+const RecruitersAndJobsPage: NextPage = () => {
   const theme = useTheme();
 
   return (
     <>
       <Head>
-        <title key="title">Tech recruiters • SLO Coders</title>
+        <title key="title">Recruiters and Jobs • SLO Coders</title>
         <meta
           key="description"
           name="description"
-          content="A list of tech recruiters in San Luis Obispo county to help you find your dream job."
+          content="A list of coding recruiters and jobs in San Luis Obispo county to help you find your dream gig."
         />
         <link
           key="canonical"
           rel="canonical"
-          href="https://slocoders.com/tech-recruiters"
+          href="https://slocoders.com/recruiters-and-jobs"
         />
       </Head>
-      <Layout page="tech-recruiters">
+      <Layout page="recruiters-and-jobs">
         <Typography
           variant="h4"
           component="h2"
@@ -41,7 +41,7 @@ const TechRecruitersPage: NextPage = () => {
               mx: 0.5,
             }}
           >
-            Tech Recruiters in San Luis Obispo County
+            Recruiters and Jobs in San Luis Obispo County
           </Box>
         </Typography>
         <Paper
@@ -54,15 +54,16 @@ const TechRecruitersPage: NextPage = () => {
           }}
         >
           <Typography mb={4}>
-            Are you looking for some assistance finding your dream job? Here is
-            a list of some recruiters and recruiting companies that would love
-            to help you find the perfect fit.
+            Are you looking for some assistance finding your dream gig? Here is
+            a list of some recruiters that would love to help you find the
+            perfect fit along with some resources for finding coding jobs in
+            SLO.
           </Typography>
           <Typography variant="body2">
             If you would like to contribute new data, modify existing listings,
             or report a mistake, please{" "}
             <Link
-              href="https://github.com/lenzi-erickson/slo-coders/edit/main/src/data/tech-recruiters.ts"
+              href="https://github.com/lenzi-erickson/slo-coders/edit/main/src/data/recruiters-and-jobs.ts"
               target="_blank"
             >
               create a pull request
@@ -82,11 +83,11 @@ const TechRecruitersPage: NextPage = () => {
             padding: 3,
           }}
         >
-          <TechRecruitersList />
+          <RecruitersAndJobsList />
         </Paper>
       </Layout>
     </>
   );
 };
 
-export default TechRecruitersPage;
+export default RecruitersAndJobsPage;

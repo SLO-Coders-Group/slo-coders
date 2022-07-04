@@ -1,6 +1,7 @@
 type LearningResourcesType = {
   displayName: string;
   websiteUrl: string;
+  websiteDisplayName?: string;
   description: string;
 };
 
@@ -21,6 +22,8 @@ export const learningResources: { [key in string]: LearningResourcesType } = {
     displayName: "Some Books to Improve Your Code and Your Way of Coding",
     websiteUrl:
       "https://medium.com/javarevisited/some-books-to-improve-your-code-nd-your-way-of-coding-d5c1cbbbdf73",
+    websiteDisplayName:
+      "medium.com/javarevisited/some-books-to-improve-your-code...",
     description:
       "“Any fool can write code that a computer can understand. Good programmers write code that humans can understand.” — M. Fowler",
   },
