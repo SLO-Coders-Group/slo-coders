@@ -33,7 +33,7 @@ export const Header: FC = () => {
         <Box
           component="span"
           sx={{
-            mx: "2rem",
+            mx: "1rem",
           }}
         >
           SLO
@@ -42,9 +42,9 @@ export const Header: FC = () => {
           component="span"
           sx={{
             fontFamily: "Fira Code, Oswald, Arial, Helvetica, sans-serif",
-            transform: "translate(0, -.25rem)",
+            transform: "translate(0, -.35rem)",
             display: "inline-block",
-            mx: "2rem",
+            mx: "1rem",
             letterSpacing: "normal",
             textTransform: "lowercase",
           }}
