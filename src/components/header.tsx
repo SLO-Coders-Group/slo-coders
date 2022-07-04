@@ -41,7 +41,7 @@ export const Header: FC = () => {
         <Box
           component="span"
           sx={{
-            fontFamily: "Fira Code, monospace",
+            fontFamily: `"Fira Code", monospace`,
             transform: "translate(0, -.35rem)",
             display: "inline-block",
             mx: "1rem",
