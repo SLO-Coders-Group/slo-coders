@@ -16,7 +16,7 @@ export const BusinessesWithCodersList: FC = () => {
             websiteDisplayName,
             linkedInJobsUrl,
             glassdoorReviewsUrl,
-            googleMapsUrls,
+            googleMapsLocations,
           } = businessesWithCoders[key];
           return (
             <Grid item key={key} xs={12} sm={6} md={4} lg={3}>
@@ -31,11 +31,11 @@ export const BusinessesWithCodersList: FC = () => {
                 </Link>
               </Typography>
               {/* get better icons and use svgs and SvgIcon from MUI */}
-              {googleMapsUrls &&
-                googleMapsUrls.map((googleMapsUrl) => (
+              {googleMapsLocations &&
+                googleMapsLocations.map((googleMapsLocation) => (
                   <Link
                     key={websiteUrl}
-                    href={googleMapsUrl}
+                    href={googleMapsLocation.googleMapsUrl}
                     target="_blank"
                     sx={{
                       display: "block",
@@ -62,7 +62,7 @@ export const BusinessesWithCodersList: FC = () => {
                       variant="body2"
                       sx={{ display: "inline", marginLeft: 0.5 }}
                     >
-                      Google Maps Office Location
+                      {`${googleMapsLocation.cityName}`}
                     </Typography>
                   </Link>
                 ))}

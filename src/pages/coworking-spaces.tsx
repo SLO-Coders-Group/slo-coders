@@ -57,8 +57,8 @@ const CoworkingSpacesPage: NextPage = () => {
           <Typography mb={4}>
             Do you work remote and need some interaction from someone that isn
             &apos;t your cat? Or maybe you love your kids, but prefer not to
-            have them scream they want their butt wiped during a Zoom meeting?
-            Then try out one of our fabulous co-working spaces here in SLO!
+            have them guest star in every Zoom meeting? Then try out one of our
+            fabulous co-working spaces here in SLO!
           </Typography>
           <Typography variant="body2">
             If you would like to contribute new data, modify existing listings,

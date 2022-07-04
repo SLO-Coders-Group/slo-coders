@@ -42,7 +42,7 @@ export const Navigation: FC = () => {
           justifyContent: "center",
           py: 1,
           px: xsBreakpoint ? 4 : smBreakpoint ? 6 : 8,
-          columnGap: xsBreakpoint ? 1 : smBreakpoint ? 2 : 4,
+          columnGap: xsBreakpoint ? 4 : smBreakpoint ? 6 : 8,
           rowGap: 1,
           flexWrap: "wrap",
         }}
