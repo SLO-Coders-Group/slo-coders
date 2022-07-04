@@ -38,6 +38,7 @@ export const Header: FC = () => {
             transform: "translate(0, .55rem)",
             display: "inline-block",
             marginLeft: "2rem",
+            letterSpacing: "normal",
           }}
         >
           Coders
