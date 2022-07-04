@@ -329,7 +329,9 @@ export const businessesWithCoders: {
   },
 
   amazon: {
-    websiteUrl: "https://amazon.com",
+    websiteUrl:
+      "https://www.amazon.jobs/en/locations/san-luis-obispo-california",
+    websiteDisplayName: "www.amazon.jobs/...",
     displayName: "Amazon",
     glassdoorReviewsUrl:
       "https://www.glassdoor.com/Reviews/Amazon-Reviews-E6036.htm",
