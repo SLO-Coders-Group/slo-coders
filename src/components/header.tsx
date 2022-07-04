@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { Paper, Typography, useMediaQuery, useTheme } from "@mui/material";
+import { Box, Paper, Typography, useMediaQuery, useTheme } from "@mui/material";
 
 export const Header: FC = () => {
   const theme = useTheme();
@@ -30,7 +30,18 @@ export const Header: FC = () => {
           fontSize: xsBreakpoint ? "4rem" : smBreakpoint ? "5rem" : "6rem",
         }}
       >
-        SLO Coders
+        SLO
+        <Box
+          component="span"
+          sx={{
+            fontFamily: "Fira Code, Oswald, Arial, Helvetica, sans-serif",
+            transform: "translate(0, .55rem)",
+            display: "inline-block",
+            marginLeft: "2rem",
+          }}
+        >
+          Coders
+        </Box>
       </Typography>
     </Paper>
   );
