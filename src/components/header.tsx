@@ -46,6 +46,7 @@ export const Header: FC = () => {
             display: "inline-block",
             mx: "2rem",
             letterSpacing: "normal",
+            textTransform: "lowercase",
           }}
         >
           Coders
