@@ -107,6 +107,7 @@ export const Navigation: FC = () => {
             horizontal: "center",
           }}
         >
+          {/* TODO: why does this first link always show as being hovered until you interact with the menu */}
           <MenuItem onClick={handleClose}>
             <NextLink href="/businesses-with-coders">
               Businesses with Coders

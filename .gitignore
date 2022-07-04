@@ -9,6 +9,9 @@
 !.yarn/sdks
 !.yarn/versions
 
+# testing
+coverage
+
 # next.js
 /.next/
 /out/

@@ -12,5 +12,9 @@
   "prettier.prettierPath": ".yarn/sdks/prettier/index.js",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
-  "prettier.configPath": "prettier.config.js"
+  "prettier.configPath": "prettier.config.js",
+  "jestrunner.configPath": "jest.config.js",
+  "jestrunner.enableYarnPnpSupport": true,
+  "jestrunner.jestCommand": "yarn run test",
+  "jestrunner.yarnPnpCommand": "yarn-3.2.1.cjs"
 }
