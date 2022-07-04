@@ -597,6 +597,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@fontsource/fira-code@npm:~4.5.10":
+  version: 4.5.10
+  resolution: "@fontsource/fira-code@npm:4.5.10"
+  checksum: 170c12374c67b7f7685a46190f98a499292233532a100684487eba04bfb6a7268f1597ad569cfae8df47f34e1753286389415109fbb2776597cbf87368082c95
+  languageName: node
+  linkType: hard
+
 "@fontsource/oswald@npm:~4.5.9":
   version: 4.5.9
   resolution: "@fontsource/oswald@npm:4.5.9"
@@ -6200,6 +6207,7 @@ __metadata:
     "@emotion/react": ~11.9.3
     "@emotion/server": ~11.4.0
     "@emotion/styled": ~11.9.3
+    "@fontsource/fira-code": ~4.5.10
     "@fontsource/oswald": ~4.5.9
     "@mui/icons-material": ~5.8.4
     "@mui/material": ~5.8.6

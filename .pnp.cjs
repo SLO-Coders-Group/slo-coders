@@ -37,6 +37,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@emotion/react", "virtual:38847eb7bdd5253f6f99e12f031c7de0ebb27a6285daa163bc7534844f235dfee8aa43d8cd25dcb7dbd8f30f93665d5a8f9bc3eba94527006f892d955718e6de#npm:11.9.3"],\
             ["@emotion/server", "virtual:38847eb7bdd5253f6f99e12f031c7de0ebb27a6285daa163bc7534844f235dfee8aa43d8cd25dcb7dbd8f30f93665d5a8f9bc3eba94527006f892d955718e6de#npm:11.4.0"],\
             ["@emotion/styled", "virtual:38847eb7bdd5253f6f99e12f031c7de0ebb27a6285daa163bc7534844f235dfee8aa43d8cd25dcb7dbd8f30f93665d5a8f9bc3eba94527006f892d955718e6de#npm:11.9.3"],\
+            ["@fontsource/fira-code", "npm:4.5.10"],\
             ["@fontsource/oswald", "npm:4.5.9"],\
             ["@mui/icons-material", "virtual:38847eb7bdd5253f6f99e12f031c7de0ebb27a6285daa163bc7534844f235dfee8aa43d8cd25dcb7dbd8f30f93665d5a8f9bc3eba94527006f892d955718e6de#npm:5.8.4"],\
             ["@mui/material", "virtual:38847eb7bdd5253f6f99e12f031c7de0ebb27a6285daa163bc7534844f235dfee8aa43d8cd25dcb7dbd8f30f93665d5a8f9bc3eba94527006f892d955718e6de#npm:5.8.6"],\
@@ -1096,6 +1097,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["js-yaml", "npm:4.1.0"],\
             ["minimatch", "npm:3.1.2"],\
             ["strip-json-comments", "npm:3.1.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@fontsource/fira-code", [\
+        ["npm:4.5.10", {\
+          "packageLocation": "./.yarn/cache/@fontsource-fira-code-npm-4.5.10-81248631d9-170c12374c.zip/node_modules/@fontsource/fira-code/",\
+          "packageDependencies": [\
+            ["@fontsource/fira-code", "npm:4.5.10"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -7827,6 +7837,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@emotion/react", "virtual:38847eb7bdd5253f6f99e12f031c7de0ebb27a6285daa163bc7534844f235dfee8aa43d8cd25dcb7dbd8f30f93665d5a8f9bc3eba94527006f892d955718e6de#npm:11.9.3"],\
             ["@emotion/server", "virtual:38847eb7bdd5253f6f99e12f031c7de0ebb27a6285daa163bc7534844f235dfee8aa43d8cd25dcb7dbd8f30f93665d5a8f9bc3eba94527006f892d955718e6de#npm:11.4.0"],\
             ["@emotion/styled", "virtual:38847eb7bdd5253f6f99e12f031c7de0ebb27a6285daa163bc7534844f235dfee8aa43d8cd25dcb7dbd8f30f93665d5a8f9bc3eba94527006f892d955718e6de#npm:11.9.3"],\
+            ["@fontsource/fira-code", "npm:4.5.10"],\
             ["@fontsource/oswald", "npm:4.5.9"],\
             ["@mui/icons-material", "virtual:38847eb7bdd5253f6f99e12f031c7de0ebb27a6285daa163bc7534844f235dfee8aa43d8cd25dcb7dbd8f30f93665d5a8f9bc3eba94527006f892d955718e6de#npm:5.8.4"],\
             ["@mui/material", "virtual:38847eb7bdd5253f6f99e12f031c7de0ebb27a6285daa163bc7534844f235dfee8aa43d8cd25dcb7dbd8f30f93665d5a8f9bc3eba94527006f892d955718e6de#npm:5.8.6"],\
