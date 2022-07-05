@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { Box, Paper, Typography, useMediaQuery, useTheme } from "@mui/material";
+import { Paper, Typography, useMediaQuery, useTheme } from "@mui/material";
 
 export const Header: FC = () => {
   const theme = useTheme();
