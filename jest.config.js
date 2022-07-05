@@ -20,10 +20,10 @@ const customJestConfig = {
   coverageReporters: ["lcov", "text"],
   coverageThreshold: {
     global: {
-      branches: 0, // Only lower coverage threshold if necessary
-      functions: 0, // Only lower coverage threshold if necessary
-      lines: 0, // Only lower coverage threshold if necessary
-      statements: 0, // Only lower coverage threshold if necessary
+      branches: 20, // Only lower coverage threshold if necessary
+      functions: 10, // Only lower coverage threshold if necessary
+      lines: 15, // Only lower coverage threshold if necessary
+      statements: 15, // Only lower coverage threshold if necessary
     },
   },
 };

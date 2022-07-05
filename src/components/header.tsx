@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { Box, Paper, Typography, useMediaQuery, useTheme } from "@mui/material";
+import { Paper, Typography, useMediaQuery, useTheme } from "@mui/material";
 
 export const Header: FC = () => {
   const theme = useTheme();
@@ -28,29 +28,12 @@ export const Header: FC = () => {
         align="center"
         sx={{
           fontSize: xsBreakpoint ? "4rem" : smBreakpoint ? "5rem" : "6rem",
+          fontFamily: theme.typography.fontFamily,
+          letterSpacing: "normal",
+          textTransform: "none",
         }}
       >
-        <Box
-          component="span"
-          sx={{
-            mx: "1rem",
-          }}
-        >
-          SLO
-        </Box>
-        <Box
-          component="span"
-          sx={{
-            fontFamily: `"Fira Code", monospace`,
-            transform: "translate(0, -.35rem)",
-            display: "inline-block",
-            mx: "1rem",
-            letterSpacing: "normal",
-            textTransform: "none",
-          }}
-        >
-          Coders
-        </Box>
+        SLO Coders
       </Typography>
     </Paper>
   );

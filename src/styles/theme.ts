@@ -19,43 +19,51 @@ const theme = createTheme({
     },
   },
   typography: {
-    fontFamily: "Oswald, Arial, Helvetica, sans-serif",
+    fontFamily: `"Fira Code", monospace`,
+    fontSize: 14,
     h1: {
       letterSpacing: 12,
       textTransform: "uppercase",
       fontWeight: 400,
+      fontFamily: "Oswald, Arial, Helvetica, sans-serif",
     },
     h2: {
       letterSpacing: 12,
       textTransform: "uppercase",
       fontWeight: 400,
+      fontFamily: "Oswald, Arial, Helvetica, sans-serif",
     },
     h3: {
       letterSpacing: 12,
       textTransform: "uppercase",
       fontWeight: 400,
+      fontFamily: "Oswald, Arial, Helvetica, sans-serif",
     },
     h4: {
       letterSpacing: 2,
       textTransform: "uppercase",
       fontWeight: 700,
+      fontFamily: "Oswald, Arial, Helvetica, sans-serif",
     },
     h5: {
       letterSpacing: 2,
       textTransform: "uppercase",
       fontWeight: 700,
+      fontFamily: "Oswald, Arial, Helvetica, sans-serif",
     },
     h6: {
       letterSpacing: 2,
       textTransform: "uppercase",
       fontWeight: 700,
+      fontFamily: "Oswald, Arial, Helvetica, sans-serif",
     },
     body1: {
-      fontSize: "1.2rem",
+      fontSize: "1rem",
     },
     body2: {
       fontSize: "1rem",
       fontWeight: 300,
+      fontFamily: "Oswald, Arial, Helvetica, sans-serif",
     },
   },
   components: {

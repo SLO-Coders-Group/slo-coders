@@ -35,7 +35,9 @@ export const Footer: FC = () => {
         textAlign={footerTextAlignment}
       >
         <Grid item xs={12} sm={6} md="auto">
-          <Typography variant="h5">If you are a</Typography>
+          <Typography variant="h5" sx={{ mb: 1 }}>
+            If you are a
+          </Typography>
           <List
             dense
             disablePadding
@@ -96,7 +98,9 @@ export const Footer: FC = () => {
         </Grid>
 
         <Grid item xs={12} sm={6} md="auto">
-          <Typography variant="h5">and live in</Typography>
+          <Typography variant="h5" sx={{ mb: 1 }}>
+            and live in
+          </Typography>
           <List
             dense
             disablePadding
@@ -166,7 +170,10 @@ export const Footer: FC = () => {
         </Grid>
 
         <Grid item xs={12} sm={12} md="auto">
-          <Typography variant="h5">{`then we would like to be friends! 😎`}</Typography>
+          <Typography
+            variant="h5"
+            sx={{ mb: 1 }}
+          >{`then we would like to be friends! 😎`}</Typography>
         </Grid>
       </Grid>
     </Box>
