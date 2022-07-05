@@ -20,8 +20,13 @@ export const BusinessesWithCodersList: FC = () => {
           } = businessesWithCoders[key];
           return (
             <Grid item key={key} xs={12} sm={6} md={4} lg={3} data-testid={key}>
-              <Typography>{displayName}</Typography>
-              <Typography variant="body2">
+              <Typography
+                variant="body2"
+                sx={{ fontSize: "1.15rem", fontWeight: 400 }}
+              >
+                {displayName}
+              </Typography>
+              <Typography sx={{ fontSize: ".85rem" }}>
                 <Link color="secondary" href={websiteUrl} target="_blank">
                   {websiteDisplayName ||
                     websiteUrl
