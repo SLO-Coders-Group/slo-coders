@@ -63,12 +63,14 @@ export const Footer: FC = () => {
           </Link>
           .
         </Typography>
-        <Image
-          alt="StoryLabs"
-          src="/images/storylabs-logo.png"
-          width={255}
-          height={150}
-        />
+        <Link href="https://www.storylabs.work/" target="_blank">
+          <Image
+            alt="StoryLabs"
+            src="/images/storylabs-logo.png"
+            width={255}
+            height={150}
+          />
+        </Link>
       </Box>
       <Box
         sx={{
