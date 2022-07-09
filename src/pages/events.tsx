@@ -58,17 +58,17 @@ const EventsPage: NextPage = () => {
             Are you hoping to get inspired for your next coding project, or chat
             about the latest technologies? Then check out our upcoming events!
           </Typography>
-          <Typography component="h4" variant="h6">
+          <Typography>
+            For specific dates and more information on upcoming events, look at
+            the events tab on our SLO Coders Meetup page:
+          </Typography>
+          <Typography component="h4" variant="h6" mb={4}>
             <Link
               href="https://www.meetup.com/slo-coders/events/"
               target="_blank"
             >
               SLO Coders Meetup Events
             </Link>
-          </Typography>
-          <Typography mb={4}>
-            For specific dates and more information on upcoming events, look at
-            the events tab on our SLO Coders Meetup page.
           </Typography>
           <Typography variant="body2">
             If you have any new ideas for events or would like to contribute in
@@ -104,7 +104,7 @@ const EventsPage: NextPage = () => {
           </Typography>
           <Typography
             mb={4}
-          >{`A very casual morning get together where we enjoy each other's company and our favorite morning beverages. Fun conversation starters could be: a coding challenge you are stuck on, a new technology that just came out, your favorite way to squeeze in exercise mid-week, etc.`}</Typography>
+          >{`A very casual morning get-together where we enjoy each other's company and our favorite morning beverages. Fun conversation starters could be a coding challenge you are stuck on, a new technology that just came out, your favorite way to squeeze in exercise mid-week, etc.`}</Typography>
 
           <Typography component="h3" variant="h5" mb={0.5}>
             Shop Talk
