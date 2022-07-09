@@ -16,5 +16,7 @@
   "jestrunner.configPath": "jest.config.js",
   "jestrunner.enableYarnPnpSupport": true,
   "jestrunner.jestCommand": "yarn run test",
-  "jestrunner.yarnPnpCommand": "yarn-3.2.1.cjs"
+  "jestrunner.yarnPnpCommand": "yarn-3.2.1.cjs",
+  "jest.showTerminalOnLaunch": true,
+  "jest.autoRun": "off"
 }

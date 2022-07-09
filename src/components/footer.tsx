@@ -11,11 +11,14 @@ import { useTheme } from "@mui/material/styles";
 
 export const Footer: FC = () => {
   const theme = useTheme();
-  const smallBreakpoint = useMediaQuery(theme.breakpoints.down("md"));
+  const mdAndDownBreakpoint = useMediaQuery(theme.breakpoints.down("md"));
 
-  const footerTextAlignment = smallBreakpoint ? "center" : "left";
+  const footerTextAlignment = mdAndDownBreakpoint ? "center" : "left";
 
-  const listItemStyle = { justifyContent: footerTextAlignment };
+  const listItemStyle = {
+    justifyContent: footerTextAlignment,
+    textAlign: footerTextAlignment,
+  };
 
   return (
     <Box

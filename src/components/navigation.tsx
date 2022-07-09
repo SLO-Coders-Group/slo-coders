@@ -65,8 +65,7 @@ export const Navigation: FC = () => {
         <Typography variant="h6" color="inherit">
           <Link
             color="inherit"
-            href="https://www.meetup.com/slo-coders/events/"
-            target="_blank"
+            href="/events"
             underline="hover"
             sx={{ whiteSpace: "nowrap" }}
           >
