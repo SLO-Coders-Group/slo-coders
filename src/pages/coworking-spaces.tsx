@@ -64,7 +64,7 @@ const CoworkingSpacesPage: NextPage = () => {
             If you would like to contribute new data, modify existing listings,
             or report a mistake, please{" "}
             <Link
-              href="https://github.com/lenzi-erickson/slo-coders/edit/main/src/data/coworking-spaces.ts"
+              href="https://github.com/SLO-Coders-Group/slo-coders/edit/main/src/data/coworking-spaces.ts"
               target="_blank"
             >
               create a pull request
