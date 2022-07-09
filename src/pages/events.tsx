@@ -146,7 +146,7 @@ const EventsPage: NextPage = () => {
           >{`Are you the competitive type? Then this event is for you! Get your keyboard ready and see if you can climb to the top of the SLO Coders leaderboard.`}</Typography>
 
           <Typography component="h3" variant="h5" mb={0.5}>
-            SLO Annual Hackathon
+            SLO Coders Annual Hackathon
           </Typography>
           <Typography variant="body2" mb={0}>
             <Box component="span" sx={{ display: "inline", fontWeight: 400 }}>
@@ -158,11 +158,11 @@ const EventsPage: NextPage = () => {
             <Box component="span" sx={{ display: "inline", fontWeight: 400 }}>
               Where:{" "}
             </Box>
-            StoryLabs in SLO
+            TBD
           </Typography>
           <Typography
             mb={4}
-          >{`A special two day event where we brainstorm, break up into teams, and collaborate with one another on unique and one-of-a-kind projects. At the end, each team gives a presentation on their project. The judges will then pick one winner. There will also be People's Choice awards given out as well. It is a great chance to meet new people, improve your skills, and show off your individual talents while creating something new. Prizes will vary depending on sponsorship, but SLO Coders aims to support the winning project (to the extent of our ability) in hopes that it will become a real product.`}</Typography>
+          >{`A special two day event where we brainstorm, break up into teams, and collaborate with one another on unique and one-of-a-kind projects. At the end, each team gives a presentation on their project. The judges will then pick one winner. People's Choice awards will also be given out as well and can be voted on by anybody in the community that watched the presentations either virtually or in-person. It is a great chance to meet new people, improve your skills, work with cool technologies, and show off your individual talents while creating something new and exciting. Prizes will vary depending on sponsorship, but SLO Coders aims to support the winning project (to the extent of our ability) in hopes that it will become a real product. We welcome all ages and skill levels of coders! Not a coder but want to join? Teams can always use assistance with ideas, graphic design, testing, presentations, and more. So there are tons of other ways to contribute!`}</Typography>
         </Paper>
       </Layout>
     </>
