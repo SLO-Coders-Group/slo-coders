@@ -51,6 +51,7 @@ export const RecruitersAndJobsList: FC = () => {
                   <IconButton
                     sx={{
                       background: "#0e50b4",
+                      mb: 0.5,
                     }}
                   >
                     <Image

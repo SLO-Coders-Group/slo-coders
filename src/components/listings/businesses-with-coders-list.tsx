@@ -60,6 +60,7 @@ export const BusinessesWithCodersList: FC = () => {
                     <IconButton
                       sx={{
                         background: "#b9312c",
+                        mb: 0.5,
                       }}
                     >
                       <Image
@@ -95,6 +96,7 @@ export const BusinessesWithCodersList: FC = () => {
                   <IconButton
                     sx={{
                       background: "#0caa41",
+                      mb: 0.5,
                     }}
                   >
                     <Image
@@ -129,6 +131,7 @@ export const BusinessesWithCodersList: FC = () => {
                   <IconButton
                     sx={{
                       background: "#0e50b4",
+                      mb: 0.5,
                     }}
                   >
                     <Image
