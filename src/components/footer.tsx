@@ -62,7 +62,11 @@ export const Footer: FC = () => {
           </Link>
           .
         </Typography>
-        <Link href="https://www.storylabs.work/" target="_blank">
+        <Link
+          underline="hover"
+          href="https://www.storylabs.work/"
+          target="_blank"
+        >
           <Image
             alt="StoryLabs"
             src="/images/storylabs-logo.png"

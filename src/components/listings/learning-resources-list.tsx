@@ -15,7 +15,12 @@ export const LearningResourcesList: FC = () => {
             <Grid item key={key} xs={12} md={6}>
               <Typography>{displayName}</Typography>
               <Typography variant="body2">
-                <Link color="secondary" href={websiteUrl} target="_blank">
+                <Link
+                  underline="hover"
+                  color="secondary"
+                  href={websiteUrl}
+                  target="_blank"
+                >
                   {websiteDisplayName ||
                     websiteUrl
                       .replace(/^https?:\/\//, "")

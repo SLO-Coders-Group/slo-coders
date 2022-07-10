@@ -20,7 +20,12 @@ export const CoworkingSpacesList: FC = () => {
             <Grid item key={key} xs={12} sm={6} md={4} lg={3}>
               <Typography>{displayName}</Typography>
               <Typography variant="body2">
-                <Link color="secondary" href={websiteUrl} target="_blank">
+                <Link
+                  underline="hover"
+                  color="secondary"
+                  href={websiteUrl}
+                  target="_blank"
+                >
                   {websiteDisplayName ||
                     websiteUrl
                       .replace(/^https?:\/\//, "")
@@ -32,6 +37,7 @@ export const CoworkingSpacesList: FC = () => {
               {googleMapsLocations &&
                 googleMapsLocations.map((googleMapsLocations) => (
                   <Link
+                    underline="hover"
                     key={websiteUrl}
                     href={googleMapsLocations.googleMapsUrl}
                     target="_blank"
@@ -47,6 +53,7 @@ export const CoworkingSpacesList: FC = () => {
                     <IconButton
                       sx={{
                         background: "#b9312c",
+                        mt: 0.5,
                       }}
                     >
                       <Image

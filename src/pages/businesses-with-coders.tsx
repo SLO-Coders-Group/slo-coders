@@ -61,12 +61,17 @@ const BusinessesWithCodersPage: NextPage = () => {
           </Typography>
           <Typography variant="body2">
             This page was inspired by{" "}
-            <Link href="https://slotechcompanies.com/" target="_blank">
+            <Link
+              underline="hover"
+              href="https://slotechcompanies.com/"
+              target="_blank"
+            >
               slotechcompanies.com
             </Link>
             . If you would like to contribute new data, modify existing
             listings, or report a mistake, please{" "}
             <Link
+              underline="hover"
               href="https://github.com/SLO-Coders-Group/slo-coders/edit/main/src/data/businesses-with-coders.ts"
               target="_blank"
             >
