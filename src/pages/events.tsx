@@ -64,6 +64,7 @@ const EventsPage: NextPage = () => {
           </Typography>
           <Typography component="h4" variant="h6" mb={4}>
             <Link
+              underline="hover"
               href="https://www.meetup.com/slo-coders/events/"
               target="_blank"
             >
@@ -104,6 +105,7 @@ const EventsPage: NextPage = () => {
           </Typography>
           <Typography variant="body2" mb={1} sx={{ fontWeight: 400 }}>
             <Link
+              underline="hover"
               href="https://www.meetup.com/slo-coders/events/287077776/"
               target="_blank"
             >
@@ -131,6 +133,7 @@ const EventsPage: NextPage = () => {
           </Typography>
           <Typography variant="body2" mb={1} sx={{ fontWeight: 400 }}>
             <Link
+              underline="hover"
               href="https://www.meetup.com/slo-coders/events/287078905/"
               target="_blank"
             >
@@ -159,6 +162,7 @@ const EventsPage: NextPage = () => {
           </Typography>
           <Typography variant="body2" mb={1} sx={{ fontWeight: 400 }}>
             <Link
+              underline="hover"
               href="https://www.meetup.com/slo-coders/events/287094084/"
               target="_blank"
             >
@@ -185,10 +189,7 @@ const EventsPage: NextPage = () => {
             TBD
           </Typography>
           <Typography variant="body2" mb={1} sx={{ fontWeight: 400 }}>
-            <Link
-              href="https://www.meetup.com/slo-coders/events/287077776/"
-              target="_blank"
-            >
+            <Link underline="hover" href="mailto:contact@slocoders.com">
               Interested in sponsoring or volunteering? Email us!
             </Link>
           </Typography>

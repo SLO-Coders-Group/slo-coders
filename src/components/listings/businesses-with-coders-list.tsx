@@ -27,7 +27,12 @@ export const BusinessesWithCodersList: FC = () => {
                 {displayName}
               </Typography>
               <Typography sx={{ fontSize: ".85rem" }}>
-                <Link color="secondary" href={websiteUrl} target="_blank">
+                <Link
+                  underline="hover"
+                  color="secondary"
+                  href={websiteUrl}
+                  target="_blank"
+                >
                   {websiteDisplayName ||
                     websiteUrl
                       .replace(/^https?:\/\//, "")
@@ -39,6 +44,7 @@ export const BusinessesWithCodersList: FC = () => {
               {googleMapsLocations &&
                 googleMapsLocations.map((googleMapsLocation) => (
                   <Link
+                    underline="hover"
                     key={websiteUrl}
                     href={googleMapsLocation.googleMapsUrl}
                     target="_blank"
@@ -73,6 +79,7 @@ export const BusinessesWithCodersList: FC = () => {
                 ))}
               {glassdoorReviewsUrl && (
                 <Link
+                  underline="hover"
                   href={glassdoorReviewsUrl}
                   target="_blank"
                   sx={{
@@ -107,6 +114,7 @@ export const BusinessesWithCodersList: FC = () => {
               )}
               {linkedInJobsUrl && (
                 <Link
+                  underline="hover"
                   href={linkedInJobsUrl}
                   target="_blank"
                   sx={{

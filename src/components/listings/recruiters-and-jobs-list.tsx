@@ -20,7 +20,12 @@ export const RecruitersAndJobsList: FC = () => {
             <Grid item key={key} xs={12} sm={6} md={4} lg={3}>
               <Typography>{displayName}</Typography>
               <Typography variant="body2">
-                <Link color="secondary" href={websiteUrl} target="_blank">
+                <Link
+                  underline="hover"
+                  color="secondary"
+                  href={websiteUrl}
+                  target="_blank"
+                >
                   {websiteDisplayName ||
                     websiteUrl
                       .replace(/^https?:\/\//, "")
@@ -31,6 +36,7 @@ export const RecruitersAndJobsList: FC = () => {
               {/* get better icons and use svgs and SvgIcon from MUI */}
               {linkedInJobsUrl && (
                 <Link
+                  underline="hover"
                   href={linkedInJobsUrl}
                   target="_blank"
                   sx={{
