@@ -53,7 +53,7 @@ export const CoworkingSpacesList: FC = () => {
                     <IconButton
                       sx={{
                         background: "#b9312c",
-                        mb: 0.5,
+                        mt: 0.5,
                       }}
                     >
                       <Image
