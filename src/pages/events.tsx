@@ -170,8 +170,12 @@ const EventsPage: NextPage = () => {
             </Link>
           </Typography>
           <Typography
+            mb={1}
+          >{`Are you the competitive type? Then this event is for you! Get your keyboard ready and see if you can climb to the top of the SLO Coders leaderboard. We will be hosting code fights open to all coders in SLO county, which can be joined either in-person or virtually.`}</Typography>
+          <Typography
             mb={4}
-          >{`Are you the competitive type? Then this event is for you! Get your keyboard ready and see if you can climb to the top of the SLO Coders leaderboard. We will be hosting code fights open to all coders in SLO county, which can be joined either in-person or virtually. (We are still investigating the best platform to use, if you have opinions, let us know!)`}</Typography>
+            sx={{ fontWeight: "fontWeightBold" }}
+          >{`We are still investigating the best platform to use, if you have opinions, let us know!`}</Typography>
 
           {/* <Typography component="h3" variant="h5" mb={0.5}>
             SLO Coders Annual Hackathon
