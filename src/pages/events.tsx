@@ -65,7 +65,7 @@ const EventsPage: NextPage = () => {
           <Typography component="h4" variant="h6" mb={4}>
             <Link
               underline="hover"
-              href="https://www.meetup.com/slo-coders/events/"
+              href="https://www.meetup.com/slo-county-coders/events/"
               target="_blank"
             >
               SLO County Coders Meetup Events
@@ -106,7 +106,7 @@ const EventsPage: NextPage = () => {
           <Typography variant="body2" mb={1} sx={{ fontWeight: 400 }}>
             <Link
               underline="hover"
-              href="https://www.meetup.com/slo-coders/events/287077776/"
+              href="https://www.meetup.com/slo-county-coders/events/287077776/"
               target="_blank"
             >
               RSVP
@@ -134,7 +134,7 @@ const EventsPage: NextPage = () => {
           <Typography variant="body2" mb={1} sx={{ fontWeight: 400 }}>
             <Link
               underline="hover"
-              href="https://www.meetup.com/slo-coders/events/287078905/"
+              href="https://www.meetup.com/slo-county-coders/events/287078905/"
               target="_blank"
             >
               RSVP
@@ -163,7 +163,7 @@ const EventsPage: NextPage = () => {
           <Typography variant="body2" mb={1} sx={{ fontWeight: 400 }}>
             <Link
               underline="hover"
-              href="https://www.meetup.com/slo-coders/events/287094084/"
+              href="https://www.meetup.com/slo-county-coders/events/287094084/"
               target="_blank"
             >
               RSVP

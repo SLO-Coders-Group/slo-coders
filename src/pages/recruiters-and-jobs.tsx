@@ -1,8 +1,9 @@
-import { Box, Link, Paper, Typography, useTheme } from "@mui/material";
+import { Box, Grid, Link, Paper, Typography, useTheme } from "@mui/material";
 import type { NextPage } from "next";
 import Head from "next/head";
 import { Layout } from "../components/layout";
-import { RecruitersAndJobsList } from "../components/listings/recruiters-and-jobs-list";
+import { JobResourcesList } from "../components/listings/job-resources-list";
+import { RecruitersList } from "../components/listings/recruiters-list";
 
 const RecruitersAndJobsPage: NextPage = () => {
   const theme = useTheme();
@@ -64,10 +65,18 @@ const RecruitersAndJobsPage: NextPage = () => {
             or report a mistake, please{" "}
             <Link
               underline="hover"
-              href="https://github.com/SLO-Coders-Group/slo-coders/edit/main/src/data/recruiters-and-jobs.ts"
+              href="https://github.com/SLO-Coders-Group/slo-coders/edit/main/src/data/job-resources.ts"
               target="_blank"
             >
-              create a pull request
+              create a pull request for a job resource
+            </Link>
+            {", "}
+            <Link
+              underline="hover"
+              href="https://github.com/SLO-Coders-Group/slo-coders/edit/main/src/data/recruiters.ts"
+              target="_blank"
+            >
+              create a pull request for a recruiter
             </Link>{" "}
             or contact us at{" "}
             <Link underline="hover" href="mailto:contact@slocountycoders.com">
@@ -76,16 +85,32 @@ const RecruitersAndJobsPage: NextPage = () => {
             .
           </Typography>
         </Paper>
-        <Paper
-          sx={{
-            backgroundColor: "#FFF",
-            borderRadius: "10px",
-            color: "#000",
-            padding: 3,
-          }}
-        >
-          <RecruitersAndJobsList />
-        </Paper>
+        <Grid container spacing={2}>
+          <Grid item xs={12} lg={7} xl={8}>
+            <Paper
+              sx={{
+                backgroundColor: "#FFF",
+                borderRadius: "10px",
+                color: "#000",
+                padding: 3,
+              }}
+            >
+              <JobResourcesList />
+            </Paper>
+          </Grid>
+          <Grid item xs={12} lg={5} xl={4}>
+            <Paper
+              sx={{
+                backgroundColor: "#FFF",
+                borderRadius: "10px",
+                color: "#000",
+                padding: 3,
+              }}
+            >
+              <RecruitersList />
+            </Paper>
+          </Grid>
+        </Grid>
       </Layout>
     </>
   );

@@ -1,18 +1,21 @@
 import { Grid, Typography } from "@mui/material";
 import { FC } from "react";
-import { learningResources } from "../../data/learning-resources";
+import { localLearningResources } from "../../data/local-learning-resources";
 import { Link } from "../link";
 
-export const LearningResourcesList: FC = () => {
+export const LocalLearningResourcesList: FC = () => {
   return (
     <Grid container columnSpacing={3} rowSpacing={6}>
-      {Object.keys(learningResources)
+      <Grid item xs={12}>
+        <Typography variant="h5">Local Learning Resources</Typography>
+      </Grid>
+      {Object.keys(localLearningResources)
         .sort()
         .map((key) => {
           const { displayName, websiteUrl, description, websiteDisplayName } =
-            learningResources[key];
+            localLearningResources[key];
           return (
-            <Grid item key={key} xs={12} sm={6} md={4} lg={3}>
+            <Grid item key={key} xs={12}>
               <Typography>{displayName}</Typography>
               <Typography variant="body2">
                 <Link

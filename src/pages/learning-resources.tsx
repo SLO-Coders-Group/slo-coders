@@ -1,9 +1,10 @@
-import { Box, Paper, Typography, useTheme } from "@mui/material";
+import { Box, Grid, Paper, Typography, useTheme } from "@mui/material";
 import type { NextPage } from "next";
 import Head from "next/head";
 import { Layout } from "../components/layout";
 import { Link } from "../components/link";
-import { LearningResourcesList } from "../components/listings/learning-resources-list";
+import { OnlineLearningResourcesList } from "../components/listings/online-learning-resources-list";
+import { LocalLearningResourcesList } from "../components/listings/local-learning-resources-list";
 
 const LearningResourcesPage: NextPage = () => {
   const theme = useTheme();
@@ -64,10 +65,18 @@ const LearningResourcesPage: NextPage = () => {
             or report a mistake, please{" "}
             <Link
               underline="hover"
-              href="https://github.com/SLO-Coders-Group/slo-coders/edit/main/src/data/learning-resources.ts"
+              href="https://github.com/SLO-Coders-Group/slo-coders/edit/main/src/data/online-learning-resources.ts"
               target="_blank"
             >
-              create a pull request
+              create a pull request for an online learning resource
+            </Link>
+            {", "}
+            <Link
+              underline="hover"
+              href="https://github.com/SLO-Coders-Group/slo-coders/edit/main/src/data/local-learning-resources.ts"
+              target="_blank"
+            >
+              create a pull request for a local learning resource
             </Link>{" "}
             or contact us at{" "}
             <Link underline="hover" href="mailto:contact@slocountycoders.com">
@@ -76,16 +85,32 @@ const LearningResourcesPage: NextPage = () => {
             .
           </Typography>
         </Paper>
-        <Paper
-          sx={{
-            backgroundColor: "#FFF",
-            borderRadius: "10px",
-            color: "#000",
-            padding: 3,
-          }}
-        >
-          <LearningResourcesList />
-        </Paper>
+        <Grid container spacing={2}>
+          <Grid item xs={12} lg={7} xl={8}>
+            <Paper
+              sx={{
+                backgroundColor: "#FFF",
+                borderRadius: "10px",
+                color: "#000",
+                padding: 3,
+              }}
+            >
+              <OnlineLearningResourcesList />
+            </Paper>
+          </Grid>
+          <Grid item xs={12} lg={5} xl={4}>
+            <Paper
+              sx={{
+                backgroundColor: "#FFF",
+                borderRadius: "10px",
+                color: "#000",
+                padding: 3,
+              }}
+            >
+              <LocalLearningResourcesList />
+            </Paper>
+          </Grid>
+        </Grid>
       </Layout>
     </>
   );
