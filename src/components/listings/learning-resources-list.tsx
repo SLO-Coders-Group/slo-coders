@@ -12,7 +12,7 @@ export const LearningResourcesList: FC = () => {
           const { displayName, websiteUrl, description, websiteDisplayName } =
             learningResources[key];
           return (
-            <Grid item key={key} xs={12} md={6}>
+            <Grid item key={key} xs={12} sm={6} md={4} lg={3}>
               <Typography>{displayName}</Typography>
               <Typography variant="body2">
                 <Link
