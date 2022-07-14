@@ -79,7 +79,7 @@ const BusinessesWithCodersPage: NextPage = () => {
             >
               create a pull request for a slo business
             </Link>
-            {" or "}
+            {", "}
             <Link
               underline="hover"
               href="https://github.com/SLO-Coders-Group/slo-coders/edit/main/src/data/businesses-with-slo-coders.ts"

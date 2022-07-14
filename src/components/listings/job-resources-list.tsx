@@ -1,13 +1,16 @@
 import { IconButton, Grid, Typography, lighten } from "@mui/material";
 import { FC } from "react";
 import Image from "next/image";
-import { recruitersAndJobs } from "../../data/recruiters-and-jobs";
+import { jobResources } from "../../data/job-resources";
 import { Link } from "../link";
 
-export const RecruitersAndJobsList: FC = () => {
+export const JobResourcesList: FC = () => {
   return (
     <Grid container columnSpacing={3} rowSpacing={6}>
-      {Object.keys(recruitersAndJobs)
+      <Grid item xs={12}>
+        <Typography variant="h5">Job Resources</Typography>
+      </Grid>
+      {Object.keys(jobResources)
         .sort()
         .map((key) => {
           const {
@@ -15,9 +18,9 @@ export const RecruitersAndJobsList: FC = () => {
             websiteUrl,
             websiteDisplayName,
             linkedInJobsUrl,
-          } = recruitersAndJobs[key];
+          } = jobResources[key];
           return (
-            <Grid item key={key} xs={12} sm={6} md={4} lg={3}>
+            <Grid item key={key} xs={12} lg={6} xl={4} data-testid={key}>
               <Typography>{displayName}</Typography>
               <Typography variant="body2">
                 <Link

@@ -1,4 +1,4 @@
-type RecruitersAndJobsType = {
+type JobResourcesType = {
   displayName: string;
   websiteUrl: string;
   websiteDisplayName?: string;
@@ -6,12 +6,7 @@ type RecruitersAndJobsType = {
   linkedInJobsUrl?: string;
 };
 
-export const recruitersAndJobs: { [key in string]: RecruitersAndJobsType } = {
-  revature: {
-    displayName: "Revature",
-    websiteUrl: "https://revature.com/",
-    linkedInJobsUrl: "https://www.linkedin.com/company/revature/jobs/",
-  },
+export const jobResources: { [key in string]: JobResourcesType } = {
   linkedIn: {
     displayName: "LinkedIn Jobs",
     websiteUrl:

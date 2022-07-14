@@ -1,17 +1,13 @@
-type LearningResourcesType = {
+type OnlineLearningResourcesType = {
   displayName: string;
   websiteUrl: string;
   websiteDisplayName?: string;
   description: string;
 };
 
-export const learningResources: { [key in string]: LearningResourcesType } = {
-  codeSlo: {
-    displayName: "CodeSLO",
-    websiteUrl: "https://codeslo.com/",
-    description:
-      "CodeSLO is a local company that makes learning to code as  accessible as possible for the Central Coast and beyond and focuses on an inclusive model of coding instruction.",
-  },
+export const onlineLearningResources: {
+  [key in string]: OnlineLearningResourcesType;
+} = {
   stackOverflowDeveloperSurvey: {
     displayName: "StackOverflow Developer Survey",
     websiteUrl: "https://survey.stackoverflow.co/2022",
@@ -26,18 +22,6 @@ export const learningResources: { [key in string]: LearningResourcesType } = {
       "medium.com/javarevisited/some-books-to-improve-your-code...",
     description:
       "“Any fool can write code that a computer can understand. Good programmers write code that humans can understand.” — M. Fowler",
-  },
-  calPolySoftwareEngineering: {
-    displayName: "Cal Poly Software Engineering",
-    websiteUrl: "https://www.calpoly.edu/major/software-engineering",
-    description:
-      "Interested in getting a degree? Cal Poly has a Software Engineering major.",
-  },
-  calPolyCodingBootcamp: {
-    displayName: "Cal Poly Coding Bootcamp",
-    websiteUrl: "https://bootcamp-extended.calpoly.edu/programs/coding",
-    description:
-      "A 12-26 week Cal Poly extended education coding program. No prior coding experience necessary!",
   },
   w3Schools: {
     displayName: "W3Schools",
