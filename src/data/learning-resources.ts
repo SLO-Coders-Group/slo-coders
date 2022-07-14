@@ -27,4 +27,40 @@ export const learningResources: { [key in string]: LearningResourcesType } = {
     description:
       "“Any fool can write code that a computer can understand. Good programmers write code that humans can understand.” — M. Fowler",
   },
+  calPolySoftwareEngineering: {
+    displayName: "Cal Poly Software Engineering",
+    websiteUrl: "https://www.calpoly.edu/major/software-engineering",
+    description:
+      "Interested in getting a degree? Cal Poly has a Software Engineering major.",
+  },
+  calPolyCodingBootcamp: {
+    displayName: "Cal Poly Coding Bootcamp",
+    websiteUrl: "https://bootcamp-extended.calpoly.edu/programs/coding",
+    description:
+      "A 12-26 week Cal Poly extended education coding program. No prior coding experience necessary!",
+  },
+  w3Schools: {
+    displayName: "W3Schools",
+    websiteUrl: "https://www.w3schools.com/",
+    description:
+      "W3Schools is an online free school for web developers. This is a great beginner place to start.",
+  },
+  freeCodeCamp: {
+    displayName: "freeCodeCamp",
+    websiteUrl: "https://www.freecodecamp.org/",
+    description:
+      "freeCodeCamp is free and has thousands of videos, articles, and interactive coding lessons.",
+  },
+  codeAcademy: {
+    displayName: "Codecademy",
+    websiteUrl: "https://www.codecademy.com/",
+    description:
+      "If you are looking for a paid course platform with more features than the free ones listed, then check out Codecademy.",
+  },
+  medium: {
+    displayName: "Medium - Programming",
+    websiteUrl: "https://medium.com/tag/programming",
+    description:
+      "One of the best ways to stay up-to-date with the latest and greatest is to read coding articles on Medium.",
+  },
 };
