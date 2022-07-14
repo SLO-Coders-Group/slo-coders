@@ -1,12 +1,20 @@
 import { IconButton, Grid, Typography, lighten } from "@mui/material";
 import { FC } from "react";
 import Image from "next/image";
-import { businessesWithCoders } from "../../data/businesses-with-coders";
+import { businessesWithCoders } from "../../data/businesses-with-slo-coders";
 import { Link } from "../link";
 
-export const BusinessesWithCodersList: FC = () => {
+export const BusinessesWithSloCoders: FC = () => {
   return (
     <Grid container columnSpacing={3} rowSpacing={6}>
+      <Grid item xs={12}>
+        <Typography variant="h5">
+          Businesses with coders in SLO County
+        </Typography>
+        <Typography variant="body2">
+          They have coders that work in SLO county.
+        </Typography>
+      </Grid>
       {Object.keys(businessesWithCoders)
         .sort()
         .map((key) => {
@@ -16,10 +24,9 @@ export const BusinessesWithCodersList: FC = () => {
             websiteDisplayName,
             linkedInJobsUrl,
             glassdoorReviewsUrl,
-            googleMapsLocations,
           } = businessesWithCoders[key];
           return (
-            <Grid item key={key} xs={12} sm={6} md={4} lg={3} data-testid={key}>
+            <Grid item key={key} xs={12} data-testid={key}>
               <Typography
                 variant="body2"
                 sx={{ fontSize: "1.15rem", fontWeight: 400 }}
@@ -40,44 +47,6 @@ export const BusinessesWithCodersList: FC = () => {
                       .split("?")[0]}
                 </Link>
               </Typography>
-              {/* get better icons and use svgs and SvgIcon from MUI */}
-              {googleMapsLocations &&
-                googleMapsLocations.map((googleMapsLocation) => (
-                  <Link
-                    underline="hover"
-                    key={websiteUrl}
-                    href={googleMapsLocation.googleMapsUrl}
-                    target="_blank"
-                    sx={{
-                      display: "block",
-                      "&:hover": {
-                        "& .MuiIconButton-root": {
-                          background: lighten("#0e50b4", 0.25),
-                        },
-                      },
-                    }}
-                  >
-                    <IconButton
-                      sx={{
-                        background: "#b9312c",
-                        mt: 0.5,
-                      }}
-                    >
-                      <Image
-                        alt="Google Maps"
-                        src="/images/google-maps.png"
-                        width={12}
-                        height={12}
-                      />
-                    </IconButton>
-                    <Typography
-                      variant="body2"
-                      sx={{ display: "inline", marginLeft: 0.5 }}
-                    >
-                      {`${googleMapsLocation.cityName}`}
-                    </Typography>
-                  </Link>
-                ))}
               {glassdoorReviewsUrl && (
                 <Link
                   underline="hover"

@@ -11,7 +11,7 @@ const EventsPage: NextPage = () => {
   return (
     <>
       <Head>
-        <title key="title">Events • SLO Coders</title>
+        <title key="title">Events • SLO County Coders</title>
         <meta
           key="description"
           name="description"
@@ -20,7 +20,7 @@ const EventsPage: NextPage = () => {
         <link
           key="canonical"
           rel="canonical"
-          href="https://slocoders.com/events"
+          href="https://slocountycoders.com/events"
         />
       </Head>
       <Layout page="events">
@@ -60,7 +60,7 @@ const EventsPage: NextPage = () => {
           </Typography>
           <Typography>
             For specific dates and more information on upcoming events, look at
-            the events tab on our SLO Coders Meetup page:
+            the events tab on our SLO County Coders Meetup page:
           </Typography>
           <Typography component="h4" variant="h6" mb={4}>
             <Link
@@ -68,14 +68,14 @@ const EventsPage: NextPage = () => {
               href="https://www.meetup.com/slo-coders/events/"
               target="_blank"
             >
-              SLO Coders Meetup Events
+              SLO County Coders Meetup Events
             </Link>
           </Typography>
           <Typography variant="body2">
             If you have any new ideas for events or would like to contribute in
             some way, contact us at{" "}
-            <Link underline="hover" href="mailto:contact@slocoders.com">
-              contact@slocoders.com
+            <Link underline="hover" href="mailto:contact@slocountycoders.com">
+              contact@slocountycoders.com
             </Link>
             .
           </Typography>
@@ -171,14 +171,14 @@ const EventsPage: NextPage = () => {
           </Typography>
           <Typography
             mb={1}
-          >{`Are you the competitive type? Then this event is for you! Get your keyboard ready and see if you can climb to the top of the SLO Coders leaderboard. We will be hosting code fights open to all coders in SLO county, which can be joined either in-person or virtually.`}</Typography>
+          >{`Are you the competitive type? Then this event is for you! Get your keyboard ready and see if you can climb to the top of the SLO County Coders leaderboard. We will be hosting code fights open to all coders in SLO county, which can be joined either in-person or virtually.`}</Typography>
           <Typography
             mb={4}
             sx={{ fontWeight: "fontWeightBold" }}
           >{`We are still investigating the best platform to use, if you have opinions, let us know!`}</Typography>
 
           {/* <Typography component="h3" variant="h5" mb={0.5}>
-            SLO Coders Annual Hackathon
+            SLO County Coders Annual Hackathon
           </Typography>
           <Typography variant="body2" mb={0}>
             <Box component="span" sx={{ display: "inline", fontWeight: 400 }}>
@@ -193,16 +193,16 @@ const EventsPage: NextPage = () => {
             TBD
           </Typography>
           <Typography variant="body2" mb={1} sx={{ fontWeight: 400 }}>
-            <Link underline="hover" href="mailto:contact@slocoders.com">
+            <Link underline="hover" href="mailto:contact@slocountycoders.com">
               Interested in sponsoring or volunteering? Email us!
             </Link>
           </Typography>
           <Typography
             mb={1.5}
-          >{`A special two-day event where any SLO Coders can get together and brainstorm, break up into teams and collaborate with one another on unique and one-of-a-kind projects. At the end of the event, each team gives a presentation on their project. The judges will then pick one winning team. People's Choice awards will also be given out as well and can be voted on by anybody in the community that watched the presentations either virtually or in person.`}</Typography>
+          >{`A special two-day event where any SLO County Coders can get together and brainstorm, break up into teams and collaborate with one another on unique and one-of-a-kind projects. At the end of the event, each team gives a presentation on their project. The judges will then pick one winning team. People's Choice awards will also be given out as well and can be voted on by anybody in the community that watched the presentations either virtually or in person.`}</Typography>
           <Typography
             mb={1.5}
-          >{`It is a great chance to meet new people, improve your skills, work with cool technologies, and show off your individual talents while creating something new and exciting. There will be a new theme every year to fuel inspiration and fun. Prizes will vary depending on sponsorship, but SLO Coders aims to support the winning project (to the extent of our ability) in hopes that it will become a real product.`}</Typography>
+          >{`It is a great chance to meet new people, improve your skills, work with cool technologies, and show off your individual talents while creating something new and exciting. There will be a new theme every year to fuel inspiration and fun. Prizes will vary depending on sponsorship, but SLO County Coders aims to support the winning project (to the extent of our ability) in hopes that it will become a real product.`}</Typography>
           <Typography
             mb={4}
           >{`We welcome all ages and skill levels of coders! Not a coder but want to join in on the competition? Teams can always use assistance with ideas, graphic design, testing, presentations, and more. So there are tons of other ways to contribute to a project! Want to help the cause in other ways? We can always use volunteers to help plan and host the event as well as corporate sponsorship or help find sponsorship.`}</Typography> */}

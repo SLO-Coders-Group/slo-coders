@@ -11,7 +11,7 @@ const CoworkingSpacesPage: NextPage = () => {
   return (
     <>
       <Head>
-        <title key="title">Coworking Spaces • SLO Coders</title>
+        <title key="title">Coworking Spaces • SLO County Coders</title>
         <meta
           key="description"
           name="description"
@@ -20,7 +20,7 @@ const CoworkingSpacesPage: NextPage = () => {
         <link
           key="canonical"
           rel="canonical"
-          href="https://slocoders.com/coworking-spaces"
+          href="https://slocountycoders.com/coworking-spaces"
         />
       </Head>
       <Layout page="coworking-spaces">
@@ -71,8 +71,8 @@ const CoworkingSpacesPage: NextPage = () => {
               create a pull request
             </Link>{" "}
             or contact us at{" "}
-            <Link underline="hover" href="mailto:contact@slocoders.com">
-              contact@slocoders.com
+            <Link underline="hover" href="mailto:contact@slocountycoders.com">
+              contact@slocountycoders.com
             </Link>
             .
           </Typography>

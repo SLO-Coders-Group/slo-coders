@@ -1,4 +1,4 @@
-# SLO Coders
+# SLO County Coders
 
 ## Hi! Thanks for being here :)
 
@@ -16,4 +16,4 @@ If you are looking for something specific to help with, search the repo for "TOD
 
 ## Credits
 
-Lenzi Erickson and SLO Coders
+Lenzi Erickson and SLO County Coders

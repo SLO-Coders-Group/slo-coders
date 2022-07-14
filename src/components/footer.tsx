@@ -57,8 +57,8 @@ export const Footer: FC = () => {
         </Typography>
         <Typography variant="body2" mb={6}>
           Want to become a sponsor? Email us at{" "}
-          <Link underline="hover" href="mailto:contact@slocoders.com">
-            contact@slocoders.com
+          <Link underline="hover" href="mailto:contact@slocountycoders.com">
+            contact@slocountycoders.com
           </Link>
           .
         </Typography>

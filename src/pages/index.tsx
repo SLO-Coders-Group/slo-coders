@@ -11,13 +11,17 @@ const HomePage: NextPage = () => {
   return (
     <>
       <Head>
-        <title key="title">SLO Coders</title>
+        <title key="title">SLO County Coders</title>
         <meta
           key="description"
           name="description"
           content="A community of individuals that love SLO and coding. We promote a healthy work/life balance to help support our community, ourselves, and our industry."
         />
-        <link key="canonical" rel="canonical" href="https://slocoders.com/" />
+        <link
+          key="canonical"
+          rel="canonical"
+          href="https://slocountycoders.com/"
+        />
       </Head>
       <Layout page="home">
         <Typography
@@ -87,11 +91,11 @@ const HomePage: NextPage = () => {
           }}
         >
           <Typography mb={4}>
-            SLO Coders was started to help find a community of individuals that
-            love SLO and coding. We promote a healthy work/life balance to help
-            support our community, ourselves, and our industry. We hope to host
-            a wide range of events that brew inspiration and creativity and
-            leave us ready to tackle our next coding challenge.
+            SLO County Coders was started to help find a community of
+            individuals that love SLO and coding. We promote a healthy work/life
+            balance to help support our community, ourselves, and our industry.
+            We hope to host a wide range of events that brew inspiration and
+            creativity and leave us ready to tackle our next coding challenge.
           </Typography>
           <Typography mb={4}>
             We welcome and love all kinds of coders regardless of skill level,
@@ -101,8 +105,8 @@ const HomePage: NextPage = () => {
           <Typography variant="body2">
             If you share the drive and would like to contribute in some way or
             provide feedback or event ideas. (Yay!) You can email us at{" "}
-            <Link underline="hover" href="mailto:contact@slocoders.com">
-              contact@slocoders.com
+            <Link underline="hover" href="mailto:contact@slocountycoders.com">
+              contact@slocountycoders.com
             </Link>
             .
           </Typography>

@@ -6,27 +6,27 @@ export const getServerSideProps: GetServerSideProps = async ({ res }) => {
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
     <url>
-        <loc>https://slocoders.com/</loc>
+        <loc>https://slocountycoders.com/</loc>
         <priority>1.00</priority>
     </url>
     <url>
-        <loc>https://slocoders.com/events</loc>
+        <loc>https://slocountycoders.com/events</loc>
         <priority>0.90</priority>
     </url>
     <url>
-        <loc>https://slocoders.com/businesses-with-coders</loc>
+        <loc>https://slocountycoders.com/businesses-with-coders</loc>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>https://slocoders.com/recruiters-and-jobs</loc>
+        <loc>https://slocountycoders.com/recruiters-and-jobs</loc>
         <priority>0.70</priority>
     </url>
     <url>
-        <loc>https://slocoders.com/coworking-spaces</loc>
+        <loc>https://slocountycoders.com/coworking-spaces</loc>
         <priority>0.50</priority>
     </url>
     <url>
-        <loc>https://slocoders.com/learning-resources</loc>
+        <loc>https://slocountycoders.com/learning-resources</loc>
         <priority>0.10</priority>
     </url>
     </urlset>`;
