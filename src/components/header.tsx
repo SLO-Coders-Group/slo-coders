@@ -33,7 +33,7 @@ export const Header: FC = () => {
           textTransform: "none",
         }}
       >
-        SLO Coders
+        SLO County Coders
       </Typography>
     </Paper>
   );

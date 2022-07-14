@@ -10,7 +10,7 @@ const RecruitersAndJobsPage: NextPage = () => {
   return (
     <>
       <Head>
-        <title key="title">Recruiters and Jobs • SLO Coders</title>
+        <title key="title">Recruiters and Jobs • SLO County Coders</title>
         <meta
           key="description"
           name="description"
@@ -19,7 +19,7 @@ const RecruitersAndJobsPage: NextPage = () => {
         <link
           key="canonical"
           rel="canonical"
-          href="https://slocoders.com/recruiters-and-jobs"
+          href="https://slocountycoders.com/recruiters-and-jobs"
         />
       </Head>
       <Layout page="recruiters-and-jobs">
@@ -70,8 +70,8 @@ const RecruitersAndJobsPage: NextPage = () => {
               create a pull request
             </Link>{" "}
             or contact us at{" "}
-            <Link underline="hover" href="mailto:contact@slocoders.com">
-              contact@slocoders.com
+            <Link underline="hover" href="mailto:contact@slocountycoders.com">
+              contact@slocountycoders.com
             </Link>
             .
           </Typography>

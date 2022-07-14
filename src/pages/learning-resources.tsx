@@ -11,7 +11,7 @@ const LearningResourcesPage: NextPage = () => {
   return (
     <>
       <Head>
-        <title key="title">Learning Resources • SLO Coders</title>
+        <title key="title">Learning Resources • SLO County Coders</title>
         <meta
           key="description"
           name="description"
@@ -20,7 +20,7 @@ const LearningResourcesPage: NextPage = () => {
         <link
           key="canonical"
           rel="canonical"
-          href="https://slocoders.com/learning-resources"
+          href="https://slocountycoders.com/learning-resources"
         />
       </Head>
       <Layout page="learning-resources">
@@ -70,8 +70,8 @@ const LearningResourcesPage: NextPage = () => {
               create a pull request
             </Link>{" "}
             or contact us at{" "}
-            <Link underline="hover" href="mailto:contact@slocoders.com">
-              contact@slocoders.com
+            <Link underline="hover" href="mailto:contact@slocountycoders.com">
+              contact@slocountycoders.com
             </Link>
             .
           </Typography>
