@@ -36,4 +36,14 @@ export const coworkingSpaces: { [key in string]: CoworkingSpacesType } = {
       },
     ],
   },
+  hotHouse: {
+    displayName: "Cal Poly HotHouse",
+    websiteUrl: "https://cie.calpoly.edu/coworking/",
+    googleMapsLocations: [
+      {
+        cityName: "San Luis Obispo",
+        googleMapsUrl: "https://goo.gl/maps/aCzctP91d2JE1Jnv9",
+      },
+    ],
+  },
 };
