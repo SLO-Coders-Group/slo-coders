@@ -17,7 +17,7 @@ export const CoworkingSpacesList: FC = () => {
             googleMapsLocations,
           } = coworkingSpaces[key];
           return (
-            <Grid item key={key} xs={12} sm={6} md={4} lg={3}>
+            <Grid item key={key} xs={12} sm={6} lg={4}>
               <Typography>{displayName}</Typography>
               <Typography variant="body2">
                 <Link
