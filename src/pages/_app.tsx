@@ -43,7 +43,7 @@ export default function MyApp(properties: MyAppProperties) {
       {/* Global site tag (gtag.js) - Google Analytics */}
       <Script
         async
-        src="https://www.googletagmanager.com/gtag/js?id=G-J6VHS450EY"
+        src="https://www.googletagmanager.com/gtag/js?id=G-8YH73YEWW4"
         strategy="afterInteractive"
       />
       <Script id="google-analytics" strategy="afterInteractive">
@@ -52,7 +52,7 @@ export default function MyApp(properties: MyAppProperties) {
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
 
-          gtag('config', 'G-J6VHS450EY');
+          gtag('config', 'G-8YH73YEWW4');
         `}
       </Script>
 
