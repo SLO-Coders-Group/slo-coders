@@ -1441,13 +1441,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/jest@npm:*, @types/jest@npm:~28.1.5":
+"@types/jest@npm:*":
   version: 28.1.5
   resolution: "@types/jest@npm:28.1.5"
   dependencies:
     jest-matcher-utils: ^28.0.0
     pretty-format: ^28.0.0
   checksum: 994bfc25a5e767ec1506a2a7d94e60a7a5645b2e4e8444c56ae902f3a3e27ae54e821e41c1b4e7c8d7f5022bf5abfdd0460ead223ba6f2d0a194e5b2bed1ad76
+  languageName: node
+  linkType: hard
+
+"@types/jest@npm:~28.1.6":
+  version: 28.1.6
+  resolution: "@types/jest@npm:28.1.6"
+  dependencies:
+    jest-matcher-utils: ^28.0.0
+    pretty-format: ^28.0.0
+  checksum: f2ba5fbefc8f44d1c16ee19d8d2811bca75754a2846e222287f2788d96062801c568215e6b81eb532a48e8cb2a7282729da1d4f6fb496831da8269c5abaad4c5
   languageName: node
   linkType: hard
 
@@ -1476,10 +1486,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:~18.0.4":
+"@types/node@npm:*":
   version: 18.0.4
   resolution: "@types/node@npm:18.0.4"
   checksum: 981284fd57941f233f0e77038087c122f56e3c2b4fc4e090dfc7f0a93abfc526d5ccdd59eb3ef551d713245cf3943e37c7b957f12ba699209341a447c39fab59
+  languageName: node
+  linkType: hard
+
+"@types/node@npm:~18.0.5":
+  version: 18.0.5
+  resolution: "@types/node@npm:18.0.5"
+  checksum: cc9c67d0074252f798d226dd95a22e0e8851cf7fc623ef4a603d9ad2c2b46650f930147062ea33719008b1de67f08f499ad693307d02f8396e6f1fead8144329
   languageName: node
   linkType: hard
 
@@ -2991,9 +3008,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-jest@npm:~26.5.3":
-  version: 26.5.3
-  resolution: "eslint-plugin-jest@npm:26.5.3"
+"eslint-plugin-jest@npm:~26.6.0":
+  version: 26.6.0
+  resolution: "eslint-plugin-jest@npm:26.6.0"
   dependencies:
     "@typescript-eslint/utils": ^5.10.0
   peerDependencies:
@@ -3004,7 +3021,7 @@ __metadata:
       optional: true
     jest:
       optional: true
-  checksum: 16897c56eadf3da19a96e18b1bd983bbd0a34ad9545d5bc6f9ee67d2940e6e2fd2f067f44dbbb26dcaf17c75c0132f89a06a09ff5169761ce48c9708a2acf7d7
+  checksum: 5dd60820d5618175e7203b077788476a6f697316b53d77c4bb7037b32073f3d5d539a72dec910eb3f8eedc97c3b28600ba35c5d3bf8c687ade765bb2d0dc77d2
   languageName: node
   linkType: hard
 
@@ -3144,9 +3161,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:~8.19.0":
-  version: 8.19.0
-  resolution: "eslint@npm:8.19.0"
+"eslint@npm:~8.20.0":
+  version: 8.20.0
+  resolution: "eslint@npm:8.20.0"
   dependencies:
     "@eslint/eslintrc": ^1.3.0
     "@humanwhocodes/config-array": ^0.9.2
@@ -3185,7 +3202,7 @@ __metadata:
     v8-compile-cache: ^2.0.3
   bin:
     eslint: bin/eslint.js
-  checksum: 0bc9df1a3a09dcd5a781ec728f280aa8af3ab19c2d1f14e2668b5ee5b8b1fb0e72dde5c3acf738e7f4281685fb24ec149b6154255470b06cf41de76350bca7a4
+  checksum: a31adf390d71d916925586bc8467b48f620e93dd0416bc1e897d99265af88b48d4eba3985b5ff4653ae5cc46311a360d373574002277e159bb38a4363abf9228
   languageName: node
   linkType: hard
 
@@ -6213,8 +6230,8 @@ __metadata:
     "@mui/material": ~5.9.0
     "@testing-library/jest-dom": ~5.16.4
     "@testing-library/react": ~13.3.0
-    "@types/jest": ~28.1.5
-    "@types/node": ~18.0.4
+    "@types/jest": ~28.1.6
+    "@types/node": ~18.0.5
     "@types/prettier": ~2.6.3
     "@types/react": ~18.0.15
     "@types/react-dom": 18.0.6
@@ -6223,10 +6240,10 @@ __metadata:
     "@typescript-eslint/parser": ~5.30.6
     audit-ci: ~6.3.0
     clsx: ~1.2.1
-    eslint: ~8.19.0
+    eslint: ~8.20.0
     eslint-config-next: ~12.2.2
     eslint-config-prettier: ~8.5.0
-    eslint-plugin-jest: ~26.5.3
+    eslint-plugin-jest: ~26.6.0
     eslint-plugin-testing-library: ~5.5.1
     eslint-plugin-unicorn: ~43.0.1
     jest: ~28.1.3

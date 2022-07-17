@@ -49,7 +49,7 @@ export const Navigation: FC = () => {
       >
         {/*
           TODO: figure out a good way to add bullets in between links
-          but not have a hanging bullet when links wrap
+          but not have a hanging bullet when links wrap,
           bullets would be the theme secondary color
         */}
         <Typography
@@ -114,6 +114,7 @@ export const Navigation: FC = () => {
           </MuiLink>
         </Typography>
         <Menu
+          disableAutoFocusItem
           anchorEl={anchorElement}
           open={open}
           onClose={handleClose}
@@ -126,7 +127,6 @@ export const Navigation: FC = () => {
             horizontal: "center",
           }}
         >
-          {/* TODO: why does this first link always show as being hovered until you interact with the menu */}
           <MenuItem onClick={handleClose}>
             <NextLink href="/businesses-with-coders">
               Businesses with Coders

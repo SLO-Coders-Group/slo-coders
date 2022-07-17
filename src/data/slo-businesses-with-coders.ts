@@ -1,17 +1,20 @@
-import { SloCitiesType } from "./data.types";
+import {
+  SloCitiesType,
+  UrlType,
+  GlassdoorReviewUrlType,
+  LinkedInJobsUrlType,
+  GoogleMapsUrl,
+} from "./data.types";
 
 type BusinessesWithCodersType = {
   displayName: string;
-  websiteUrl: string;
+  websiteUrl: UrlType;
   websiteDisplayName?: string;
-  // TODO: validate if it's a valid Glassdoor REVIEW link somehow
-  glassdoorReviewsUrl?: string;
-  // TODO: validate if it's a valid LinkedIn JOBS link somehow
-  linkedInJobsUrl?: string;
-  // TODO: validate if it's a valid Google Maps link somehow
+  glassdoorReviewsUrl?: GlassdoorReviewUrlType;
+  linkedInJobsUrl?: LinkedInJobsUrlType;
   googleMapsLocations?: {
     cityName: SloCitiesType;
-    googleMapsUrl: string;
+    googleMapsUrl: GoogleMapsUrl;
   }[];
 };
 
@@ -267,7 +270,7 @@ export const businessesWithCoders: {
   empath: {
     websiteUrl: "https://empathunited.com/",
     displayName: "EMPATH",
-    linkedInJobsUrl: "https://www.linkedin.com/company/empathunited/about/",
+    linkedInJobsUrl: "https://www.linkedin.com/company/empathunited/jobs/",
   },
 
   dozuki: {

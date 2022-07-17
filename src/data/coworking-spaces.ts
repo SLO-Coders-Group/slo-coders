@@ -1,13 +1,12 @@
-import { SloCitiesType } from "./data.types";
+import { GoogleMapsUrl, SloCitiesType, UrlType } from "./data.types";
 
 type CoworkingSpacesType = {
   displayName: string;
-  websiteUrl: string;
+  websiteUrl: UrlType;
   websiteDisplayName?: string;
-  // TODO: validate if it's a valid Google Maps link somehow
   googleMapsLocations?: {
     cityName: SloCitiesType;
-    googleMapsUrl: string;
+    googleMapsUrl: GoogleMapsUrl;
   }[];
 };
 

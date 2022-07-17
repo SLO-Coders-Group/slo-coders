@@ -1,13 +1,15 @@
-import { SloCitiesType } from "./data.types";
+import {
+  GlassdoorReviewUrlType,
+  LinkedInJobsUrlType,
+  UrlType,
+} from "./data.types";
 
-type BusinessesWithCodersType = {
+https: type BusinessesWithCodersType = {
   displayName: string;
-  websiteUrl: string;
+  websiteUrl: UrlType;
   websiteDisplayName?: string;
-  // TODO: validate if it's a valid Glassdoor REVIEW link somehow
-  glassdoorReviewsUrl?: string;
-  // TODO: validate if it's a valid LinkedIn JOBS link somehow
-  linkedInJobsUrl?: string;
+  glassdoorReviewsUrl?: GlassdoorReviewUrlType;
+  linkedInJobsUrl?: LinkedInJobsUrlType;
 };
 
 export const businessesWithCoders: {

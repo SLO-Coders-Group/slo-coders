@@ -19,3 +19,16 @@ export type SloCitiesType =
   | "Santa Margarita"
   | "Shandon"
   | "Templeton";
+
+export type GlassdoorReviewUrlType =
+  `https://www.glassdoor.com/Reviews/${string}.htm`;
+
+export type LinkedInJobsUrlType =
+  | `https://www.linkedin.com/jobs/search/${string}`
+  | `https://www.linkedin.com/company/${string}/jobs/`;
+
+export type UrlType = `${"https" | "http"}://${string}`;
+
+export type GoogleMapsUrl =
+  | `https://goo.gl/maps/${string}`
+  | `https://g.page/${string}?share`;

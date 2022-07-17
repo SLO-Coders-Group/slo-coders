@@ -1,6 +1,8 @@
+import { UrlType } from "./data.types";
+
 type LocalLearningResourcesType = {
   displayName: string;
-  websiteUrl: string;
+  websiteUrl: UrlType;
   websiteDisplayName?: string;
   description: string;
 };

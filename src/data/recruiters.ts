@@ -1,9 +1,10 @@
+import { LinkedInJobsUrlType, UrlType } from "./data.types";
+
 type RecruitersType = {
   displayName: string;
-  websiteUrl: string;
+  websiteUrl: UrlType;
   websiteDisplayName?: string;
-  // TODO: validate if it's a valid LinkedIn JOBS link somehow
-  linkedInJobsUrl?: string;
+  linkedInJobsUrl?: LinkedInJobsUrlType;
 };
 
 export const recruiters: { [key in string]: RecruitersType } = {

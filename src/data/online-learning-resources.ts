@@ -1,6 +1,8 @@
+import { UrlType } from "./data.types";
+
 type OnlineLearningResourcesType = {
   displayName: string;
-  websiteUrl: string;
+  websiteUrl: UrlType;
   websiteDisplayName?: string;
   description: string;
 };
@@ -15,7 +17,7 @@ export const onlineLearningResources: {
       "Browse through a massive list of survey results from developers on everything from the most popular online course platforms, languages, IDEs, and version control systems.",
   },
   someBooksToImproveYourCodeAndYourWayOfCoding: {
-    displayName: "Some Books to Improve Your Code and Your Way of Coding",
+    displayName: "Books on improving your coding skills",
     websiteUrl:
       "https://medium.com/javarevisited/some-books-to-improve-your-code-nd-your-way-of-coding-d5c1cbbbdf73",
     websiteDisplayName:
@@ -46,5 +48,11 @@ export const onlineLearningResources: {
     websiteUrl: "https://medium.com/tag/programming",
     description:
       "One of the best ways to stay up-to-date with the latest and greatest is to read coding articles on Medium.",
+  },
+  leetCode: {
+    displayName: "LeetCode",
+    websiteUrl: "https://leetcode.com/",
+    description:
+      "Prepare for technical interview with over 2350 practice questions.",
   },
 };
