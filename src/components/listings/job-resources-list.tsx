@@ -6,9 +6,11 @@ import { Link } from "../link";
 
 export const JobResourcesList: FC = () => {
   return (
-    <Grid container columnSpacing={3} rowSpacing={6}>
+    <Grid container spacing={3}>
       <Grid item xs={12}>
-        <Typography variant="h5">Job Resources</Typography>
+        <Typography variant="h6" component="h4">
+          Job Resources
+        </Typography>
       </Grid>
       {Object.keys(jobResources)
         .sort()
@@ -21,8 +23,10 @@ export const JobResourcesList: FC = () => {
           } = jobResources[key];
           return (
             <Grid item key={key} xs={12} lg={6} xl={4} data-testid={key}>
-              <Typography>{displayName}</Typography>
-              <Typography variant="body2">
+              <Typography variant="body1" component="h5">
+                {displayName}
+              </Typography>
+              <Typography variant="body2" component="p">
                 <Link
                   underline="hover"
                   color="secondary"
@@ -66,6 +70,7 @@ export const JobResourcesList: FC = () => {
                   </IconButton>
                   <Typography
                     variant="body2"
+                    component="p"
                     sx={{ display: "inline", marginLeft: 0.5 }}
                   >
                     LinkedIn Jobs

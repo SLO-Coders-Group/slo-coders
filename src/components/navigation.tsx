@@ -52,7 +52,11 @@ export const Navigation: FC = () => {
           but not have a hanging bullet when links wrap
           bullets would be the theme secondary color
         */}
-        <Typography variant="h6" color="inherit">
+        <Typography
+          variant={xsBreakpoint || smBreakpoint ? "h6" : "h5"}
+          component="p"
+          color="inherit"
+        >
           <Link
             underline="hover"
             sx={{ whiteSpace: "nowrap" }}
@@ -62,7 +66,11 @@ export const Navigation: FC = () => {
             Home
           </Link>
         </Typography>
-        <Typography variant="h6" color="inherit">
+        <Typography
+          variant={xsBreakpoint || smBreakpoint ? "h6" : "h5"}
+          component="p"
+          color="inherit"
+        >
           <Link
             color="inherit"
             href="/events"
@@ -72,7 +80,11 @@ export const Navigation: FC = () => {
             Events
           </Link>
         </Typography>
-        <Typography variant="h6" color="inherit">
+        <Typography
+          variant={xsBreakpoint || smBreakpoint ? "h6" : "h5"}
+          component="p"
+          color="inherit"
+        >
           <Link
             color="inherit"
             href="https://www.meetup.com/slo-county-coders/?action=join"
@@ -83,7 +95,11 @@ export const Navigation: FC = () => {
             Join
           </Link>
         </Typography>
-        <Typography variant="h6" color="inherit">
+        <Typography
+          variant={xsBreakpoint || smBreakpoint ? "h6" : "h5"}
+          component="p"
+          color="inherit"
+        >
           <MuiLink
             color="inherit"
             onClick={handleClick}

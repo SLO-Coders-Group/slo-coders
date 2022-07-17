@@ -1,4 +1,11 @@
-import { Box, Grid, Paper, Typography, useTheme } from "@mui/material";
+import {
+  Box,
+  Grid,
+  Paper,
+  Typography,
+  useMediaQuery,
+  useTheme,
+} from "@mui/material";
 import type { NextPage } from "next";
 import Head from "next/head";
 import { Layout } from "../components/layout";
@@ -8,6 +15,8 @@ import { LocalLearningResourcesList } from "../components/listings/local-learnin
 
 const LearningResourcesPage: NextPage = () => {
   const theme = useTheme();
+  const xsBreakpoint = useMediaQuery(theme.breakpoints.only("xs"));
+  const smBreakpoint = useMediaQuery(theme.breakpoints.only("sm"));
 
   return (
     <>
@@ -26,7 +35,7 @@ const LearningResourcesPage: NextPage = () => {
       </Head>
       <Layout page="learning-resources">
         <Typography
-          variant="h4"
+          variant={xsBreakpoint || smBreakpoint ? "h5" : "h4"}
           component="h2"
           color="primary"
           align="center"
@@ -55,12 +64,12 @@ const LearningResourcesPage: NextPage = () => {
             mb: 3,
           }}
         >
-          <Typography mb={4}>
+          <Typography variant="body1" component="p" mb={4}>
             If you are just learning to code, looking to learn a new language,
             or maybe just hoping to keep your skills sharp and current, then
             check out these resources to help you along your journey.
           </Typography>
-          <Typography variant="body2">
+          <Typography variant="body2" component="p">
             If you would like to contribute new data, modify existing listings,
             or report a mistake, please{" "}
             <Link
