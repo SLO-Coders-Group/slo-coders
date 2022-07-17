@@ -21,8 +21,8 @@ const theme = createTheme({
   typography: {
     fontFamily: `"Fira Code", monospace`,
     h1: {
-      letterSpacing: "0.55rem",
-      fontSize: "5.5rem",
+      letterSpacing: "0.575rem",
+      fontSize: "5.75rem",
       textTransform: "uppercase",
       fontWeight: 400,
       fontFamily: "Oswald, Arial, Helvetica, sans-serif",
@@ -35,8 +35,8 @@ const theme = createTheme({
       fontFamily: "Oswald, Arial, Helvetica, sans-serif",
     },
     h3: {
-      letterSpacing: "0.45rem",
-      fontSize: "4.5rem",
+      letterSpacing: "0.425rem",
+      fontSize: "4.25rem",
       textTransform: "uppercase",
       fontWeight: 400,
       fontFamily: "Oswald, Arial, Helvetica, sans-serif",
