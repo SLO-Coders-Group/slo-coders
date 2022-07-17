@@ -3,10 +3,12 @@ import Image from "next/image";
 import {
   Box,
   Grid,
+  IconButton,
   List,
   ListItem,
   Typography,
   useMediaQuery,
+  darken,
 } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import { Link } from "./link";
@@ -238,6 +240,74 @@ export const Footer: FC = () => {
             >{`then we would like to be friends! 😎`}</Typography>
           </Grid>
         </Grid>
+      </Box>
+      <Box
+        sx={{
+          backgroundColor: theme.palette.common.white,
+          width: "100%",
+          px: 8,
+          py: 3,
+          borderTop: "1px dashed black",
+          justifyContent: "center",
+          display: "flex",
+        }}
+      >
+        <Link
+          underline="hover"
+          href="https://instagram.com/slo.county.coders"
+          target="_blank"
+          sx={{
+            display: "block",
+            mb: 0.25,
+            "&:hover": {
+              "& .MuiIconButton-root": {
+                background: darken("#fff", 0.1),
+              },
+            },
+          }}
+        >
+          <IconButton
+            size="large"
+            sx={{
+              mt: 0.5,
+            }}
+          >
+            <Image
+              alt="SLO County Coders on Instagram"
+              src="/images/instagram.png"
+              width={24}
+              height={24}
+            />
+          </IconButton>
+        </Link>
+        <Link
+          underline="hover"
+          href="https://www.meetup.com/slo-county-coders/"
+          target="_blank"
+          sx={{
+            display: "block",
+            mb: 0.25,
+            "&:hover": {
+              "& .MuiIconButton-root": {
+                background: darken("#fff", 0.1),
+              },
+            },
+          }}
+        >
+          <IconButton
+            sx={{
+              mt: 0.5,
+            }}
+            size="large"
+          >
+            <Image
+              alt="SLO County Coders on Meetup"
+              src="/images/meetup.png"
+              width={24}
+              height={24}
+            />
+          </IconButton>
+        </Link>
       </Box>
     </>
   );

@@ -15,6 +15,8 @@ export const Layout: FC<Props> = ({ children }) => {
 
   const xsBreakpoint = useMediaQuery(theme.breakpoints.only("xs"));
   const smBreakpoint = useMediaQuery(theme.breakpoints.only("sm"));
+  const mdBreakpoint = useMediaQuery(theme.breakpoints.only("md"));
+  const lgBreakpoint = useMediaQuery(theme.breakpoints.only("lg"));
 
   return (
     <Box
@@ -61,7 +63,12 @@ export const Layout: FC<Props> = ({ children }) => {
         elevation={6}
         square
         sx={{
-          px: xsBreakpoint ? 2 : smBreakpoint ? 7 : 12,
+          px:
+            xsBreakpoint || smBreakpoint
+              ? 2
+              : mdBreakpoint || lgBreakpoint
+              ? 7
+              : 12,
           py: 10,
           mb: 6,
           // wrapper style

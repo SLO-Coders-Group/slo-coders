@@ -14,7 +14,12 @@ export const Header: FC = () => {
       elevation={6}
       square
       sx={{
-        px: xsBreakpoint ? 2 : smBreakpoint ? 7 : 12,
+        px:
+          xsBreakpoint || smBreakpoint
+            ? 2
+            : mdBreakpoint || lgBreakpoint
+            ? 7
+            : 12,
         py: 3,
         mt: 6,
         mb: 2,
