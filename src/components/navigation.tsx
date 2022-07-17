@@ -40,7 +40,7 @@ export const Navigation: FC = () => {
         sx={{
           display: "flex",
           justifyContent: "center",
-          py: 1,
+          py: 1, // 1 unit which is 8px that matches the spacing below
           px: xsBreakpoint ? 4 : smBreakpoint ? 6 : 8,
           columnGap: xsBreakpoint ? 4 : smBreakpoint ? 6 : 8,
           rowGap: 1,
@@ -56,6 +56,7 @@ export const Navigation: FC = () => {
           variant={xsBreakpoint || smBreakpoint ? "h6" : "h5"}
           component="p"
           color="inherit"
+          sx={{ display: "inline-flex", position: "relative" }}
         >
           <Link
             underline="hover"
@@ -70,6 +71,7 @@ export const Navigation: FC = () => {
           variant={xsBreakpoint || smBreakpoint ? "h6" : "h5"}
           component="p"
           color="inherit"
+          sx={{ display: "inline-flex", position: "relative" }}
         >
           <Link
             color="inherit"
@@ -84,6 +86,7 @@ export const Navigation: FC = () => {
           variant={xsBreakpoint || smBreakpoint ? "h6" : "h5"}
           component="p"
           color="inherit"
+          sx={{ display: "inline-flex", position: "relative" }}
         >
           <Link
             color="inherit"
@@ -99,6 +102,7 @@ export const Navigation: FC = () => {
           variant={xsBreakpoint || smBreakpoint ? "h6" : "h5"}
           component="p"
           color="inherit"
+          sx={{ display: "inline-flex", position: "relative" }}
         >
           <MuiLink
             color="inherit"
@@ -118,7 +122,7 @@ export const Navigation: FC = () => {
             horizontal: "center",
           }}
           transformOrigin={{
-            vertical: -10,
+            vertical: -8, // 8px which equals the 1 unit of padding above
             horizontal: "center",
           }}
         >
