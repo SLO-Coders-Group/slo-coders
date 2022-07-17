@@ -13,9 +13,13 @@ import { Link } from "./link";
 
 export const Footer: FC = () => {
   const theme = useTheme();
-  const mdAndDownBreakpoint = useMediaQuery(theme.breakpoints.down("md"));
 
-  const footerTextAlignment = mdAndDownBreakpoint ? "center" : "left";
+  const xsBreakpoint = useMediaQuery(theme.breakpoints.only("xs"));
+  const smBreakpoint = useMediaQuery(theme.breakpoints.only("sm"));
+  const mdBreakpoint = useMediaQuery(theme.breakpoints.only("md"));
+
+  const footerTextAlignment =
+    xsBreakpoint || smBreakpoint || mdBreakpoint ? "center" : "left";
 
   const listItemStyle = {
     justifyContent: footerTextAlignment,
@@ -36,8 +40,8 @@ export const Footer: FC = () => {
         }}
       >
         <Typography
-          variant="h4"
-          component="h2"
+          variant={xsBreakpoint || smBreakpoint ? "h6" : "h5"}
+          component="p"
           color="primary"
           align="center"
           mb={1}
@@ -55,7 +59,7 @@ export const Footer: FC = () => {
             Sponsors
           </Box>
         </Typography>
-        <Typography variant="body2" mb={6}>
+        <Typography variant="body2" component="p" mb={6}>
           Want to become a sponsor? Email us at{" "}
           <Link underline="hover" href="mailto:contact@slocountycoders.com">
             contact@slocountycoders.com
@@ -92,14 +96,14 @@ export const Footer: FC = () => {
           textAlign={footerTextAlignment}
         >
           <Grid item xs={12} sm={6} md="auto">
-            <Typography variant="h5" sx={{ mb: 1 }}>
+            <Typography
+              variant={xsBreakpoint || smBreakpoint ? "h6" : "h5"}
+              component="h3"
+              sx={{ mb: 1 }}
+            >
               If you are a
             </Typography>
-            <List
-              dense
-              disablePadding
-              sx={{ fontSize: theme.typography.body1.fontSize }}
-            >
+            <List dense disablePadding>
               <ListItem dense sx={listItemStyle}>
                 Software Engineer
               </ListItem>
@@ -155,14 +159,14 @@ export const Footer: FC = () => {
           </Grid>
 
           <Grid item xs={12} sm={6} md="auto">
-            <Typography variant="h5" sx={{ mb: 1 }}>
+            <Typography
+              variant={xsBreakpoint || smBreakpoint ? "h6" : "h5"}
+              component="h3"
+              sx={{ mb: 1 }}
+            >
               and live in
             </Typography>
-            <List
-              dense
-              disablePadding
-              sx={{ fontSize: theme.typography.body1.fontSize }}
-            >
+            <List dense disablePadding>
               <ListItem dense sx={listItemStyle}>
                 Atascadero
               </ListItem>
@@ -228,7 +232,8 @@ export const Footer: FC = () => {
 
           <Grid item xs={12} sm={12} md="auto">
             <Typography
-              variant="h5"
+              variant={xsBreakpoint || smBreakpoint ? "h6" : "h5"}
+              component="h3"
               sx={{ mb: 1 }}
             >{`then we would like to be friends! 😎`}</Typography>
           </Grid>

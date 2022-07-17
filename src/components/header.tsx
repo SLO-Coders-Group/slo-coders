@@ -1,11 +1,13 @@
 import { FC } from "react";
-import { Paper, Typography, useMediaQuery, useTheme } from "@mui/material";
+import { Box, Paper, Typography, useMediaQuery, useTheme } from "@mui/material";
 
 export const Header: FC = () => {
   const theme = useTheme();
 
   const xsBreakpoint = useMediaQuery(theme.breakpoints.only("xs"));
   const smBreakpoint = useMediaQuery(theme.breakpoints.only("sm"));
+  const mdBreakpoint = useMediaQuery(theme.breakpoints.only("md"));
+  const lgBreakpoint = useMediaQuery(theme.breakpoints.only("lg"));
 
   return (
     <Paper
@@ -23,17 +25,36 @@ export const Header: FC = () => {
       }}
     >
       <Typography
-        variant="h1"
+        variant={
+          xsBreakpoint || smBreakpoint
+            ? "h3"
+            : mdBreakpoint || lgBreakpoint
+            ? "h2"
+            : "h1"
+        }
+        component="h1"
         color="primary"
         align="center"
-        sx={{
-          fontSize: xsBreakpoint ? "4rem" : smBreakpoint ? "5rem" : "6rem",
-          fontFamily: theme.typography.fontFamily,
-          letterSpacing: "normal",
-          textTransform: "none",
-        }}
       >
-        SLO County Coders
+        <Box
+          component="span"
+          sx={{
+            textTransform: "none",
+          }}
+        >
+          SLO County{" "}
+        </Box>
+        <Box
+          component="span"
+          sx={{
+            fontFamily: theme.typography.fontFamily,
+            letterSpacing: "normal",
+            textTransform: "none",
+            display: "block",
+          }}
+        >
+          Coders
+        </Box>
       </Typography>
     </Paper>
   );

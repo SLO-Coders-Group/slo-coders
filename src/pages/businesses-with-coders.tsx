@@ -1,13 +1,22 @@
-import { Box, Grid, Paper, Typography, useTheme } from "@mui/material";
+import {
+  Box,
+  Grid,
+  Paper,
+  Typography,
+  useMediaQuery,
+  useTheme,
+} from "@mui/material";
 import type { NextPage } from "next";
 import Head from "next/head";
 import { Layout } from "../components/layout";
 import { Link } from "../components/link";
-import { BusinessesWithSloCoders } from "../components/listings/businesses-with-slo-coders";
-import { SloBusinessesWithCoders } from "../components/listings/slo-businesses-with-coders";
+import { BusinessesWithSloCodersList } from "../components/listings/businesses-with-slo-coders-list";
+import { SloBusinessesWithCodersList } from "../components/listings/slo-businesses-with-coders-list";
 
 const BusinessesWithCodersPage: NextPage = () => {
   const theme = useTheme();
+  const xsBreakpoint = useMediaQuery(theme.breakpoints.only("xs"));
+  const smBreakpoint = useMediaQuery(theme.breakpoints.only("sm"));
 
   return (
     <>
@@ -26,7 +35,7 @@ const BusinessesWithCodersPage: NextPage = () => {
       </Head>
       <Layout page="businesses-with-coders">
         <Typography
-          variant="h4"
+          variant={xsBreakpoint || smBreakpoint ? "h5" : "h4"}
           component="h2"
           color="primary"
           align="center"
@@ -55,13 +64,13 @@ const BusinessesWithCodersPage: NextPage = () => {
             mb: 3,
           }}
         >
-          <Typography mb={4}>
+          <Typography variant="body1" component="p" mb={4}>
             We love to help developers, engineers, coders, etc. find their
             perfect work home in our amazing San Luis Obispo county. Here is a
             compiled list of all businesses, that we know of, that have coders
             in SLO county.
           </Typography>
-          <Typography variant="body2">
+          <Typography variant="body2" component="p">
             This page was inspired by{" "}
             <Link
               underline="hover"
@@ -104,7 +113,7 @@ const BusinessesWithCodersPage: NextPage = () => {
                 padding: 3,
               }}
             >
-              <SloBusinessesWithCoders />
+              <SloBusinessesWithCodersList />
             </Paper>
           </Grid>
           <Grid item xs={12} lg={5} xl={4}>
@@ -116,7 +125,7 @@ const BusinessesWithCodersPage: NextPage = () => {
                 padding: 3,
               }}
             >
-              <BusinessesWithSloCoders />
+              <BusinessesWithSloCodersList />
             </Paper>
           </Grid>
         </Grid>

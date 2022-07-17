@@ -1,4 +1,12 @@
-import { Box, Grid, Link, Paper, Typography, useTheme } from "@mui/material";
+import {
+  Box,
+  Grid,
+  Link,
+  Paper,
+  Typography,
+  useMediaQuery,
+  useTheme,
+} from "@mui/material";
 import type { NextPage } from "next";
 import Head from "next/head";
 import { Layout } from "../components/layout";
@@ -7,6 +15,8 @@ import { RecruitersList } from "../components/listings/recruiters-list";
 
 const RecruitersAndJobsPage: NextPage = () => {
   const theme = useTheme();
+  const xsBreakpoint = useMediaQuery(theme.breakpoints.only("xs"));
+  const smBreakpoint = useMediaQuery(theme.breakpoints.only("sm"));
 
   return (
     <>
@@ -25,7 +35,7 @@ const RecruitersAndJobsPage: NextPage = () => {
       </Head>
       <Layout page="recruiters-and-jobs">
         <Typography
-          variant="h4"
+          variant={xsBreakpoint || smBreakpoint ? "h5" : "h4"}
           component="h2"
           color="primary"
           align="center"
@@ -54,13 +64,13 @@ const RecruitersAndJobsPage: NextPage = () => {
             mb: 3,
           }}
         >
-          <Typography mb={4}>
+          <Typography variant="body1" component="p" mb={4}>
             Are you looking for some assistance finding your dream gig? Here is
             a list of some recruiters that would love to help you find the
             perfect fit along with some resources for finding coding jobs in
             SLO.
           </Typography>
-          <Typography variant="body2">
+          <Typography variant="body2" component="p">
             If you would like to contribute new data, modify existing listings,
             or report a mistake, please{" "}
             <Link

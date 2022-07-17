@@ -6,7 +6,7 @@ import { Link } from "../link";
 
 export const CoworkingSpacesList: FC = () => {
   return (
-    <Grid container columnSpacing={3} rowSpacing={6}>
+    <Grid container spacing={3}>
       {Object.keys(coworkingSpaces)
         .sort()
         .map((key) => {
@@ -18,8 +18,10 @@ export const CoworkingSpacesList: FC = () => {
           } = coworkingSpaces[key];
           return (
             <Grid item key={key} xs={12} sm={6} md={4} xl={3}>
-              <Typography>{displayName}</Typography>
-              <Typography variant="body2">
+              <Typography variant="body1" component="h4">
+                {displayName}
+              </Typography>
+              <Typography variant="body2" component="p">
                 <Link
                   underline="hover"
                   color="secondary"
@@ -65,6 +67,7 @@ export const CoworkingSpacesList: FC = () => {
                     </IconButton>
                     <Typography
                       variant="body2"
+                      component="p"
                       sx={{ display: "inline", marginLeft: 0.5 }}
                     >
                       {`${googleMapsLocations.cityName}`}

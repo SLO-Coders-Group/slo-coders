@@ -1,9 +1,9 @@
 import { render, screen, within } from "../../utils/test/test.utils";
-import { SloBusinessesWithCoders } from "./slo-businesses-with-coders";
+import { SloBusinessesWithCodersList } from "./slo-businesses-with-coders-list";
 
-describe("test SloBusinessesWithCoders", () => {
+describe("test SloBusinessesWithCodersList", () => {
   it("does component render with Amazon listing", () => {
-    render(<SloBusinessesWithCoders />);
+    render(<SloBusinessesWithCodersList />);
 
     const amazonSection = screen.queryByTestId("amazon");
     expect(amazonSection).toBeInTheDocument();
