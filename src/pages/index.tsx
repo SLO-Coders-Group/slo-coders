@@ -40,48 +40,62 @@ const HomePage: NextPage = () => {
             component="span"
             sx={{
               display: "block",
-              borderBottom: `1px solid #eddbcc`,
-              mx: 0.5,
             }}
           >
-            {"Let's show the tech industry what it's like"}
+            <Box
+              component="span"
+              sx={{
+                display: "inline-block",
+                borderBottom: `1px solid #eddbcc`,
+                px: 1,
+              }}
+            >
+              {"Let's show the tech industry what it's like"}
+            </Box>
           </Box>
           <Box
             component="span"
             sx={{
-              transform: "translate(0, 10px)",
-              display: "inline-block",
-              borderBottom: `1px solid #eddbcc`,
-              px: 1,
-              mx: 0.5,
+              display: "block",
             }}
           >
-            to
-          </Box>
-          <Box
-            component="span"
-            sx={{
-              transform: "translate(0, 18px)",
-              display: "inline-block",
-              px: 2.5,
-              mx: 0.5,
-              color: theme.palette.primary.main,
-              borderBottom: `1px solid #eddbcc`,
-            }}
-          >
-            SLO
-          </Box>
-          <Box
-            component="span"
-            sx={{
-              transform: "translate(0, 36px)",
-              display: "inline-block",
-              mx: 0.5,
-              px: 1,
-              borderBottom: `1px solid #eddbcc`,
-            }}
-          >
-            down
+            <Box
+              component="span"
+              sx={{
+                transform: "translate(0, 10px)",
+                display: "inline-block",
+                borderBottom: `1px solid #eddbcc`,
+                px: 1,
+                mx: 0.5,
+              }}
+            >
+              to
+            </Box>
+            <Box
+              component="span"
+              sx={{
+                transform: "translate(0, 18px)",
+                display: "inline-block",
+                px: 2.5,
+                mx: 0.5,
+                color: theme.palette.primary.main,
+                borderBottom: `1px solid #eddbcc`,
+              }}
+            >
+              SLO
+            </Box>
+            <Box
+              component="span"
+              sx={{
+                transform: "translate(0, 36px)",
+                display: "inline-block",
+                mx: 0.5,
+                px: 1,
+                borderBottom: `1px solid #eddbcc`,
+              }}
+            >
+              down
+            </Box>
           </Box>
         </Typography>
         <Paper
