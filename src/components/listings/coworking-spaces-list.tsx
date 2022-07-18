@@ -1,9 +1,9 @@
 import { Grid, Typography } from "@mui/material";
 import { FC } from "react";
-import Image from "next/image";
 import { coworkingSpaces } from "../../data/coworking-spaces";
 import { Link } from "../link";
 import { LinkIcon } from "../icons/link-icon";
+import RoomIcon from "@mui/icons-material/Room";
 
 export const CoworkingSpacesList: FC = () => {
   return (
@@ -43,14 +43,9 @@ export const CoworkingSpacesList: FC = () => {
                     key={websiteUrl}
                     href={googleMapsLocations.googleMapsUrl}
                     text={`${googleMapsLocations.cityName}`}
-                    icon={
-                      <Image
-                        alt="Google Maps"
-                        src="/images/google-maps.png"
-                        width={12}
-                        height={12}
-                      />
-                    }
+                    fontSize={16}
+                    iconButtonSize="small"
+                    icon={<RoomIcon fontSize="inherit" color="inherit" />}
                   />
                 ))}
             </Grid>
