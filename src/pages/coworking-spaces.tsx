@@ -41,7 +41,7 @@ const CoworkingSpacesPage: NextPage = () => {
             sx={{
               display: "inline-block",
               borderBottom: `1px solid #eddbcc`,
-              mx: 0.5,
+              px: 1.5,
             }}
           >
             Coworking Spaces in San Luis Obispo County

@@ -49,7 +49,7 @@ const LearningResourcesPage: NextPage = () => {
             sx={{
               display: "inline-block",
               borderBottom: `1px solid #eddbcc`,
-              mx: 0.5,
+              px: 1.5,
             }}
           >
             Learning Resources

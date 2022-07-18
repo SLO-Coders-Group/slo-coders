@@ -49,7 +49,7 @@ const BusinessesWithCodersPage: NextPage = () => {
             sx={{
               display: "inline-block",
               borderBottom: `1px solid #eddbcc`,
-              mx: 0.5,
+              px: 1.5,
             }}
           >
             Businesses with Coders in San Luis Obispo County
