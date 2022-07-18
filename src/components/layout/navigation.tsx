@@ -8,8 +8,8 @@ import {
   useMediaQuery,
   useTheme,
   Link as MuiLink,
+  Link,
 } from "@mui/material";
-import { Link } from "./link";
 import NextLink from "next/link";
 
 export const Navigation: FC = () => {

@@ -1,8 +1,9 @@
-import { IconButton, Grid, Typography, lighten } from "@mui/material";
+import { Grid, Typography } from "@mui/material";
 import { FC } from "react";
 import Image from "next/image";
 import { coworkingSpaces } from "../../data/coworking-spaces";
 import { Link } from "../link";
+import { LinkIcon } from "../icons/link-icon";
 
 export const CoworkingSpacesList: FC = () => {
   return (
@@ -38,41 +39,19 @@ export const CoworkingSpacesList: FC = () => {
               {/* get better icons and use svgs and SvgIcon from MUI */}
               {googleMapsLocations &&
                 googleMapsLocations.map((googleMapsLocations) => (
-                  <Link
-                    underline="hover"
+                  <LinkIcon
                     key={websiteUrl}
                     href={googleMapsLocations.googleMapsUrl}
-                    target="_blank"
-                    sx={{
-                      display: "block",
-                      "&:hover": {
-                        "& .MuiIconButton-root": {
-                          background: lighten("#0e50b4", 0.25),
-                        },
-                      },
-                    }}
-                  >
-                    <IconButton
-                      sx={{
-                        background: "#b9312c",
-                        mt: 0.5,
-                      }}
-                    >
+                    text={`${googleMapsLocations.cityName}`}
+                    icon={
                       <Image
                         alt="Google Maps"
                         src="/images/google-maps.png"
                         width={12}
                         height={12}
                       />
-                    </IconButton>
-                    <Typography
-                      variant="body2"
-                      component="p"
-                      sx={{ display: "inline", marginLeft: 0.5 }}
-                    >
-                      {`${googleMapsLocations.cityName}`}
-                    </Typography>
-                  </Link>
+                    }
+                  />
                 ))}
             </Grid>
           );
