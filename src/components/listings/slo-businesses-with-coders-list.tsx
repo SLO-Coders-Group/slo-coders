@@ -1,8 +1,11 @@
-import { IconButton, Grid, Typography, lighten } from "@mui/material";
+import { Grid, Typography } from "@mui/material";
 import { FC } from "react";
-import Image from "next/image";
 import { businessesWithCoders } from "../../data/slo-businesses-with-coders";
 import { Link } from "../link";
+import { LinkIcon } from "../icons/link-icon";
+import RoomIcon from "@mui/icons-material/Room";
+import { GlassdoorIcon } from "../icons/glassdoor.icon";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 export const SloBusinessesWithCodersList: FC = () => {
   return (
@@ -53,114 +56,32 @@ export const SloBusinessesWithCodersList: FC = () => {
                 {/* get better icons and use svgs and SvgIcon from MUI */}
                 {googleMapsLocations &&
                   googleMapsLocations.map((googleMapsLocation) => (
-                    <Link
-                      underline="hover"
+                    <LinkIcon
                       key={websiteUrl}
                       href={googleMapsLocation.googleMapsUrl}
-                      target="_blank"
-                      sx={{
-                        display: "block",
-                        "&:hover": {
-                          "& .MuiIconButton-root": {
-                            background: lighten("#0e50b4", 0.25),
-                          },
-                        },
-                      }}
-                    >
-                      <IconButton
-                        sx={{
-                          background: "#b9312c",
-                          mt: 0.5,
-                        }}
-                      >
-                        <Image
-                          alt="Google Maps"
-                          src="/images/google-maps.png"
-                          width={12}
-                          height={12}
-                        />
-                      </IconButton>
-                      <Typography
-                        variant="body2"
-                        component="p"
-                        sx={{ display: "inline", marginLeft: 0.5 }}
-                      >
-                        {`${googleMapsLocation.cityName}`}
-                      </Typography>
-                    </Link>
+                      text={`${googleMapsLocation.cityName}`}
+                      fontSize={16}
+                      iconButtonSize="small"
+                      icon={<RoomIcon fontSize="inherit" color="inherit" />}
+                    />
                   ))}
                 {glassdoorReviewsUrl && (
-                  <Link
-                    underline="hover"
+                  <LinkIcon
                     href={glassdoorReviewsUrl}
-                    target="_blank"
-                    sx={{
-                      display: "block",
-                      mb: 0.25,
-                      "&:hover": {
-                        "& .MuiIconButton-root": {
-                          background: lighten("#0caa41", 0.25),
-                        },
-                      },
-                    }}
-                  >
-                    <IconButton
-                      sx={{
-                        background: "#0caa41",
-                        mt: 0.5,
-                      }}
-                    >
-                      <Image
-                        alt="Glassdoor"
-                        src="/images/glassdoor.png"
-                        width={12}
-                        height={12}
-                      />
-                    </IconButton>
-                    <Typography
-                      variant="body2"
-                      component="p"
-                      sx={{ display: "inline", marginLeft: 0.5 }}
-                    >
-                      Glassdoor Reviews
-                    </Typography>
-                  </Link>
+                    text="Glassdoor Reviews"
+                    fontSize={16}
+                    iconButtonSize="small"
+                    icon={<GlassdoorIcon fontSize={16} />}
+                  />
                 )}
                 {linkedInJobsUrl && (
-                  <Link
-                    underline="hover"
+                  <LinkIcon
                     href={linkedInJobsUrl}
-                    target="_blank"
-                    sx={{
-                      display: "block",
-                      "&:hover": {
-                        "& .MuiIconButton-root": {
-                          background: lighten("#0e50b4", 0.25),
-                        },
-                      },
-                    }}
-                  >
-                    <IconButton
-                      sx={{
-                        background: "#0e50b4",
-                        mt: 0.5,
-                      }}
-                    >
-                      <Image
-                        alt="LinkedIn"
-                        src="/images/linkedin.png"
-                        width={12}
-                        height={12}
-                      />
-                    </IconButton>
-                    <Typography
-                      variant="body2"
-                      component="p"
-                      sx={{ display: "inline", marginLeft: 0.5 }}
-                    >
-                      LinkedIn Jobs
-                    </Typography>
-                  </Link>
+                    text="LinkedIn Jobs"
+                    fontSize={16}
+                    iconButtonSize="small"
+                    icon={<LinkedInIcon fontSize="inherit" color="inherit" />}
+                  />
                 )}
               </Grid>
             );

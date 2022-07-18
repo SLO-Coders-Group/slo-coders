@@ -3,15 +3,16 @@ import Image from "next/image";
 import {
   Box,
   Grid,
-  IconButton,
   List,
   ListItem,
   Typography,
   useMediaQuery,
-  darken,
 } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
-import { Link } from "./link";
+import { Link } from "../link";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import { MeetupIcon } from "../icons/meetup.icon";
+import { LinkIcon } from "../icons/link-icon";
 
 export const Footer: FC = () => {
   const theme = useTheme();
@@ -248,66 +249,43 @@ export const Footer: FC = () => {
           px: 8,
           py: 3,
           borderTop: "1px dashed black",
-          justifyContent: "center",
-          display: "flex",
         }}
       >
-        <Link
-          underline="hover"
-          href="https://instagram.com/slo.county.coders"
-          target="_blank"
-          sx={{
-            display: "block",
-            mb: 0.25,
-            "&:hover": {
-              "& .MuiIconButton-root": {
-                background: darken("#fff", 0.1),
-              },
-            },
-          }}
+        <Typography
+          variant={xsBreakpoint || smBreakpoint ? "h6" : "h5"}
+          component="p"
+          color="primary"
+          align="center"
+          mb={1}
         >
-          <IconButton
-            size="large"
+          <Box
+            component="span"
             sx={{
-              mt: 0.5,
+              display: "inline-block",
+              px: 2.5,
+              mx: 0.5,
+              color: theme.palette.primary.main,
+              borderBottom: `1px solid ${theme.palette.common.black}`,
             }}
           >
-            <Image
-              alt="SLO County Coders on Instagram"
-              src="/images/instagram.png"
-              width={24}
-              height={24}
-            />
-          </IconButton>
-        </Link>
-        <Link
-          underline="hover"
-          href="https://www.meetup.com/slo-county-coders/"
-          target="_blank"
+            Follow Us
+          </Box>
+        </Typography>
+        <Box
           sx={{
-            display: "block",
-            mb: 0.25,
-            "&:hover": {
-              "& .MuiIconButton-root": {
-                background: darken("#fff", 0.1),
-              },
-            },
+            justifyContent: "center",
+            display: "flex",
           }}
         >
-          <IconButton
-            sx={{
-              mt: 0.5,
-            }}
-            size="large"
-          >
-            <Image
-              alt="SLO County Coders on Meetup"
-              src="/images/meetup.png"
-              width={24}
-              height={24}
-            />
-          </IconButton>
-        </Link>
+          <LinkIcon
+            href="https://instagram.com/slo.county.coders"
+            icon={<InstagramIcon color="inherit" fontSize="inherit" />}
+          />
+          <LinkIcon
+            href="https://www.meetup.com/slo-county-coders/"
+            icon={<MeetupIcon fontSize={24} />}
+          />
+        </Box>
       </Box>
     </>
   );

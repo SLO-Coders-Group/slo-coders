@@ -1,8 +1,9 @@
-import { IconButton, Grid, Typography, lighten } from "@mui/material";
+import { Grid, Typography } from "@mui/material";
 import { FC } from "react";
-import Image from "next/image";
 import { recruiters } from "../../data/recruiters";
 import { Link } from "../link";
+import { LinkIcon } from "../icons/link-icon";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 export const RecruitersList: FC = () => {
   return (
@@ -41,40 +42,13 @@ export const RecruitersList: FC = () => {
                 </Typography>
                 {/* get better icons and use svgs and SvgIcon from MUI */}
                 {linkedInJobsUrl && (
-                  <Link
-                    underline="hover"
+                  <LinkIcon
                     href={linkedInJobsUrl}
-                    target="_blank"
-                    sx={{
-                      display: "block",
-                      "&:hover": {
-                        "& .MuiIconButton-root": {
-                          background: lighten("#0e50b4", 0.25),
-                        },
-                      },
-                    }}
-                  >
-                    <IconButton
-                      sx={{
-                        background: "#0e50b4",
-                        mt: 0.5,
-                      }}
-                    >
-                      <Image
-                        alt="LinkedIn"
-                        src="/images/linkedin.png"
-                        width={12}
-                        height={12}
-                      />
-                    </IconButton>
-                    <Typography
-                      variant="body2"
-                      component="p"
-                      sx={{ display: "inline", marginLeft: 0.5 }}
-                    >
-                      LinkedIn Jobs
-                    </Typography>
-                  </Link>
+                    text="LinkedIn Jobs"
+                    fontSize={16}
+                    iconButtonSize="small"
+                    icon={<LinkedInIcon fontSize="inherit" color="inherit" />}
+                  />
                 )}
               </Grid>
             );
