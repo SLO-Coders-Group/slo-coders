@@ -34,6 +34,7 @@ const HomePage: NextPage = () => {
           mb={8}
           sx={{
             color: theme.palette.common.white,
+            px: 1.5,
           }}
         >
           <Box
@@ -47,7 +48,7 @@ const HomePage: NextPage = () => {
               sx={{
                 display: "inline-block",
                 borderBottom: `1px solid #eddbcc`,
-                px: 1,
+                px: 1.5,
               }}
             >
               {"Let's show the tech industry what it's like"}
@@ -65,7 +66,7 @@ const HomePage: NextPage = () => {
                 transform: "translate(0, 10px)",
                 display: "inline-block",
                 borderBottom: `1px solid #eddbcc`,
-                px: 1,
+                px: 1.5,
                 mx: 0.5,
               }}
             >
@@ -76,7 +77,7 @@ const HomePage: NextPage = () => {
               sx={{
                 transform: "translate(0, 18px)",
                 display: "inline-block",
-                px: 2.5,
+                px: 1.5,
                 mx: 0.5,
                 color: theme.palette.primary.main,
                 borderBottom: `1px solid #eddbcc`,
@@ -90,7 +91,7 @@ const HomePage: NextPage = () => {
                 transform: "translate(0, 36px)",
                 display: "inline-block",
                 mx: 0.5,
-                px: 1,
+                px: 1.5,
                 borderBottom: `1px solid #eddbcc`,
               }}
             >

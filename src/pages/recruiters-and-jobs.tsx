@@ -49,7 +49,7 @@ const RecruitersAndJobsPage: NextPage = () => {
             sx={{
               display: "inline-block",
               borderBottom: `1px solid #eddbcc`,
-              mx: 0.5,
+              px: 1.5,
             }}
           >
             Recruiters and Jobs in San Luis Obispo County

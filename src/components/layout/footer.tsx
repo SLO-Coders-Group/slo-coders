@@ -53,7 +53,7 @@ export const Footer: FC = () => {
             component="span"
             sx={{
               display: "inline-block",
-              px: 2.5,
+              px: 1.5,
               mx: 0.5,
               color: theme.palette.primary.main,
               borderBottom: `1px solid ${theme.palette.common.black}`,
@@ -262,7 +262,7 @@ export const Footer: FC = () => {
             component="span"
             sx={{
               display: "inline-block",
-              px: 2.5,
+              px: 1.5,
               mx: 0.5,
               color: theme.palette.primary.main,
               borderBottom: `1px solid ${theme.palette.common.black}`,
