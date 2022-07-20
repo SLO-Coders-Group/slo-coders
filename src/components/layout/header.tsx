@@ -41,11 +41,31 @@ export const Header: FC = () => {
         container
         alignItems="center"
         justifyContent="center"
-        columnSpacing={5}
-        rowSpacing={2}
+        columnSpacing={
+          xsBreakpoint || smBreakpoint
+            ? 3
+            : mdBreakpoint || lgBreakpoint
+            ? 5
+            : 7
+        }
+        rowSpacing={
+          xsBreakpoint || smBreakpoint
+            ? 1
+            : mdBreakpoint || lgBreakpoint
+            ? 2
+            : 3
+        }
       >
         <Grid item>
-          <SloCountyCodersLogoIcon fontSize={150} />
+          <SloCountyCodersLogoIcon
+            fontSize={
+              xsBreakpoint || smBreakpoint
+                ? 120
+                : mdBreakpoint || lgBreakpoint
+                ? 150
+                : 180
+            }
+          />
         </Grid>
         <Grid item>
           <Typography
