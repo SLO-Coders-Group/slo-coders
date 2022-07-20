@@ -1,5 +1,13 @@
 import { FC } from "react";
-import { Box, Paper, Typography, useMediaQuery, useTheme } from "@mui/material";
+import {
+  Box,
+  Grid,
+  Paper,
+  Typography,
+  useMediaQuery,
+  useTheme,
+} from "@mui/material";
+import { SloCountyCodersLogoIcon } from "../icons/slo-county-coders-logo.icon";
 
 export const Header: FC = () => {
   const theme = useTheme();
@@ -29,38 +37,51 @@ export const Header: FC = () => {
         minWidth: 350,
       }}
     >
-      <Typography
-        variant={
-          xsBreakpoint || smBreakpoint
-            ? "h3"
-            : mdBreakpoint || lgBreakpoint
-            ? "h2"
-            : "h1"
-        }
-        component="h1"
-        color="primary"
-        align="center"
+      <Grid
+        container
+        alignItems="center"
+        justifyContent="center"
+        columnSpacing={5}
+        rowSpacing={2}
       >
-        <Box
-          component="span"
-          sx={{
-            textTransform: "none",
-          }}
-        >
-          SLO County{" "}
-        </Box>
-        <Box
-          component="span"
-          sx={{
-            fontFamily: theme.typography.fontFamily,
-            letterSpacing: "normal",
-            textTransform: "none",
-            display: "block",
-          }}
-        >
-          Coders
-        </Box>
-      </Typography>
+        <Grid item>
+          <SloCountyCodersLogoIcon fontSize={150} />
+        </Grid>
+        <Grid item>
+          <Typography
+            variant={
+              xsBreakpoint || smBreakpoint
+                ? "h3"
+                : mdBreakpoint || lgBreakpoint
+                ? "h2"
+                : "h1"
+            }
+            component="h1"
+            color="primary"
+            align="center"
+          >
+            <Box
+              component="span"
+              sx={{
+                textTransform: "none",
+              }}
+            >
+              SLO County{" "}
+            </Box>
+            <Box
+              component="span"
+              sx={{
+                fontFamily: theme.typography.fontFamily,
+                letterSpacing: "normal",
+                textTransform: "none",
+                display: "block",
+              }}
+            >
+              Coders
+            </Box>
+          </Typography>
+        </Grid>
+      </Grid>
     </Paper>
   );
 };
