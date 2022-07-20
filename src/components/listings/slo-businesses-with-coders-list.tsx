@@ -1,4 +1,5 @@
-import { Grid, Typography } from "@mui/material";
+import { Box, Grid, Typography } from "@mui/material";
+import { grey } from "@mui/material/colors";
 import { FC } from "react";
 import { businessesWithCoders } from "../../data/slo-businesses-with-coders";
 import { Link } from "../link";
@@ -9,84 +10,98 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 export const SloBusinessesWithCodersList: FC = () => {
   return (
-    <>
+    <Box
+      sx={{
+        borderBottom: `1px solid ${grey[500]}`,
+        height: "100%",
+      }}
+    >
       <Typography variant="h6" component="h4">
-        SLO County Businesses with Coders
+        SLO Companies
       </Typography>
-      <Typography variant="body2" component="p" mb={4}>
+      <Typography variant="body2" component="p" mb={2}>
         They have an office or headquarters in SLO county.
       </Typography>
-      <Grid container spacing={3}>
-        {Object.keys(businessesWithCoders)
-          .sort()
-          .map((key) => {
-            const {
-              displayName,
-              websiteUrl,
-              websiteDisplayName,
-              linkedInJobsUrl,
-              glassdoorReviewsUrl,
-              googleMapsLocations,
-            } = businessesWithCoders[key];
-            return (
-              <Grid item key={key} xs={12} lg={6} xl={4} data-testid={key}>
-                <Typography
-                  variant="body2"
-                  component="h5"
-                  sx={{
-                    fontWeight: (theme) => theme.typography.fontWeightRegular,
-                  }}
-                >
-                  {displayName}
-                </Typography>
-                <Typography variant="body1" component="p">
-                  <Link
-                    underline="hover"
-                    color="secondary"
-                    href={websiteUrl}
-                    target="_blank"
+      <Box
+        sx={{
+          borderTop: `1px solid ${grey[500]}`,
+          paddingTop: 2,
+          maxHeight: 500,
+          overflowY: "scroll",
+        }}
+      >
+        <Grid container spacing={3} pb={2}>
+          {Object.keys(businessesWithCoders)
+            .sort()
+            .map((key) => {
+              const {
+                displayName,
+                websiteUrl,
+                websiteDisplayName,
+                linkedInJobsUrl,
+                glassdoorReviewsUrl,
+                googleMapsLocations,
+              } = businessesWithCoders[key];
+              return (
+                <Grid item key={key} xs={12} lg={6} xl={4} data-testid={key}>
+                  <Typography
+                    variant="body2"
+                    component="h5"
+                    sx={{
+                      fontWeight: (theme) => theme.typography.fontWeightRegular,
+                    }}
                   >
-                    {websiteDisplayName ||
-                      websiteUrl
-                        .replace(/^https?:\/\//, "")
-                        .replace(/\/$/, "")
-                        .split("?")[0]}
-                  </Link>
-                </Typography>
-                {/* get better icons and use svgs and SvgIcon from MUI */}
-                {googleMapsLocations &&
-                  googleMapsLocations.map((googleMapsLocation) => (
+                    {displayName}
+                  </Typography>
+                  <Typography variant="body1" component="p">
+                    <Link
+                      underline="hover"
+                      color="secondary"
+                      href={websiteUrl}
+                      target="_blank"
+                    >
+                      {websiteDisplayName ||
+                        websiteUrl
+                          .replace(/^https?:\/\//, "")
+                          .replace(/\/$/, "")
+                          .split("?")[0]}
+                    </Link>
+                  </Typography>
+                  {/* get better icons and use svgs and SvgIcon from MUI */}
+                  {googleMapsLocations &&
+                    googleMapsLocations.map((googleMapsLocation) => (
+                      <LinkIcon
+                        key={websiteUrl}
+                        href={googleMapsLocation.googleMapsUrl}
+                        text={`${googleMapsLocation.cityName}`}
+                        fontSize={16}
+                        iconButtonSize="small"
+                        icon={<RoomIcon fontSize="inherit" color="inherit" />}
+                      />
+                    ))}
+                  {glassdoorReviewsUrl && (
                     <LinkIcon
-                      key={websiteUrl}
-                      href={googleMapsLocation.googleMapsUrl}
-                      text={`${googleMapsLocation.cityName}`}
+                      href={glassdoorReviewsUrl}
+                      text="Glassdoor Reviews"
                       fontSize={16}
                       iconButtonSize="small"
-                      icon={<RoomIcon fontSize="inherit" color="inherit" />}
+                      icon={<GlassdoorIcon fontSize={16} />}
                     />
-                  ))}
-                {glassdoorReviewsUrl && (
-                  <LinkIcon
-                    href={glassdoorReviewsUrl}
-                    text="Glassdoor Reviews"
-                    fontSize={16}
-                    iconButtonSize="small"
-                    icon={<GlassdoorIcon fontSize={16} />}
-                  />
-                )}
-                {linkedInJobsUrl && (
-                  <LinkIcon
-                    href={linkedInJobsUrl}
-                    text="LinkedIn Jobs"
-                    fontSize={16}
-                    iconButtonSize="small"
-                    icon={<LinkedInIcon fontSize="inherit" color="inherit" />}
-                  />
-                )}
-              </Grid>
-            );
-          })}
-      </Grid>
-    </>
+                  )}
+                  {linkedInJobsUrl && (
+                    <LinkIcon
+                      href={linkedInJobsUrl}
+                      text="LinkedIn Jobs"
+                      fontSize={16}
+                      iconButtonSize="small"
+                      icon={<LinkedInIcon fontSize="inherit" color="inherit" />}
+                    />
+                  )}
+                </Grid>
+              );
+            })}
+        </Grid>
+      </Box>
+    </Box>
   );
 };
