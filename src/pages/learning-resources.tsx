@@ -102,6 +102,7 @@ const LearningResourcesPage: NextPage = () => {
                 borderRadius: "10px",
                 color: "#000",
                 padding: 3,
+                height: "100%",
               }}
             >
               <OnlineLearningResourcesList />
@@ -114,6 +115,7 @@ const LearningResourcesPage: NextPage = () => {
                 borderRadius: "10px",
                 color: "#000",
                 padding: 3,
+                height: "100%",
               }}
             >
               <LocalLearningResourcesList />

@@ -111,6 +111,7 @@ const BusinessesWithCodersPage: NextPage = () => {
                 borderRadius: "10px",
                 color: "#000",
                 padding: 3,
+                height: "100%",
               }}
             >
               <SloBusinessesWithCodersList />
@@ -123,6 +124,8 @@ const BusinessesWithCodersPage: NextPage = () => {
                 borderRadius: "10px",
                 color: "#000",
                 padding: 3,
+                height: "100%",
+                height: "100%",
               }}
             >
               <BusinessesWithSloCodersList />
