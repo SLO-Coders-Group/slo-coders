@@ -2,7 +2,7 @@ import { Grid, Typography } from "@mui/material";
 import { FC } from "react";
 import { businessesWithCoders } from "../../data/slo-businesses-with-coders";
 import { Link } from "../link";
-import { LinkIcon } from "../icons/link-icon";
+import { LinkIcon } from "../link-icon";
 import RoomIcon from "@mui/icons-material/Room";
 import { GlassdoorIcon } from "../icons/glassdoor.icon";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";

@@ -1,7 +1,7 @@
 import { IconButton, darken, Typography } from "@mui/material";
 import { ReactElement } from "react";
-import { UrlType } from "../../data/data.types";
-import { Link } from "../link";
+import { UrlType } from "../data/data.types";
+import { Link } from "./link";
 
 export function LinkIcon({
   icon,

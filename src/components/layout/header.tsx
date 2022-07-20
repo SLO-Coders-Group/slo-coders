@@ -1,5 +1,13 @@
 import { FC } from "react";
-import { Box, Paper, Typography, useMediaQuery, useTheme } from "@mui/material";
+import {
+  Box,
+  Grid,
+  Paper,
+  Typography,
+  useMediaQuery,
+  useTheme,
+} from "@mui/material";
+import { SloCountyCodersLogoIcon } from "../icons/slo-county-coders-logo.icon";
 
 export const Header: FC = () => {
   const theme = useTheme();
@@ -29,38 +37,71 @@ export const Header: FC = () => {
         minWidth: 350,
       }}
     >
-      <Typography
-        variant={
+      <Grid
+        container
+        alignItems="center"
+        justifyContent="center"
+        columnSpacing={
           xsBreakpoint || smBreakpoint
-            ? "h3"
+            ? 3
             : mdBreakpoint || lgBreakpoint
-            ? "h2"
-            : "h1"
+            ? 5
+            : 7
         }
-        component="h1"
-        color="primary"
-        align="center"
+        rowSpacing={
+          xsBreakpoint || smBreakpoint
+            ? 1
+            : mdBreakpoint || lgBreakpoint
+            ? 2
+            : 3
+        }
       >
-        <Box
-          component="span"
-          sx={{
-            textTransform: "none",
-          }}
-        >
-          SLO County{" "}
-        </Box>
-        <Box
-          component="span"
-          sx={{
-            fontFamily: theme.typography.fontFamily,
-            letterSpacing: "normal",
-            textTransform: "none",
-            display: "block",
-          }}
-        >
-          Coders
-        </Box>
-      </Typography>
+        <Grid item>
+          <SloCountyCodersLogoIcon
+            fontSize={
+              xsBreakpoint || smBreakpoint
+                ? 120
+                : mdBreakpoint || lgBreakpoint
+                ? 150
+                : 180
+            }
+          />
+        </Grid>
+        <Grid item>
+          <Typography
+            variant={
+              xsBreakpoint || smBreakpoint
+                ? "h3"
+                : mdBreakpoint || lgBreakpoint
+                ? "h2"
+                : "h1"
+            }
+            component="h1"
+            color="primary"
+            align="center"
+          >
+            <Box
+              component="span"
+              sx={{
+                textTransform: "none",
+              }}
+            >
+              SLO County{" "}
+            </Box>
+            <Box
+              component="span"
+              sx={{
+                fontFamily: theme.typography.fontFamily,
+                letterSpacing: "normal",
+                textTransform: "none",
+                display: "block",
+              }}
+            >
+              Coders
+            </Box>
+          </Typography>
+        </Grid>
+      </Grid>
     </Paper>
   );
 };
