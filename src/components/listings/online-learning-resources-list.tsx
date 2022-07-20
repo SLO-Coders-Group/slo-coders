@@ -1,15 +1,18 @@
-import { Grid, Typography } from "@mui/material";
+import { Divider, Grid, Typography } from "@mui/material";
+import { grey } from "@mui/material/colors";
 import { FC } from "react";
+import { listContainerStyle } from ".";
 import { onlineLearningResources } from "../../data/online-learning-resources";
 import { Link } from "../link";
 
 export const OnlineLearningResourcesList: FC = () => {
   return (
     <>
-      <Typography variant="h6" component="h4" mb={4}>
-        Online Learning Resources
+      <Typography variant="h6" component="h4" mb={2} noWrap>
+        Online
       </Typography>
-      <Grid container spacing={3}>
+      <Divider variant="fullWidth" color={grey[400]} />
+      <Grid container spacing={3} mt={0} sx={listContainerStyle}>
         {Object.keys(onlineLearningResources)
           .sort()
           .map((key) => {
@@ -34,13 +37,14 @@ export const OnlineLearningResourcesList: FC = () => {
                         .split("?")[0]}
                   </Link>
                 </Typography>
-                <Typography variant="body2" component="p">
+                <Typography variant="body2" component="p" mb={2}>
                   {description}
                 </Typography>
               </Grid>
             );
           })}
       </Grid>
+      <Divider variant="fullWidth" color={grey[400]} />
     </>
   );
 };

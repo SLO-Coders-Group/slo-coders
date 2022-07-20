@@ -1,4 +1,5 @@
-import { Grid, Typography } from "@mui/material";
+import { Divider, Grid, Typography } from "@mui/material";
+import { grey } from "@mui/material/colors";
 import { FC } from "react";
 import { businessesWithCoders } from "../../data/slo-businesses-with-coders";
 import { Link } from "../link";
@@ -6,17 +7,19 @@ import { LinkIcon } from "../link-icon";
 import RoomIcon from "@mui/icons-material/Room";
 import { GlassdoorIcon } from "../icons/glassdoor.icon";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import { listContainerStyle } from ".";
 
 export const SloBusinessesWithCodersList: FC = () => {
   return (
     <>
-      <Typography variant="h6" component="h4">
-        SLO County Businesses with Coders
+      <Typography variant="h6" component="h4" noWrap>
+        SLO Companies
       </Typography>
-      <Typography variant="body2" component="p" mb={4}>
+      <Typography variant="body2" component="p" mb={2} noWrap>
         They have an office or headquarters in SLO county.
       </Typography>
-      <Grid container spacing={3}>
+      <Divider variant="fullWidth" color={grey[400]} />
+      <Grid container spacing={3} mt={0} sx={listContainerStyle}>
         {Object.keys(businessesWithCoders)
           .sort()
           .map((key) => {
@@ -87,6 +90,7 @@ export const SloBusinessesWithCodersList: FC = () => {
             );
           })}
       </Grid>
+      <Divider variant="fullWidth" color={grey[400]} />
     </>
   );
 };

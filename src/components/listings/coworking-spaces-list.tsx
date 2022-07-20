@@ -7,7 +7,15 @@ import RoomIcon from "@mui/icons-material/Room";
 
 export const CoworkingSpacesList: FC = () => {
   return (
-    <Grid container spacing={3}>
+    <Grid
+      container
+      spacing={3}
+      mt={0}
+      sx={{
+        maxHeight: 600,
+        overflowY: "scroll",
+      }}
+    >
       {Object.keys(coworkingSpaces)
         .sort()
         .map((key) => {
