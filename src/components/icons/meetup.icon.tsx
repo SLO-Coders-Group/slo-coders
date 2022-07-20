@@ -1,6 +1,6 @@
 import { SvgIcon } from "@mui/material";
 
-export function MeetupIcon({ fontSize = 29 }: { fontSize: number }) {
+export function MeetupIcon({ fontSize = 29 }: { fontSize?: number }) {
   return (
     <SvgIcon
       width={`${fontSize}px`}

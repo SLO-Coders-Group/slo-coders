@@ -2,7 +2,7 @@ import { Grid, Typography } from "@mui/material";
 import { FC } from "react";
 import { coworkingSpaces } from "../../data/coworking-spaces";
 import { Link } from "../link";
-import { LinkIcon } from "../icons/link-icon";
+import { LinkIcon } from "../link-icon";
 import RoomIcon from "@mui/icons-material/Room";
 
 export const CoworkingSpacesList: FC = () => {

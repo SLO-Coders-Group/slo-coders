@@ -1,6 +1,6 @@
 import { SvgIcon } from "@mui/material";
 
-export function GlassdoorIcon({ fontSize = 24 }: { fontSize: number }) {
+export function GlassdoorIcon({ fontSize = 24 }: { fontSize?: number }) {
   return (
     <SvgIcon
       width={`${fontSize}px`}
