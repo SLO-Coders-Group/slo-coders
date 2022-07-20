@@ -1,4 +1,4 @@
-import { IconButton, darken, Typography } from "@mui/material";
+import { IconButton, darken, Typography, SxProps } from "@mui/material";
 import { ReactElement } from "react";
 import { UrlType } from "../data/data.types";
 import { Link } from "./link";
@@ -9,12 +9,14 @@ export function LinkIcon({
   text,
   fontSize = 24,
   iconButtonSize = "medium",
+  sx,
 }: {
   icon: ReactElement;
   href: UrlType;
   text?: string;
   fontSize?: number;
   iconButtonSize?: "small" | "medium" | "large" | undefined;
+  sx?: SxProps;
 }) {
   return (
     <Link
@@ -36,6 +38,7 @@ export function LinkIcon({
             color: (theme) => theme.palette.common.white,
           },
         },
+        ...sx,
       }}
     >
       <IconButton

@@ -53,6 +53,7 @@ export const CoworkingSpacesList: FC = () => {
                     text={`${googleMapsLocations.cityName}`}
                     fontSize={16}
                     iconButtonSize="small"
+                    sx={{ marginBottom: 2 }}
                     icon={<RoomIcon fontSize="inherit" color="inherit" />}
                   />
                 ))}

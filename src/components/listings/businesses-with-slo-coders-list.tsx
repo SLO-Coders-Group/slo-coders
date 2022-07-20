@@ -69,6 +69,7 @@ export const BusinessesWithSloCodersList: FC = () => {
                     text="LinkedIn Jobs"
                     fontSize={16}
                     iconButtonSize="small"
+                    sx={{ marginBottom: 2 }}
                     icon={<LinkedInIcon fontSize="inherit" color="inherit" />}
                   />
                 )}

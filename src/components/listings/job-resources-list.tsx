@@ -23,7 +23,7 @@ export const JobResourcesList: FC = () => {
                 <Typography variant="body1" component="h5">
                   {displayName}
                 </Typography>
-                <Typography variant="body2" component="p">
+                <Typography variant="body2" component="p" mb={2}>
                   <Link
                     underline="hover"
                     color="secondary"
