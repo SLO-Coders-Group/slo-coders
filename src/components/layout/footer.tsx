@@ -153,6 +153,9 @@ export const Footer: FC = () => {
                 Application Programmer
               </ListItem>
               <ListItem dense sx={listItemStyle}>
+                Android Developer
+              </ListItem>
+              <ListItem dense sx={listItemStyle}>
                 Computer Programmer
               </ListItem>
               <ListItem dense sx={listItemStyle}>
