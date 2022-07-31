@@ -25,7 +25,7 @@ export type GlassdoorReviewUrlType =
 
 export type LinkedInJobsUrlType =
   | `https://www.linkedin.com/jobs/search/${string}`
-  | `https://www.linkedin.com/company/${string}/jobs/`;
+  | `https://www.linkedin.com/${"school" | "company"}/${string}/jobs/`;
 
 export type UrlType = `${"https" | "http"}://${string}`;
 
