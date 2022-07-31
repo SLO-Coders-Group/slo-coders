@@ -4,7 +4,7 @@ import {
   UrlType,
 } from "./data.types";
 
-https: type BusinessesWithCodersType = {
+type BusinessesWithCodersType = {
   displayName: string;
   websiteUrl: UrlType;
   websiteDisplayName?: string;
