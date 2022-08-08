@@ -103,7 +103,7 @@ const EventsPage: NextPage = () => {
             >
               When:{" "}
             </Box>
-            First Thursday of every month from 8 - 9am
+            First Thursday of every month from 7 - 8am
           </Typography>
           <Typography variant="body2" component="p" mb={1}>
             <Box
