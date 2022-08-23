@@ -2,6 +2,7 @@ import { Box, Grid, Typography } from "@mui/material";
 import { grey } from "@mui/material/colors";
 import { FC } from "react";
 import { jobResources } from "../../data/job-resources";
+import { scrollDivStyles } from "../../styles/theme";
 import { Link } from "../link";
 
 export const JobResourcesList: FC = () => {
@@ -15,14 +16,7 @@ export const JobResourcesList: FC = () => {
       <Typography variant="h6" component="h4" mb={2}>
         Job Resources
       </Typography>
-      <Box
-        sx={{
-          borderTop: `1px solid ${grey[500]}`,
-          paddingTop: 2,
-          maxHeight: 500,
-          overflowY: "scroll",
-        }}
-      >
+      <Box sx={scrollDivStyles}>
         <Grid container spacing={3} pb={2}>
           {Object.keys(jobResources)
             .sort()

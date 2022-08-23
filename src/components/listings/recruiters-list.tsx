@@ -5,6 +5,7 @@ import { recruiters } from "../../data/recruiters";
 import { Link } from "../link";
 import { LinkIcon } from "../link-icon";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import { scrollDivStyles } from "../../styles/theme";
 
 export const RecruitersList: FC = () => {
   return (
@@ -17,14 +18,7 @@ export const RecruitersList: FC = () => {
       <Typography variant="h6" component="h4" mb={2}>
         Recruiters
       </Typography>
-      <Box
-        sx={{
-          borderTop: `1px solid ${grey[500]}`,
-          paddingTop: 2,
-          maxHeight: 500,
-          overflowY: "scroll",
-        }}
-      >
+      <Box sx={scrollDivStyles}>
         <Grid container spacing={3} pb={2}>
           {Object.keys(recruiters)
             .sort()

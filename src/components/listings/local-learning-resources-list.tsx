@@ -2,6 +2,7 @@ import { Box, Grid, Typography } from "@mui/material";
 import { grey } from "@mui/material/colors";
 import { FC } from "react";
 import { localLearningResources } from "../../data/local-learning-resources";
+import { scrollDivStyles } from "../../styles/theme";
 import { Link } from "../link";
 
 export const LocalLearningResourcesList: FC = () => {
@@ -15,14 +16,7 @@ export const LocalLearningResourcesList: FC = () => {
       <Typography variant="h6" component="h4" mb={2}>
         Local
       </Typography>
-      <Box
-        sx={{
-          borderTop: `1px solid ${grey[500]}`,
-          paddingTop: 2,
-          maxHeight: 500,
-          overflowY: "scroll",
-        }}
-      >
+      <Box sx={scrollDivStyles}>
         <Grid container spacing={3} pb={2}>
           {Object.keys(localLearningResources)
             .sort()

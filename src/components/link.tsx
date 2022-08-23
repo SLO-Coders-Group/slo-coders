@@ -15,7 +15,10 @@ const Anchor = styled("a")({});
 
 interface NextLinkComposedProps
   extends Omit<AnchorHTMLAttributes<HTMLAnchorElement>, "href">,
-    Omit<NextLinkProps, "href" | "as" | "onClick" | "onMouseEnter"> {
+    Omit<
+      NextLinkProps,
+      "href" | "as" | "onClick" | "onMouseEnter" | "onTouchStart"
+    > {
   to: NextLinkProps["href"];
   linkAs?: NextLinkProps["as"];
 }
