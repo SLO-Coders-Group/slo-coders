@@ -6,6 +6,7 @@ import { Link } from "../link";
 import { LinkIcon } from "../link-icon";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { GlassdoorIcon } from "../icons/glassdoor.icon";
+import { scrollDivStyles } from "../../styles/theme";
 
 export const BusinessesWithSloCodersList: FC = () => {
   return (
@@ -21,14 +22,7 @@ export const BusinessesWithSloCodersList: FC = () => {
       <Typography variant="body2" component="p" mb={2}>
         They have coders that work in SLO county.
       </Typography>
-      <Box
-        sx={{
-          borderTop: `1px solid ${grey[500]}`,
-          paddingTop: 2,
-          maxHeight: 500,
-          overflowY: "scroll",
-        }}
-      >
+      <Box sx={scrollDivStyles}>
         <Grid container spacing={3} pb={2}>
           {Object.keys(businessesWithCoders)
             .sort()

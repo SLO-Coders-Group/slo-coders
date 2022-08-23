@@ -15,14 +15,7 @@ export const OnlineLearningResourcesList: FC = () => {
       <Typography variant="h6" component="h4" mb={2}>
         Online
       </Typography>
-      <Box
-        sx={{
-          borderTop: `1px solid ${grey[500]}`,
-          paddingTop: 2,
-          maxHeight: 500,
-          overflowY: "scroll",
-        }}
-      >
+      <Box sx={scrollDivStyles}>
         <Grid container spacing={3} pb={2}>
           {Object.keys(onlineLearningResources)
             .sort()
