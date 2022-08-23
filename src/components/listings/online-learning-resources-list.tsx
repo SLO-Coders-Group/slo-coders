@@ -2,6 +2,7 @@ import { Box, Grid, Typography } from "@mui/material";
 import { grey } from "@mui/material/colors";
 import { FC } from "react";
 import { onlineLearningResources } from "../../data/online-learning-resources";
+import { scrollDivStyles } from "../../styles/theme";
 import { Link } from "../link";
 
 export const OnlineLearningResourcesList: FC = () => {

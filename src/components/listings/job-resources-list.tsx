@@ -2,6 +2,7 @@ import { Box, Grid, Typography } from "@mui/material";
 import { grey } from "@mui/material/colors";
 import { FC } from "react";
 import { jobResources } from "../../data/job-resources";
+import { scrollDivStyles } from "../../styles/theme";
 import { Link } from "../link";
 
 export const JobResourcesList: FC = () => {

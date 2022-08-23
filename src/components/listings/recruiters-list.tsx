@@ -5,6 +5,7 @@ import { recruiters } from "../../data/recruiters";
 import { Link } from "../link";
 import { LinkIcon } from "../link-icon";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import { scrollDivStyles } from "../../styles/theme";
 
 export const RecruitersList: FC = () => {
   return (
