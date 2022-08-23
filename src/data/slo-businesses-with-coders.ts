@@ -83,7 +83,6 @@ export const businessesWithCoders: {
       },
     ],
   },
-
   roopairs: {
     websiteUrl: "https://www.roopairs.com/",
     displayName: "Roopairs",
@@ -95,7 +94,6 @@ export const businessesWithCoders: {
       },
     ],
   },
-
   publicisSapient: {
     websiteUrl: "https://www.publicissapient.com/",
     displayName: "Publicis Sapient",
@@ -109,7 +107,6 @@ export const businessesWithCoders: {
       },
     ],
   },
-
   postalIo: {
     websiteUrl: "https://postal.io/",
     displayName: "Postal.io",
@@ -123,7 +120,6 @@ export const businessesWithCoders: {
       },
     ],
   },
-
   mindbody: {
     websiteUrl: "https://www.mindbodyonline.com/",
     displayName: "Mindbody",
@@ -137,7 +133,6 @@ export const businessesWithCoders: {
       },
     ],
   },
-
   matchfire: {
     websiteUrl: "https://matchfire.com/",
     displayName: "Matchfire",
@@ -151,7 +146,6 @@ export const businessesWithCoders: {
       },
     ],
   },
-
   landGorilla: {
     websiteUrl: "https://landgorilla.com/",
     displayName: "Land Gorilla",
@@ -165,7 +159,6 @@ export const businessesWithCoders: {
       },
     ],
   },
-
   iFixit: {
     websiteUrl: "https://www.ifixit.com/",
     displayName: "iFixit",
@@ -179,7 +172,6 @@ export const businessesWithCoders: {
       },
     ],
   },
-
   hortau: {
     websiteUrl: "https://www.hortau.com/",
     displayName: "Hortau",
@@ -193,7 +185,6 @@ export const businessesWithCoders: {
       },
     ],
   },
-
   haptX: {
     websiteUrl: "https://haptx.com/",
     displayName: "HaptX",
@@ -201,7 +192,6 @@ export const businessesWithCoders: {
       "https://www.glassdoor.com/Reviews/HaptX-Reviews-E1040507.htm",
     linkedInJobsUrl: "https://www.linkedin.com/company/haptx/jobs/",
   },
-
   bounteous: {
     websiteUrl: "https://www.bounteous.com/",
     displayName: "Bounteous",
@@ -215,7 +205,6 @@ export const businessesWithCoders: {
       },
     ],
   },
-
   gaine: {
     websiteUrl: "https://www.gaine.com/",
     displayName: "Gaine",
@@ -230,7 +219,6 @@ export const businessesWithCoders: {
       },
     ],
   },
-
   flumeWater: {
     websiteUrl: "https://flumewater.com/",
     displayName: "Flume Water",
@@ -238,7 +226,6 @@ export const businessesWithCoders: {
       "https://www.glassdoor.com/Reviews/Flume-Water-Reviews-E2421543.htm",
     linkedInJobsUrl: "https://www.linkedin.com/company/flume-inc./jobs/",
   },
-
   etnaInteractive: {
     websiteUrl: "https://www.etnainteractive.com/",
     displayName: "Etna Interactive",
@@ -252,7 +239,6 @@ export const businessesWithCoders: {
       },
     ],
   },
-
   entegris: {
     websiteUrl: "https://www.entegris.com/",
     displayName: "Entegris",
@@ -266,13 +252,11 @@ export const businessesWithCoders: {
       },
     ],
   },
-
   empath: {
     websiteUrl: "https://empathunited.com/",
     displayName: "EMPATH",
     linkedInJobsUrl: "https://www.linkedin.com/company/empathunited/jobs/",
   },
-
   dozuki: {
     websiteUrl: "https://www.dozuki.com/",
     displayName: "Dozuki",
@@ -286,7 +270,6 @@ export const businessesWithCoders: {
       },
     ],
   },
-
   digitalMarketMedia: {
     websiteUrl: "https://www.digitalmarketmedia.com/",
     displayName: "Digital Market Media",
@@ -301,7 +284,6 @@ export const businessesWithCoders: {
       },
     ],
   },
-
   bishopPeakTechnology: {
     websiteUrl: "https://bishoppeak.com/",
     displayName: "Bishop Peak Technology",
@@ -316,7 +298,6 @@ export const businessesWithCoders: {
       },
     ],
   },
-
   amfMediaGroup: {
     websiteUrl: "https://www.amfmediagroup.com/",
     displayName: "AMF Media Group",
@@ -330,7 +311,6 @@ export const businessesWithCoders: {
       },
     ],
   },
-
   amazon: {
     websiteUrl:
       "https://www.amazon.jobs/en/locations/san-luis-obispo-california",
@@ -346,7 +326,6 @@ export const businessesWithCoders: {
       },
     ],
   },
-
   allPeople: {
     websiteUrl: "https://www.allpeople.co/",
     displayName: "AllPeople",
@@ -354,7 +333,6 @@ export const businessesWithCoders: {
       "https://www.glassdoor.com/Reviews/AllPeople-Marketplace-Reviews-E6850419.htm",
     linkedInJobsUrl: "https://www.linkedin.com/company/allpeople/jobs/",
   },
-
   edgeAutonomy: {
     websiteUrl: "https://edgeautonomy.io/",
     displayName: "Edge Autonomy",
@@ -396,6 +374,22 @@ export const businessesWithCoders: {
       {
         cityName: "San Luis Obispo",
         googleMapsUrl: "https://goo.gl/maps/r1uCCusLHyVk82st5",
+      },
+    ],
+  },
+  calPoly: {
+    displayName: "Cal Poly",
+    websiteDisplayName: "https://jobs.calpoly.edu/en-us/filter/...",
+    websiteUrl:
+      "https://jobs.calpoly.edu/en-us/filter/?search-keyword=&category=information%20systems%20%26%20technology",
+    glassdoorReviewsUrl:
+      "https://www.glassdoor.com/Reviews/CAL-POLY-Reviews-E32744.htm",
+    linkedInJobsUrl:
+      "https://www.linkedin.com/school/california-polytechnic-state-university-san-luis-o/jobs/",
+    googleMapsLocations: [
+      {
+        cityName: "San Luis Obispo",
+        googleMapsUrl: "https://goo.gl/maps/z2T7Vi66FepfRb3u7",
       },
     ],
   },
