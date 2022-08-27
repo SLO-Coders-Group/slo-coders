@@ -47,11 +47,6 @@ export const Navigation: FC = () => {
           flexWrap: "wrap",
         }}
       >
-        {/*
-          TODO: figure out a good way to add bullets in between links
-          but not have a hanging bullet when links wrap,
-          bullets would be the theme secondary color
-        */}
         <Typography
           variant={xsBreakpoint || smBreakpoint ? "h6" : "h5"}
           component="p"
