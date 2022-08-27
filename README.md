@@ -1,6 +1,6 @@
 # SLO County Coders
 
-## Hi! Thanks for being here :)
+## Hi! Thanks for being here :sunglasses:
 
 Please feel free to contribute!
 
@@ -36,4 +36,4 @@ Most of it has been built late when my kids are asleep and I can manage to still
 
 ## Credits
 
-Lenzi Erickson and SLO County Coders
+[Lenzi Erickson](https://www.linkedin.com/in/lenzierickson/) and [SLO County Coders](https://www.slocountycoders.com/)
