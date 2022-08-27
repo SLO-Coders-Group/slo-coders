@@ -15,6 +15,14 @@ type BusinessesWithCodersType = {
 export const businessesWithCoders: {
   [key in string]: BusinessesWithCodersType;
 } = {
+  costco: {
+    displayName: "Costco Wholesale",
+    websiteUrl: "https://www.costco.com/job-opportunities.html",
+    websiteDisplayName: "www.costco.com/job-opportunities...",
+    glassdoorReviewsUrl:
+      "https://www.glassdoor.com/Reviews/Costco-Wholesale-Reviews-E2590.htm",
+    linkedInJobsUrl: "https://www.linkedin.com/company/costco-wholesale/jobs/",
+  },
   instagram: {
     displayName: "Instagram (Meta)",
     websiteUrl: "https://about.instagram.com/about-us/careers",

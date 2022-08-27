@@ -434,7 +434,7 @@ export const businessesWithCoders: {
   },
   calPoly: {
     displayName: "Cal Poly",
-    websiteDisplayName: "https://jobs.calpoly.edu/en-us/filter/...",
+    websiteDisplayName: "jobs.calpoly.edu/en-us/filter/...",
     websiteUrl:
       "https://jobs.calpoly.edu/en-us/filter/?search-keyword=&category=information%20systems%20%26%20technology",
     glassdoorReviewsUrl:
