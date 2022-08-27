@@ -21,6 +21,61 @@ type BusinessesWithCodersType = {
 export const businessesWithCoders: {
   [key in string]: BusinessesWithCodersType;
 } = {
+  stellarExploration: {
+    displayName: "Stellar Exploration",
+    websiteUrl: "https://www.stellar-exploration.com/",
+    glassdoorReviewsUrl:
+      "https://www.glassdoor.com/Reviews/Stellar-Exploration-Reviews-E2387620.htm",
+    linkedInJobsUrl:
+      "https://www.linkedin.com/company/stellar-exploration-inc-/jobs/",
+    googleMapsLocations: [
+      {
+        cityName: "San Luis Obispo",
+        googleMapsUrl: "https://goo.gl/maps/a8pLAwGnvEm2bCV49",
+      },
+    ],
+  },
+  rantecPowerSystems: {
+    displayName: "Rantec Power Systems",
+    websiteUrl: "https://rantec.com/",
+    glassdoorReviewsUrl:
+      "https://www.glassdoor.com/Reviews/Rantec-Power-Systems-Reviews-E307287.htm",
+    linkedInJobsUrl:
+      "https://www.linkedin.com/company/rantecpowersystemsinc./jobs/",
+    googleMapsLocations: [
+      {
+        cityName: "Los Osos",
+        googleMapsUrl: "https://goo.gl/maps/fmsmzPrdXMwzo5HE8",
+      },
+    ],
+  },
+  dassaultSystemes: {
+    displayName: "Dassault Systemes",
+    websiteUrl: "https://www.3ds.com/",
+    glassdoorReviewsUrl:
+      "https://www.glassdoor.com/Reviews/Dassault-Systemes-Reviews-E6162.htm",
+    linkedInJobsUrl: "https://www.linkedin.com/company/dassaultsystemes/jobs/",
+    googleMapsLocations: [
+      {
+        cityName: "Paso Robles",
+        googleMapsUrl: "https://goo.gl/maps/oWcVdCUPkYdgYULH9",
+      },
+    ],
+  },
+  tapestrySolutions: {
+    displayName: "Tapestry Solutions",
+    websiteUrl: "https://www.tapestrysolutions.com/",
+    glassdoorReviewsUrl:
+      "https://www.glassdoor.com/Reviews/Tapestry-Solutions-Reviews-E107604.htm",
+    linkedInJobsUrl:
+      "https://www.linkedin.com/company/tapestry-solutions/jobs/",
+    googleMapsLocations: [
+      {
+        cityName: "San Luis Obispo",
+        googleMapsUrl: "https://goo.gl/maps/Fn7rXUb6tAEqmEx57",
+      },
+    ],
+  },
   whiteFoxDefense: {
     displayName: "WhiteFox Defense",
     websiteUrl: "https://www.whitefoxdefense.com/",

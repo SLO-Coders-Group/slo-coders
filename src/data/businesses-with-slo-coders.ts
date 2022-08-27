@@ -31,4 +31,11 @@ export const businessesWithCoders: {
     linkedInJobsUrl:
       "https://www.linkedin.com/company/stella-automotive-ai/jobs/",
   },
+  surePrep: {
+    displayName: "SurePrep",
+    websiteUrl: "https://corp.sureprep.com/",
+    glassdoorReviewsUrl:
+      "https://www.glassdoor.com/Reviews/SurePrep-Reviews-E355917.htm",
+    linkedInJobsUrl: "https://www.linkedin.com/company/sureprep-llc/jobs/",
+  },
 };
