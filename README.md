@@ -14,7 +14,7 @@ Most of it has been built late when my kids are asleep and I can manage to still
 
 1. Create an API in NextJS using the data in `src/data` and use that to pull in the data instead
    - [ ] create an API in NextJS based on the data in `src/data`
-     - use SSG for now (getStaticProps) so that it pulls the data on build
+     - [use SSG](https://nextjs.org/docs/basic-features/data-fetching/overview)
    - [ ] use the API to display the information on the page
 
 2. Display Glassdoor Ratings on Businesses page
@@ -23,6 +23,7 @@ Most of it has been built late when my kids are asleep and I can manage to still
      - probably use Cheerio?
        - https://cheerio.js.org/
        - https://nextjs-scraper-playground.vercel.app/
+       - [use SSG or ISR](https://nextjs.org/docs/basic-features/data-fetching/overview)
    - [ ] use the API to display the information on the page
 
 3. Create a jobs page that somehow pulls in any open coding jobs that are on LinkedIn for any of the businesses on our Businesses page
@@ -30,6 +31,7 @@ Most of it has been built late when my kids are asleep and I can manage to still
      - probably use Cheerio?
        - https://cheerio.js.org/
        - https://nextjs-scraper-playground.vercel.app/
+       - [use SSG or ISR](https://nextjs.org/docs/basic-features/data-fetching/overview)
    - [ ] use the API to display the information on the page
 
 ## Credits
