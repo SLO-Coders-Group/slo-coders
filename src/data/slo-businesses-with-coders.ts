@@ -21,6 +21,33 @@ type BusinessesWithCodersType = {
 export const businessesWithCoders: {
   [key in string]: BusinessesWithCodersType;
 } = {
+  scientificDrilling: {
+    displayName: "Scientific Drilling",
+    websiteUrl: "https://scientificdrilling.com/",
+    glassdoorReviewsUrl:
+      "https://www.glassdoor.com/Reviews/Scientific-Drilling-Reviews-E146679.htm",
+    linkedInJobsUrl:
+      "https://www.linkedin.com/company/scientific-drilling/jobs/",
+    googleMapsLocations: [
+      {
+        cityName: "Paso Robles",
+        googleMapsUrl: "https://goo.gl/maps/dCSRhFKAp5QEvNyC7",
+      },
+    ],
+  },
+  stand8: {
+    displayName: "Stand 8",
+    websiteUrl: "https://www.stand8.io/",
+    glassdoorReviewsUrl:
+      "https://www.glassdoor.com/Reviews/STAND-8-Reviews-E884340.htm",
+    linkedInJobsUrl: "https://www.linkedin.com/company/westand8/jobs/",
+    googleMapsLocations: [
+      {
+        cityName: "Morro Bay",
+        googleMapsUrl: "https://goo.gl/maps/86u96CKJ4XW7PSfs5",
+      },
+    ],
+  },
   stellarExploration: {
     displayName: "Stellar Exploration",
     websiteUrl: "https://www.stellar-exploration.com/",
