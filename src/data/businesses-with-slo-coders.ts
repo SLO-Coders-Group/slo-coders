@@ -15,6 +15,14 @@ type BusinessesWithCodersType = {
 export const businessesWithCoders: {
   [key in string]: BusinessesWithCodersType;
 } = {
+  akamai: {
+    displayName: "Akamai Technologies",
+    websiteUrl: "https://www.akamai.com/",
+    glassdoorReviewsUrl:
+      "https://www.glassdoor.com/Reviews/Akamai-Reviews-E9219.htm",
+    linkedInJobsUrl:
+      "https://www.linkedin.com/company/akamai-technologies/jobs/",
+  },
   costco: {
     displayName: "Costco Wholesale",
     websiteUrl: "https://www.costco.com/job-opportunities.html",
@@ -23,13 +31,12 @@ export const businessesWithCoders: {
       "https://www.glassdoor.com/Reviews/Costco-Wholesale-Reviews-E2590.htm",
     linkedInJobsUrl: "https://www.linkedin.com/company/costco-wholesale/jobs/",
   },
-  instagram: {
-    displayName: "Instagram (Meta)",
-    websiteUrl: "https://about.instagram.com/about-us/careers",
+  meta: {
+    displayName: "Meta",
+    websiteUrl: "https://www.metacareers.com/",
     glassdoorReviewsUrl:
-      "https://www.glassdoor.com/Reviews/Employee-Review-Meta-RVW9408902.htm",
-    linkedInJobsUrl:
-      "https://www.linkedin.com/jobs/search/?currentJobId=3168111817&f_C=2289109&geoId=92000000",
+      "https://www.glassdoor.com/Reviews/Meta-Reviews-E40772.htm",
+    linkedInJobsUrl: "https://www.linkedin.com/company/meta/jobs/",
   },
   stella: {
     displayName: "STELLA Automotive AI (Telepathy Labs)",
