@@ -70,7 +70,7 @@ const EventsPage: NextPage = () => {
               href="https://www.meetup.com/slo-county-coders/events/"
               target="_blank"
             >
-              SLO County Coders Meetup Events
+              Upcoming Events (Meetup.com)
             </Link>
           </Typography>
           <Typography variant="body2" component="p">
@@ -115,7 +115,7 @@ const EventsPage: NextPage = () => {
             >
               Where:{" "}
             </Box>
-            Field Day Coffee in SLO
+            San Luis Obispo
           </Typography>
           <Typography
             variant="body2"
@@ -123,12 +123,13 @@ const EventsPage: NextPage = () => {
             mb={1}
             sx={{ fontWeight: theme.typography.fontWeightRegular }}
           >
+            RSVP on Meetup.com for location details -{" "}
             <Link
               underline="hover"
-              href="https://www.meetup.com/slo-county-coders/events/287077776/"
+              href="https://www.meetup.com/slo-coders/events/288212202/"
               target="_blank"
             >
-              RSVP
+              Thursday, Oct 6
             </Link>
           </Typography>
           <Typography
@@ -167,7 +168,7 @@ const EventsPage: NextPage = () => {
             >
               Where:{" "}
             </Box>
-            StoryLabs in SLO
+            San Luis Obispo
           </Typography>
           <Typography
             variant="body2"
@@ -175,12 +176,13 @@ const EventsPage: NextPage = () => {
             mb={1}
             sx={{ fontWeight: theme.typography.fontWeightRegular }}
           >
+            RSVP on Meetup.com for location details -{" "}
             <Link
               underline="hover"
-              href="https://www.meetup.com/slo-county-coders/events/287078905/"
+              href="https://www.meetup.com/slo-coders/events/287078911/"
               target="_blank"
             >
-              RSVP
+              Monday, Sept 19
             </Link>
           </Typography>
           <Typography
