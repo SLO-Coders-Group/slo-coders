@@ -285,7 +285,7 @@ export const Footer: FC = () => {
             icon={<InstagramIcon color="inherit" fontSize="inherit" />}
           />
           <LinkIcon
-            href="https://www.meetup.com/slo-county-coders/"
+            href="https://www.meetup.com/slocountycoders/"
             icon={<MeetupIcon fontSize={24} />}
           />
         </Box>

@@ -67,7 +67,7 @@ const EventsPage: NextPage = () => {
           <Typography variant="h6" component="p" mb={4}>
             <Link
               underline="hover"
-              href="https://www.meetup.com/slo-county-coders/events/"
+              href="https://www.meetup.com/slocountycoders/events/"
               target="_blank"
             >
               Upcoming Events (Meetup.com)
@@ -126,7 +126,7 @@ const EventsPage: NextPage = () => {
             RSVP on Meetup.com for location details -{" "}
             <Link
               underline="hover"
-              href="https://www.meetup.com/slo-coders/events/288212202/"
+              href="https://www.meetup.com/slocountycoders/events/288212202/"
               target="_blank"
             >
               Thursday, Oct 6
@@ -179,10 +179,10 @@ const EventsPage: NextPage = () => {
             RSVP on Meetup.com for location details -{" "}
             <Link
               underline="hover"
-              href="https://www.meetup.com/slo-coders/events/287078911/"
+              href="https://www.meetup.com/slocountycoders/events/287078916/"
               target="_blank"
             >
-              Monday, Sept 19
+              Monday, Oct 17
             </Link>
           </Typography>
           <Typography

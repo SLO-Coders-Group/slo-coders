@@ -85,7 +85,7 @@ export const Navigation: FC = () => {
         >
           <Link
             color="inherit"
-            href="https://www.meetup.com/slo-coders/?action=join"
+            href="https://www.meetup.com/slocountycoders/?action=join"
             target="_blank"
             underline="hover"
             sx={{ whiteSpace: "nowrap" }}
