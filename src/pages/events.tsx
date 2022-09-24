@@ -74,12 +74,7 @@ const EventsPage: NextPage = () => {
             </Link>
           </Typography>
           <Typography variant="body2" component="p">
-            If you have any new ideas for events or would like to contribute in
-            some way, contact us at{" "}
-            <Link underline="hover" href="mailto:contact@slocountycoders.com">
-              contact@slocountycoders.com
-            </Link>
-            .
+            Members, if you have ideas for new events then let us know on Slack!
           </Typography>
         </Paper>
         <Paper
