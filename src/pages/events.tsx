@@ -130,11 +130,6 @@ const EventsPage: NextPage = () => {
           <Typography
             variant="body1"
             component="p"
-            mb={1}
-          >{`* We are considering moving this to Saturday mornings. Members, let us know your thoughts on Slack! (currently still on Thursdays)`}</Typography>
-          <Typography
-            variant="body1"
-            component="p"
             mb={4}
           >{`A very casual morning get-together where we enjoy each other's company and our favorite morning beverages. Fun conversation starters could be a coding challenge you are stuck on, a new technology that just came out, your favorite way to squeeze in exercise mid-week, etc.`}</Typography>
 
