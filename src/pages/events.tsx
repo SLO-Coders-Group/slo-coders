@@ -74,8 +74,15 @@ const EventsPage: NextPage = () => {
             </Link>
           </Typography>
           <Typography variant="body2" component="p">
-            Members, if you have ideas for new events then let us know on Slack!
-            If you are not a member, but would like to contribute in some way
+            Members, if you have ideas for new events then{" "}
+            <Link
+              underline="hover"
+              href="https://www.meetup.com/slocountycoders/discussions/6755397671812670/chat/"
+              target="_blank"
+            >
+              let us know on Slack
+            </Link>
+            ! If you are not a member, but would like to contribute in some way
             then email us at{" "}
             <Link underline="hover" href="mailto:contact@slocountycoders.com">
               contact@slocountycoders.com
