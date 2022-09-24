@@ -44,7 +44,7 @@ const CoworkingSpacesPage: NextPage = () => {
               px: 1.5,
             }}
           >
-            Coworking Spaces in San Luis Obispo County
+            Coworking Spaces in SLO
           </Box>
         </Typography>
         <Paper
@@ -57,10 +57,11 @@ const CoworkingSpacesPage: NextPage = () => {
           }}
         >
           <Typography variant="body1" component="p" mb={4}>
-            Do you work remote and need some interaction from someone that isn
-            &apos;t your cat? Or maybe you love your kids, but prefer not to
-            have them guest star in every Zoom meeting? Then try out one of our
-            fabulous co-working spaces here in SLO!
+            Do you work remote in San Luis Obispo County and need some
+            interaction from someone that isn &apos;t your cat? Or maybe you
+            love your kids, but prefer not to have them guest star in every Zoom
+            meeting? Then try out one of our fabulous co-working spaces here in
+            SLO!
           </Typography>
           <Typography variant="body2" component="p">
             If you would like to contribute new data, modify existing listings,

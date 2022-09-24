@@ -1,4 +1,4 @@
-import { Box, Grid, Typography } from "@mui/material";
+import { Box, Grid, Theme, Typography } from "@mui/material";
 import { grey } from "@mui/material/colors";
 import { FC } from "react";
 import { businessesWithCoders } from "../../data/slo-businesses-with-coders";
@@ -42,7 +42,8 @@ export const SloBusinessesWithCodersList: FC = () => {
                     variant="body2"
                     component="h5"
                     sx={{
-                      fontWeight: (theme) => theme.typography.fontWeightRegular,
+                      fontWeight: (theme: Theme) =>
+                        theme.typography.fontWeightRegular,
                     }}
                   >
                     {displayName}

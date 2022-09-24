@@ -52,7 +52,7 @@ const RecruitersAndJobsPage: NextPage = () => {
               px: 1.5,
             }}
           >
-            Recruiters and Jobs in San Luis Obispo County
+            Recruiters and Jobs in SLO
           </Box>
         </Typography>
         <Paper
@@ -65,10 +65,9 @@ const RecruitersAndJobsPage: NextPage = () => {
           }}
         >
           <Typography variant="body1" component="p" mb={4}>
-            Are you looking for some assistance finding your dream gig? Here is
-            a list of some recruiters that would love to help you find the
-            perfect fit along with some resources for finding coding jobs in
-            SLO.
+            Are you looking for some assistance finding your dream gig as a
+            coder in San Luis Obispo County? Here is a list of resources for
+            help finding coding jobs in SLO.
           </Typography>
           <Typography variant="body2" component="p">
             If you would like to contribute new data, modify existing listings,

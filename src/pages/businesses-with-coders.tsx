@@ -52,7 +52,7 @@ const BusinessesWithCodersPage: NextPage = () => {
               px: 1.5,
             }}
           >
-            Businesses with Coders in San Luis Obispo County
+            Businesses with Coders in SLO
           </Box>
         </Typography>
         <Paper
@@ -68,7 +68,7 @@ const BusinessesWithCodersPage: NextPage = () => {
             We love to help developers, engineers, coders, etc. find their
             perfect work home in our amazing San Luis Obispo county. Here is a
             compiled list of all businesses, that we know of, that have coders
-            in SLO county.
+            in SLO.
           </Typography>
           <Typography variant="body2" component="p">
             This page was inspired by{" "}
