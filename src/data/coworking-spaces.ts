@@ -50,7 +50,7 @@ export const coworkingSpaces: { [key in string]: CoworkingSpacesType } = {
     websiteUrl: "https://www.atascaderochamber.org/bridgeworks/",
     googleMapsLocations: [
       {
-        cityName: "San Luis Obispo",
+        cityName: "Atascadero",
         googleMapsUrl: "https://g.page/atascaderochamberofcommerce?share",
       },
     ],
