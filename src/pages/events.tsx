@@ -4,6 +4,7 @@ import { useTheme } from "@mui/material/styles";
 import Head from "next/head";
 import { Layout } from "../components/layout";
 import { Link } from "../components/link";
+import { Event } from "../components/event";
 
 const EventsPage: NextPage = () => {
   const theme = useTheme();
@@ -98,101 +99,24 @@ const EventsPage: NextPage = () => {
             padding: 3,
           }}
         >
-          <Typography variant="h6" component="h4" mb={0.5}>
-            Code &amp; Coffee
-          </Typography>
-          <Typography variant="body2" component="p" mb={0}>
-            <Box
-              component="span"
-              sx={{
-                display: "inline",
-                fontWeight: theme.typography.fontWeightRegular,
-              }}
-            >
-              When:{" "}
-            </Box>
-            First Thursday of every month from 8 am to 9 am
-          </Typography>
-          <Typography variant="body2" component="p" mb={1}>
-            <Box
-              component="span"
-              sx={{
-                display: "inline",
-                fontWeight: theme.typography.fontWeightRegular,
-              }}
-            >
-              Where:{" "}
-            </Box>
-            San Luis Obispo
-          </Typography>
-          <Typography
-            variant="body2"
-            component="p"
-            mb={1}
-            sx={{ fontWeight: theme.typography.fontWeightRegular }}
-          >
-            RSVP on Meetup.com for location details -{" "}
-            <Link
-              underline="hover"
-              href="https://www.meetup.com/slocountycoders/events/288212202/"
-              target="_blank"
-            >
-              Thursday, Oct 6
-            </Link>
-          </Typography>
-          <Typography
-            variant="body1"
-            component="p"
-            mb={4}
-          >{`A very casual morning get-together where we enjoy each other's company and our favorite morning beverages. Fun conversation starters could be a coding challenge you are stuck on, a new technology that just came out, your favorite way to squeeze in exercise mid-week, etc.`}</Typography>
-
-          <Typography component="p" variant="h6" mb={0.5}>
-            Shop Talk
-          </Typography>
-          <Typography variant="body2" component="p" mb={0}>
-            <Box
-              component="span"
-              sx={{
-                display: "inline",
-                fontWeight: theme.typography.fontWeightRegular,
-              }}
-            >
-              When:{" "}
-            </Box>
-            Third Monday of every month from 5 pm to 6:30 pm
-          </Typography>
-          <Typography variant="body2" component="p" mb={1}>
-            <Box
-              component="span"
-              sx={{
-                display: "inline",
-                fontWeight: theme.typography.fontWeightRegular,
-              }}
-            >
-              Where:{" "}
-            </Box>
-            San Luis Obispo
-          </Typography>
-          <Typography
-            variant="body2"
-            component="p"
-            mb={1}
-            sx={{ fontWeight: theme.typography.fontWeightRegular }}
-          >
-            RSVP on Meetup.com for location details -{" "}
-            <Link
-              underline="hover"
-              href="https://www.meetup.com/slocountycoders/events/287078916/"
-              target="_blank"
-            >
-              Monday, Oct 17
-            </Link>
-          </Typography>
-          <Typography
-            variant="body1"
-            component="p"
-            mb={4}
-          >{`A casual meet and greet where we get to talk shop with other developers and engineers. This gives us a chance to get to know each other, learn about new technologies, and get inspired for our next coding adventure.`}</Typography>
+          <Event
+            title="Coffee Break"
+            when="First Thursday of every month from 8 am to 9 am"
+            city="San Luis Obispo"
+            details="Coffee Break is a relaxing pre-work morning get-together where we enjoy good conversation, each other's company, and our favorite morning beverages. Fun conversation starters could be a coding bug you are stuck on, a new technology that just came out, your favorite way to get organized, etc."
+          />
+          <Event
+            title="Code &amp; Coffee"
+            when="Second Saturday of every month from 10 am to 11:30 am"
+            city="San Luis Obispo"
+            details="A very casual Saturday morning working session where we get together and code. Be inspired to work on a fun side project, learn some new skills, or get caught up at your day job."
+          />
+          <Event
+            title="Shop Talk"
+            when="Third Monday of every month from 5 pm to 6 pm"
+            city="San Luis Obispo"
+            details="Shop Talk is our nightly monthly gathering with a different topic or presentation each time. Afterwards there will be a general discussion, where we can “talk shop” and get to know each other."
+          />
         </Paper>
       </Layout>
     </>
