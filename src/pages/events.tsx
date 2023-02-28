@@ -78,7 +78,7 @@ const EventsPage: NextPage = () => {
             Members, if you have ideas for new events then{" "}
             <Link
               underline="hover"
-              href="https://www.meetup.com/slocountycoders/discussions/6755397671812670/chat/"
+              href="https://join.slack.com/t/slocountycoders/shared_invite/zt-1gk2bma5w-yQRXewjDdB0EO7Z510N9tQ"
               target="_blank"
             >
               let us know on Slack
@@ -110,12 +110,6 @@ const EventsPage: NextPage = () => {
             when="Second Saturday of every month from 10 am to 11:30 am"
             city="San Luis Obispo"
             details="A very casual Saturday morning working session where we get together and code. Be inspired to work on a fun side project, learn some new skills, or get caught up at your day job."
-          />
-          <Event
-            title="Shop Talk"
-            when="Third Monday of every month from 5 pm to 6 pm"
-            city="San Luis Obispo"
-            details="Shop Talk is our nightly monthly gathering with a different topic or presentation each time. Afterwards there will be a general discussion, where we can “talk shop” and get to know each other."
           />
         </Paper>
       </Layout>

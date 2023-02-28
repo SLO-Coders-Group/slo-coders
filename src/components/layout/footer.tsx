@@ -10,7 +10,7 @@ import {
 } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import { Link } from "../link";
-import InstagramIcon from "@mui/icons-material/Instagram";
+// import InstagramIcon from "@mui/icons-material/Instagram";
 import { MeetupIcon } from "../icons/meetup.icon";
 import { LinkIcon } from "../link-icon";
 
@@ -69,18 +69,6 @@ export const Footer: FC = () => {
           </Link>
           .
         </Typography>
-        <Link
-          underline="hover"
-          href="https://www.storylabs.work/"
-          target="_blank"
-        >
-          <Image
-            alt="StoryLabs"
-            src="/images/storylabs-logo.png"
-            width={255}
-            height={150}
-          />
-        </Link>
       </Box>
       <Box
         sx={{
@@ -245,7 +233,7 @@ export const Footer: FC = () => {
           </Grid>
         </Grid>
       </Box>
-      <Box
+      {/* <Box
         sx={{
           backgroundColor: theme.palette.common.white,
           width: "100%",
@@ -289,7 +277,7 @@ export const Footer: FC = () => {
             icon={<MeetupIcon fontSize={24} />}
           />
         </Box>
-      </Box>
+      </Box> */}
     </>
   );
 };

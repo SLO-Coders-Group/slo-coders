@@ -10,7 +10,7 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import { Layout } from "../components/layout";
 import { Link } from "../components/link";
-import { BusinessesWithSloCodersList } from "../components/listings/businesses-with-slo-coders-list";
+// import { BusinessesWithSloCodersList } from "../components/listings/businesses-with-slo-coders-list";
 import { SloBusinessesWithCodersList } from "../components/listings/slo-businesses-with-coders-list";
 
 const BusinessesWithCodersPage: NextPage = () => {
@@ -104,7 +104,7 @@ const BusinessesWithCodersPage: NextPage = () => {
           </Typography>
         </Paper>
         <Grid container spacing={2}>
-          <Grid item xs={12} lg={7} xl={8}>
+          <Grid item xs={12}>
             <Paper
               sx={{
                 backgroundColor: "#FFF",
@@ -115,19 +115,6 @@ const BusinessesWithCodersPage: NextPage = () => {
               }}
             >
               <SloBusinessesWithCodersList />
-            </Paper>
-          </Grid>
-          <Grid item xs={12} lg={5} xl={4}>
-            <Paper
-              sx={{
-                backgroundColor: "#FFF",
-                borderRadius: "10px",
-                color: "#000",
-                padding: 3,
-                height: "100%",
-              }}
-            >
-              <BusinessesWithSloCodersList />
             </Paper>
           </Grid>
         </Grid>
