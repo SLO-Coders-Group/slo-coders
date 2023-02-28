@@ -1,5 +1,5 @@
 import { FC } from "react";
-import Image from "next/image";
+// import Image from "next/image";
 import {
   Box,
   Grid,
@@ -11,8 +11,8 @@ import {
 import { useTheme } from "@mui/material/styles";
 import { Link } from "../link";
 // import InstagramIcon from "@mui/icons-material/Instagram";
-import { MeetupIcon } from "../icons/meetup.icon";
-import { LinkIcon } from "../link-icon";
+// import { MeetupIcon } from "../icons/meetup.icon";
+// import { LinkIcon } from "../link-icon";
 
 export const Footer: FC = () => {
   const theme = useTheme();
