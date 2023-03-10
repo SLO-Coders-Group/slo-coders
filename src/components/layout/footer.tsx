@@ -1,5 +1,5 @@
 import { FC } from "react";
-// import Image from "next/image";
+import Image from "next/image";
 import {
   Box,
   Grid,
@@ -47,7 +47,7 @@ export const Footer: FC = () => {
           component="p"
           color="primary"
           align="center"
-          mb={1}
+          mb={3}
         >
           <Box
             component="span"
@@ -62,7 +62,19 @@ export const Footer: FC = () => {
             Sponsors
           </Box>
         </Typography>
-        <Typography variant="body2" component="p" mb={6}>
+        <Link
+          underline="hover"
+          href="https://www.storylabs.work/"
+          target="_blank"
+        >
+          <Image
+            alt="StoryLabs"
+            src="/images/softec-logo.png"
+            width={255}
+            height={150}
+          />
+        </Link>
+        <Typography variant="body2" component="p" m={3}>
           Want to become a sponsor? Email us at{" "}
           <Link underline="hover" href="mailto:contact@slocountycoders.com">
             contact@slocountycoders.com
