@@ -58,12 +58,13 @@ const EventsPage: NextPage = () => {
           }}
         >
           <Typography variant="body1" component="p" mb={4}>
-            Are you hoping to get inspired for your next coding project, or chat
-            about the latest technologies? Then check out our upcoming events!
+            Are you hoping to meet some fellow SLO engineers, get inspired for
+            your next coding project, or chat about the latest technologies?
+            Then check out our upcoming events!
           </Typography>
           <Typography variant="body1" component="p">
-            For specific dates and more information on upcoming events, look at
-            the events tab on our SLO County Coders Meetup page:
+            For specific dates and more information, look at the events tab on
+            our SLO County Coders Meetup page:
           </Typography>
           <Typography variant="h6" component="p" mb={4}>
             <Link
