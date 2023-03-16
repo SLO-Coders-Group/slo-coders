@@ -108,7 +108,7 @@ const EventsPage: NextPage = () => {
           />
           <Event
             title="Code &amp; Coffee"
-            when="Second Saturday of every month from 10 am to 11:30 am"
+            when="Second Saturday of every month from 9:30 am to 11 am"
             city="San Luis Obispo"
             details="A very casual Saturday morning working session where we get together and code. Be inspired to work on a fun side project, learn some new skills, or get caught up at your day job."
           />
