@@ -4,6 +4,7 @@ import { useTheme } from "@mui/material/styles";
 import Head from "next/head";
 import { Layout } from "../components/layout";
 import { Link } from "../components/link";
+import { Event } from "../components/event";
 
 const HomePage: NextPage = () => {
   const theme = useTheme();
@@ -17,7 +18,7 @@ const HomePage: NextPage = () => {
         <meta
           key="description"
           name="description"
-          content="A group of coders living in SLO county. 🙂 Happy coders for a happy community."
+          content="A group of coders in San Luis Obispo county. 🙂 A community of coders, developers, and programmers gathering for friendship, support, fun, and inspiration."
         />
         <link
           key="canonical"
@@ -25,10 +26,13 @@ const HomePage: NextPage = () => {
           href="https://slocountycoders.com/"
         />
       </Head>
-      <Layout page="home">
+      <Layout
+        tagline="A group of coders in San Luis Obispo county"
+        link="Resources"
+      >
         <Typography
           variant={xsBreakpoint || smBreakpoint ? "h5" : "h4"}
-          component="h2"
+          component="h3"
           color="primary"
           align="center"
           mb={8}
@@ -108,29 +112,61 @@ const HomePage: NextPage = () => {
           }}
         >
           <Typography variant="body1" component="h4" mb={4}>
-            A group of coders living in SLO county. 🙂 Happy coders for a happy
-            community.
+            A community of coders, developers, and programmers gathering for
+            friendship, support, fun, and inspiration. 🙂 We love our beautiful
+            county and this wild and fun profession. We hope you&apos;ll join us
+            for the ride.
           </Typography>
-          <Typography variant="body1" component="p" mb={4}>
-            SLO County Coders is a group of programmers, developers, software
-            engineers, etc. who live and play in SLO county. We promote having a
-            healthy work/life balance to support ourselves and therefore our
-            community and industry. We hope to host a wide range of events that
-            brew inspiration and creativity and leave us ready to tackle our
-            next coding challenge.
+
+          <Typography
+            variant="h5"
+            component="p"
+            mb={4}
+            sx={{
+              width: "100%",
+              textAlign: "center",
+              fontWeight: "500",
+              color: "#eddbcc",
+            }}
+          >
+            {`</> </> </>`}
           </Typography>
-          <Typography variant="body1" component="p" mb={4}>
-            We welcome and love all kinds of coders regardless of skill level,
-            gender preference, race, skin color, religion, background,
-            schooling, disability, age, etc.
+
+          <Event
+            title="Shop Talk"
+            when="Third Monday of every month from 5:30 pm to 6:30 pm"
+            city="San Luis Obispo"
+            details="Shop Talk is our nightly monthly gathering with a different topic or presentation each time. Afterwards there will be a general discussion, where we can “talk shop” and get to know each other."
+          />
+          <Event
+            title="Code &amp; Coffee"
+            when="Second Saturday of every month from 9:30 am to 11 am"
+            city="San Luis Obispo"
+            details="A very casual Saturday morning working session where we get together and code. Be inspired to work on a fun side project, learn some new skills, or get caught up at your day job."
+          />
+          <Event
+            title="Coffee Break"
+            when="First Thursday of every month from 8 am to 9 am"
+            city="San Luis Obispo"
+            details="Coffee Break is a relaxing pre-work morning get-together where we enjoy good conversation, each other's company, and our favorite morning beverages. Fun conversation starters could be a coding bug you are stuck on, a new technology that just came out, your favorite way to get organized, etc."
+          />
+
+          <Typography
+            variant="h5"
+            component="p"
+            mb={4}
+            sx={{ width: "100%", textAlign: "center", color: "#eddbcc" }}
+          >
+            {`</> </> </>`}
           </Typography>
+
           <Typography variant="body2" component="p">
             If you share the drive and would like to contribute in some way or
-            provide feedback or event ideas. (Yay!) You can email us at{" "}
+            provide feedback or event ideas. (Yay! 🎉) You can email us at{" "}
             <Link underline="hover" href="mailto:contact@slocountycoders.com">
               contact@slocountycoders.com
-            </Link>
-            .
+            </Link>{" "}
+            or message us in our private Slack channel.
           </Typography>
         </Paper>
       </Layout>

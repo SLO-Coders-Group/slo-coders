@@ -1,20 +1,20 @@
 import { UrlType } from "./data.types";
 
-type LocalLearningResourcesType = {
+type LearningResourcesType = {
   displayName: string;
   websiteUrl: UrlType;
   websiteDisplayName?: string;
   description: string;
 };
 
-export const localLearningResources: {
-  [key in string]: LocalLearningResourcesType;
+export const learningResources: {
+  [key in string]: LearningResourcesType;
 } = {
   codeSlo: {
     displayName: "CodeSLO",
-    websiteUrl: "https://codeslo.com/",
+    websiteUrl: "https://www.meetup.com/codeslo/",
     description:
-      "CodeSLO is a local company that makes learning to code as  accessible as possible for the Central Coast and beyond and focuses on an inclusive model of coding instruction.",
+      "CodeSLO is on a mission to teach the Central Coast to code. They work in partnership with local tech companies and educational organizations to offer classes in software engineering and they specialize in teaching beginners.",
   },
   calPolySoftwareEngineering: {
     displayName: "Cal Poly Software Engineering",

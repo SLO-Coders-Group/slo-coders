@@ -1,16 +1,18 @@
 import { FC, ReactNode } from "react";
-import { Box, Paper, useMediaQuery } from "@mui/material";
+import { AppBar, Box, Paper, Typography, useMediaQuery } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import { Footer } from "./footer";
 import { Header } from "./header";
-import { Navigation } from "./navigation";
+import { Link } from "../link";
+// import { Navigation } from "./navigation";
 
 interface Props {
   children: ReactNode;
-  page: string;
+  link: "Resources" | "Home";
+  tagline: string;
 }
 
-export const Layout: FC<Props> = ({ children }) => {
+export const Layout: FC<Props> = ({ children, link, tagline }) => {
   const theme = useTheme();
 
   const xsBreakpoint = useMediaQuery(theme.breakpoints.only("xs"));
@@ -53,11 +55,32 @@ export const Layout: FC<Props> = ({ children }) => {
           // wrapper style - modified
           maxWidth: xsBreakpoint ? "100%" : smBreakpoint ? "85%" : "75%",
           mx: "auto",
-          minWidth: 350,
           width: "auto",
         }}
       >
-        <Navigation />
+        <AppBar
+          position="static"
+          sx={{
+            color: "#000",
+            background: "#FFF",
+            paddingX: 8,
+            paddingY: 2,
+          }}
+        >
+          <Typography
+            variant={
+              xsBreakpoint || smBreakpoint
+                ? "h6"
+                : mdBreakpoint || lgBreakpoint
+                ? "h5"
+                : "h4"
+            }
+            component="h2"
+            sx={{ width: "100%", textAlign: "center" }}
+          >
+            {tagline}
+          </Typography>
+        </AppBar>
       </Box>
       <Paper
         elevation={6}
@@ -79,6 +102,53 @@ export const Layout: FC<Props> = ({ children }) => {
       >
         {children}
       </Paper>
+
+      <Box
+        sx={{
+          flexGrow: 1,
+          mb: 2,
+          // wrapper style - modified
+          maxWidth: xsBreakpoint ? "100%" : smBreakpoint ? "85%" : "75%",
+          mx: "auto",
+          minWidth: 0,
+          width: "auto",
+        }}
+      >
+        <AppBar
+          position="static"
+          sx={{
+            color: "#000",
+            background: "#FFF",
+            paddingX: 8,
+            paddingY: 2,
+            marginBottom: 3,
+          }}
+        >
+          <Typography
+            variant={
+              xsBreakpoint || smBreakpoint
+                ? "h6"
+                : mdBreakpoint || lgBreakpoint
+                ? "h5"
+                : "h4"
+            }
+            component="h2"
+          >
+            🌴{" "}
+            {link === "Home" ? (
+              <Link href="/" underline="hover" color="secondary">
+                Back to SLO County Coders
+              </Link>
+            ) : (
+              <Link href="/resources" underline="hover" color="secondary">
+                Local resources
+              </Link>
+            )}{" "}
+            🌴
+          </Typography>
+        </AppBar>
+      </Box>
+
       <Footer />
     </Box>
   );
