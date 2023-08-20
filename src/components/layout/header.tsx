@@ -8,6 +8,7 @@ import {
   useTheme,
 } from "@mui/material";
 import { SloCountyCodersLogoIcon } from "../icons/slo-county-coders-logo.icon";
+import { Link } from "../link";
 
 export const Header: FC = () => {
   const theme = useTheme();
@@ -57,15 +58,17 @@ export const Header: FC = () => {
         }
       >
         <Grid item>
-          <SloCountyCodersLogoIcon
-            fontSize={
-              xsBreakpoint || smBreakpoint
-                ? 120
-                : mdBreakpoint || lgBreakpoint
-                ? 150
-                : 180
-            }
-          />
+          <Link href="/">
+            <SloCountyCodersLogoIcon
+              fontSize={
+                xsBreakpoint || smBreakpoint
+                  ? 120
+                  : mdBreakpoint || lgBreakpoint
+                  ? 150
+                  : 180
+              }
+            />
+          </Link>
         </Grid>
         <Grid item>
           <Typography
