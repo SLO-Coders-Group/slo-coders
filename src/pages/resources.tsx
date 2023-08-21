@@ -20,12 +20,12 @@ const LearningResourcesPage: NextPage = () => {
         <meta
           key="description"
           name="description"
-          content="Resources for coders in San Luis Obispo county 🙂 A community of coders, developers, and programmers gathering for friendship, support, fun, and inspiration."
+          content="Resources for coders in San Luis Obispo county - Businesses with Coders in SLO, Local learning Resources, Coworking Spaces, and Job Postings."
         />
         <link
           key="canonical"
           rel="canonical"
-          href="https://slocountycoders.com/learning-resources"
+          href="https://www.slocountycoders.com/resources"
         />
       </Head>
       <Layout

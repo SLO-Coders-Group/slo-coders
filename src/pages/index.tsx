@@ -18,12 +18,12 @@ const HomePage: NextPage = () => {
         <meta
           key="description"
           name="description"
-          content="A group of coders in San Luis Obispo county. 🙂 A community of coders, developers, and programmers gathering for friendship, support, fun, and inspiration."
+          content="A group of coders, developers, and programmers in San Luis Obispo county gathering for friendship, support, fun, and inspiration."
         />
         <link
           key="canonical"
           rel="canonical"
-          href="https://slocountycoders.com/"
+          href="https://www.slocountycoders.com/"
         />
       </Head>
       <Layout
