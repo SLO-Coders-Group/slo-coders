@@ -133,18 +133,23 @@ export const Layout: FC<Props> = ({ children, link, tagline }) => {
                 : "h4"
             }
             component="h2"
+            sx={{ width: "100%", textAlign: "center" }}
           >
-            🌴{" "}
+            <Box component="span" whiteSpace={"nowrap"}>
+              {"🌴 "}
+            </Box>
             {link === "Home" ? (
               <Link href="/" underline="hover" color="secondary">
-                Back to SLO County Coders
+                {"Back to SLO County Coders"}
               </Link>
             ) : (
               <Link href="/resources" underline="hover" color="secondary">
                 Local resources
               </Link>
-            )}{" "}
-            🌴
+            )}
+            <Box component="span" whiteSpace={"nowrap"}>
+              {" 🌴"}
+            </Box>
           </Typography>
         </AppBar>
       </Box>
