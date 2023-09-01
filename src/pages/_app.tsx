@@ -28,11 +28,6 @@ export default function MyApp(properties: MyAppProperties) {
     <CacheProvider value={emotionCache}>
       <Head>
         <title key="title">SLO County Coders</title>
-        <meta
-          key="description"
-          name="description"
-          content="A group of coders living in SLO county. 🙂 Happy coders for a happy community."
-        />
 
         <meta
           key="viewport"
