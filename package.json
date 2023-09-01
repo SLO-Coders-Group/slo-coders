@@ -2,6 +2,9 @@
   "name": "slo-coders",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "scripts": {
     "clean:modules": "rm -rf yarn.lock .yarn .pnp.cjs && git checkout .yarn && rm -rf .yarn/cache",
     "audit": "audit-ci --critical",
