@@ -96,4 +96,40 @@ export const jobPostings: {
       day: 2,
     }),
   },
+  calPolySoftwareEngineer: {
+    jobTitle: "Software Engineer",
+    companyOrCoderName: "Cal Poly",
+    url: "https://jobs.calpoly.edu/en-us/job/512565/software-engineer",
+    description:
+      "Cal Poly Information Technology Services has an open opportunity for Software Engineer. Come join our Application Engineering team as we continue our journey of modernizing our stack, migrating to AWS, and delivering excellent software products and services to our campus customers.",
+    datePosted: DateTime.fromObject({
+      year: 2023,
+      month: 7,
+      day: 25,
+    }),
+  },
+  calPolyBusinessIntelligenceEngineer: {
+    jobTitle: "Business Intelligence Engineer",
+    companyOrCoderName: "Cal Poly",
+    url: "https://jobs.calpoly.edu/en-us/job/529803/business-intelligence-engineer",
+    description:
+      "Join our team as a Business Intelligence Engineer and make a significant impact on our campus enterprise. In this role, you will design, develop, and maintain our data analytics platform, collaborating with stakeholders to determine requirements, perform data analysis, and create data pipelines. Key responsibilities include building and maintaining data sources, dashboards, and integrating applications with our computing infrastructure. Join us and drive our institution's data-driven decision-making.",
+    datePosted: DateTime.fromObject({
+      year: 2023,
+      month: 8,
+      day: 7,
+    }),
+  },
+  calEnterpriseApplicationsErpEngineerLead: {
+    jobTitle: "Enterprise Applications (ERP) Engineer - Lead",
+    companyOrCoderName: "Cal Poly",
+    url: "https://jobs.calpoly.edu/en-us/job/528544/enterprise-applications-erp-engineer-lead",
+    description:
+      "Join our team and take charge of designing, developing, and maintaining campus enterprise applications, with a focus on PeopleSoft. You'll lead the Enterprise Applications Engineering team, ensuring smooth operations, delivering excellent customer service, and managing projects and escalations. Your expertise in integrating applications with our computing infrastructure and managing critical systems will be crucial. Join us and make an impact today!",
+    datePosted: DateTime.fromObject({
+      year: 2023,
+      month: 6,
+      day: 21,
+    }),
+  },
 };
