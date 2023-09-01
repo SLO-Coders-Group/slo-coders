@@ -9,6 +9,7 @@ import theme from "../styles/theme";
 import createEmotionCache from "../components/create-emotion-cache";
 import "@fontsource/oswald";
 import "../styles/globals.css";
+import { Settings } from "luxon";
 
 // Client-side cache, shared for the whole session of the user in the browser.
 const clientSideEmotionCache = createEmotionCache();
@@ -63,3 +64,5 @@ export default function MyApp(properties: MyAppProperties) {
     </CacheProvider>
   );
 }
+
+Settings.defaultZone = "America/Los_Angeles";

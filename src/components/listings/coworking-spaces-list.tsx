@@ -24,15 +24,16 @@ export const CoworkingSpacesList: FC = () => {
 
       <Box sx={scrollDivStyles}>
         <Grid container spacing={3} pb={2}>
-          {Object.keys(coworkingSpaces)
-            .sort()
-            .map((key) => {
+          {Object.entries(coworkingSpaces)
+            .sort((a, b) => (a[1].displayName > b[1].displayName ? -1 : 1))
+            .map(([key, value]) => {
               const {
                 displayName,
                 websiteUrl,
                 websiteDisplayName,
                 googleMapsLocations,
-              } = coworkingSpaces[key];
+              } = value;
+
               return (
                 <Grid item key={key} xs={12} sm={6} md={4} xl={3}>
                   <Typography variant="body1" component="h4">
@@ -56,7 +57,7 @@ export const CoworkingSpacesList: FC = () => {
                   {googleMapsLocations &&
                     googleMapsLocations.map((googleMapsLocations) => (
                       <LinkIcon
-                        key={websiteUrl}
+                        key={`${key}-url`}
                         href={googleMapsLocations.googleMapsUrl}
                         text={`${googleMapsLocations.cityName}`}
                         fontSize={16}

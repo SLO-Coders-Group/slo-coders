@@ -1,3 +1,4 @@
+import { DateTime } from "luxon";
 import { Box, Grid, Typography } from "@mui/material";
 import { grey } from "@mui/material/colors";
 import { FC } from "react";
@@ -23,9 +24,13 @@ export const JobPostingsList: FC = () => {
       <Box sx={scrollDivStyles}>
         <Grid container spacing={3} pb={2}>
           {Object.keys(jobPostings).length > 0 ? (
-            Object.keys(jobPostings)
-              .sort()
-              .map((key) => {
+            Object.entries(jobPostings)
+              .sort(
+                (a, b) =>
+                  (b[1].datePosted?.toMillis() ?? 0) -
+                  (a[1].datePosted?.toMillis() ?? 0)
+              )
+              .map(([key]) => {
                 const {
                   companyOrCoderName,
                   jobTitle,
@@ -54,7 +59,21 @@ export const JobPostingsList: FC = () => {
                       </Link>
                     </Typography>
                     <Typography variant="body2" component="p">
-                      {datePosted} - {description}
+                      {datePosted && (
+                        <>
+                          <Typography
+                            variant="body2"
+                            color="primary.main"
+                            component="span"
+                          >
+                            {datePosted?.toLocaleString(
+                              DateTime.DATE_MED_WITH_WEEKDAY
+                            ) ?? "It's a mystery! "}
+                          </Typography>
+                          {" - "}
+                        </>
+                      )}
+                      {description}
                     </Typography>
                   </Grid>
                 );

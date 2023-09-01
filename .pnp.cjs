@@ -44,6 +44,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@testing-library/jest-dom", "npm:5.16.5"],\
             ["@testing-library/react", "virtual:38847eb7bdd5253f6f99e12f031c7de0ebb27a6285daa163bc7534844f235dfee8aa43d8cd25dcb7dbd8f30f93665d5a8f9bc3eba94527006f892d955718e6de#npm:13.4.0"],\
             ["@types/jest", "npm:29.0.0"],\
+            ["@types/luxon", "npm:3.3.2"],\
             ["@types/node", "npm:18.7.16"],\
             ["@types/prettier", "npm:2.7.0"],\
             ["@types/react", "npm:18.0.18"],\
@@ -62,6 +63,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["jest", "virtual:38847eb7bdd5253f6f99e12f031c7de0ebb27a6285daa163bc7534844f235dfee8aa43d8cd25dcb7dbd8f30f93665d5a8f9bc3eba94527006f892d955718e6de#npm:29.0.2"],\
             ["jest-environment-jsdom", "npm:29.0.2"],\
             ["jest-fetch-mock", "npm:3.0.3"],\
+            ["luxon", "npm:3.4.2"],\
             ["next", "virtual:38847eb7bdd5253f6f99e12f031c7de0ebb27a6285daa163bc7534844f235dfee8aa43d8cd25dcb7dbd8f30f93665d5a8f9bc3eba94527006f892d955718e6de#npm:12.2.5"],\
             ["prettier", "npm:2.7.1"],\
             ["react", "npm:18.2.0"],\
@@ -2275,6 +2277,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@types-json5-npm-0.0.29-f63a7916bd-e60b153664.zip/node_modules/@types/json5/",\
           "packageDependencies": [\
             ["@types/json5", "npm:0.0.29"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@types/luxon", [\
+        ["npm:3.3.2", {\
+          "packageLocation": "./.yarn/cache/@types-luxon-npm-3.3.2-50448fff51-b911113272.zip/node_modules/@types/luxon/",\
+          "packageDependencies": [\
+            ["@types/luxon", "npm:3.3.2"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -6449,6 +6460,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["luxon", [\
+        ["npm:3.4.2", {\
+          "packageLocation": "./.yarn/cache/luxon-npm-3.4.2-4241e9f066-efefdfaea9.zip/node_modules/luxon/",\
+          "packageDependencies": [\
+            ["luxon", "npm:3.4.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["lz-string", [\
         ["npm:1.4.4", {\
           "packageLocation": "./.yarn/cache/lz-string-npm-1.4.4-59a2091d3f-54e31238a6.zip/node_modules/lz-string/",\
@@ -7913,6 +7933,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@testing-library/jest-dom", "npm:5.16.5"],\
             ["@testing-library/react", "virtual:38847eb7bdd5253f6f99e12f031c7de0ebb27a6285daa163bc7534844f235dfee8aa43d8cd25dcb7dbd8f30f93665d5a8f9bc3eba94527006f892d955718e6de#npm:13.4.0"],\
             ["@types/jest", "npm:29.0.0"],\
+            ["@types/luxon", "npm:3.3.2"],\
             ["@types/node", "npm:18.7.16"],\
             ["@types/prettier", "npm:2.7.0"],\
             ["@types/react", "npm:18.0.18"],\
@@ -7931,6 +7952,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["jest", "virtual:38847eb7bdd5253f6f99e12f031c7de0ebb27a6285daa163bc7534844f235dfee8aa43d8cd25dcb7dbd8f30f93665d5a8f9bc3eba94527006f892d955718e6de#npm:29.0.2"],\
             ["jest-environment-jsdom", "npm:29.0.2"],\
             ["jest-fetch-mock", "npm:3.0.3"],\
+            ["luxon", "npm:3.4.2"],\
             ["next", "virtual:38847eb7bdd5253f6f99e12f031c7de0ebb27a6285daa163bc7534844f235dfee8aa43d8cd25dcb7dbd8f30f93665d5a8f9bc3eba94527006f892d955718e6de#npm:12.2.5"],\
             ["prettier", "npm:2.7.1"],\
             ["react", "npm:18.2.0"],\
