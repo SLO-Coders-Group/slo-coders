@@ -17,7 +17,11 @@ export const coworkingSpaces: { [key in string]: CoworkingSpacesType } = {
     googleMapsLocations: [
       {
         cityName: "San Luis Obispo",
-        googleMapsUrl: "https://goo.gl/maps/dqfcMJe7JxwPbUHr5",
+        googleMapsUrl: "https://goo.gl/maps/x6N32wjTsdx4JzRj8",
+      },
+      {
+        cityName: "San Luis Obispo",
+        googleMapsUrl: "https://goo.gl/maps/vCKEQPM2BxUQT2Cq6",
       },
       {
         cityName: "Atascadero",
