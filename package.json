@@ -2,6 +2,9 @@
   "name": "slo-coders",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "scripts": {
     "clean:modules": "rm -rf yarn.lock .yarn .pnp.cjs && git checkout .yarn && rm -rf .yarn/cache",
     "audit": "audit-ci --critical",
@@ -34,6 +37,7 @@
     "@types/jest": "~29.0.0",
     "clsx": "~1.2.1",
     "jest-fetch-mock": "~3.0.3",
+    "luxon": "~3.4.2",
     "next": "~12.2.5",
     "react": "~18.2.0",
     "react-dom": "~18.2.0"
@@ -41,6 +45,7 @@
   "devDependencies": {
     "@testing-library/jest-dom": "~5.16.5",
     "@testing-library/react": "~13.4.0",
+    "@types/luxon": "~3.3.2",
     "@types/node": "~18.7.16",
     "@types/prettier": "~2.7.0",
     "@types/react": "~18.0.18",

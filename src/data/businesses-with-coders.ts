@@ -475,4 +475,18 @@ export const businessesWithCoders: {
       },
     ],
   },
+  xano: {
+    displayName: "Xano.com",
+    websiteDisplayName: "xano.com",
+    websiteUrl: "https://www.xano.com/",
+    glassdoorReviewsUrl:
+      "https://www.glassdoor.com/Reviews/Xeno-Reviews-E1105905.htm",
+    linkedInJobsUrl: "https://www.linkedin.com/company/xano/jobs/",
+    googleMapsLocations: [
+      {
+        cityName: "San Luis Obispo",
+        googleMapsUrl: "https://goo.gl/maps/YKZbKsF4iuSd3aG66",
+      },
+    ],
+  },
 };
