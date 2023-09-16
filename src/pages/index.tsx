@@ -139,10 +139,10 @@ const HomePage: NextPage = () => {
             details="Shop Talk is our nightly monthly gathering with a different topic or presentation each time. Afterwards there will be a general discussion, where we can “talk shop” and get to know each other."
           />
           <Event
-            title="Code &amp; Coffee"
-            when="Second Saturday of every month from 9:30 am to 11 am"
+            title="Coding &amp; Coffee"
+            when="Second Saturday of every month from 10 am to 11:30 am"
             city="San Luis Obispo"
-            details="A very casual Saturday morning working session where we get together and code. Be inspired to work on a fun side project, learn some new skills, or get caught up at your day job."
+            details="A very casual Saturday morning working session where we get together to code and chat about code. Be inspired to work on a fun side project, or chat about some new skills you learned."
           />
           <Event
             title="Coffee Break"
