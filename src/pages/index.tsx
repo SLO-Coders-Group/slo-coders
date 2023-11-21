@@ -166,7 +166,8 @@ const HomePage: NextPage = () => {
             <Link underline="hover" href="mailto:contact@slocountycoders.com">
               contact@slocountycoders.com
             </Link>{" "}
-            or message us in our private Slack channel.
+            or message us on Discord (link is in the Meetup comments/discussion
+            section, email if you need help finding it!).
           </Typography>
         </Paper>
       </Layout>
