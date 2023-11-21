@@ -85,7 +85,6 @@ export const Navigation: FC = () => {
           sx={{ display: "inline-flex", position: "relative" }}
         >
           <Link
-            component={NextLink}
             color="inherit"
             href="https://www.meetup.com/slocountycoders/?action=join"
             target="_blank"

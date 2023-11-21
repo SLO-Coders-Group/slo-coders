@@ -4,7 +4,6 @@ import { grey } from "@mui/material/colors";
 import { FC } from "react";
 import { jobPostings } from "../../data/job-postings";
 import { scrollDivStyles } from "../../styles/theme";
-import NextLink from "next/link";
 
 export const JobPostingsList: FC = () => {
   return (
@@ -46,7 +45,6 @@ export const JobPostingsList: FC = () => {
                     </Typography>
                     <Typography variant="body2" component="p">
                       <Link
-                        component={NextLink}
                         underline="hover"
                         color="secondary"
                         href={url}

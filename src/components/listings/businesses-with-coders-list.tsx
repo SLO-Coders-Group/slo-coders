@@ -2,7 +2,6 @@ import { Box, Grid, Theme, Typography, Link } from "@mui/material";
 import { grey } from "@mui/material/colors";
 import { FC } from "react";
 import { businessesWithCoders } from "../../data/businesses-with-coders";
-import NextLink from "next/link";
 import { LinkIcon } from "../link-icon";
 import RoomIcon from "@mui/icons-material/Room";
 import { GlassdoorIcon } from "../icons/glassdoor.icon";
@@ -51,7 +50,6 @@ export const BusinessesWithCodersList: FC = () => {
                   </Typography>
                   <Typography variant="body1" component="p">
                     <Link
-                      component={NextLink}
                       underline="hover"
                       color="secondary"
                       href={websiteUrl}

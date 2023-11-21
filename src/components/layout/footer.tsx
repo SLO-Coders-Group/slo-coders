@@ -63,12 +63,7 @@ export const Footer: FC = () => {
             Sponsors
           </Box>
         </Typography>
-        <Link
-          component={NextLink}
-          underline="hover"
-          href="https://softec.org/"
-          target="_blank"
-        >
+        <Link underline="hover" href="https://softec.org/" target="_blank">
           <Image
             alt="Softec"
             src="/images/softec-logo.png"

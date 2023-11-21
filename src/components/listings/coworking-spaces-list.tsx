@@ -1,7 +1,6 @@
 import { Box, Grid, Typography, Link } from "@mui/material";
 import { FC } from "react";
 import { coworkingSpaces } from "../../data/coworking-spaces";
-import NextLink from "next/link";
 import { LinkIcon } from "../link-icon";
 import RoomIcon from "@mui/icons-material/Room";
 import { grey } from "@mui/material/colors";
@@ -41,7 +40,6 @@ export const CoworkingSpacesList: FC = () => {
                   </Typography>
                   <Typography variant="body2" component="p">
                     <Link
-                      component={NextLink}
                       underline="hover"
                       color="secondary"
                       href={websiteUrl}
