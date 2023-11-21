@@ -1,5 +1,4 @@
 import { Box, Link, Typography, useTheme } from "@mui/material";
-import NextLink from "next/link";
 
 type EventProps = {
   title: string;
@@ -48,7 +47,6 @@ export const Event = (props: EventProps) => {
         sx={{ fontWeight: theme.typography.fontWeightRegular }}
       >
         <Link
-          component={NextLink}
           underline="hover"
           href="https://www.meetup.com/slocountycoders/events/"
           target="_blank"

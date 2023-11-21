@@ -2,7 +2,7 @@
 
 ## Hi! Thanks for being here :sunglasses:
 
-**Please feel free to contribute by making any improvements! 🎉** It will be greatly appreciated. Email us at contact@slocountycoders.com, or message us on Discord if you need any help (link is in the Meetup comments/discussion section, email if you need help finding it!).
+**Please feel free to contribute by making any improvements! 🎉** It will be greatly appreciated. Email us at contact@slocountycoders.com, or message us on Discord if you need any help (link is in the [Meetup comments/discussion section](https://www.meetup.com/slocountycoders/#discussions-section), email if you need help finding it!).
 
 ### Dev Notes
 

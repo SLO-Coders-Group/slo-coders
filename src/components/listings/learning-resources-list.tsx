@@ -3,7 +3,6 @@ import { grey } from "@mui/material/colors";
 import { FC } from "react";
 import { learningResources } from "../../data/learning-resources";
 import { scrollDivStyles } from "../../styles/theme";
-import NextLink from "next/link";
 
 export const LearningResourcesList: FC = () => {
   return (
@@ -38,7 +37,6 @@ export const LearningResourcesList: FC = () => {
                   </Typography>
                   <Typography variant="body2" component="p">
                     <Link
-                      component={NextLink}
                       underline="hover"
                       color="secondary"
                       href={websiteUrl}
