@@ -1,9 +1,9 @@
-import { Typography, Paper, Box, useMediaQuery } from "@mui/material";
+import { Typography, Paper, Box, useMediaQuery, Link } from "@mui/material";
 import type { NextPage } from "next";
 import { useTheme } from "@mui/material/styles";
 import Head from "next/head";
 import { Layout } from "../components/layout";
-import { Link } from "../components/link";
+import NextLink from "next/link";
 import { Event } from "../components/event";
 
 const HomePage: NextPage = () => {
@@ -163,10 +163,15 @@ const HomePage: NextPage = () => {
           <Typography variant="body2" component="p">
             If you share the drive and would like to contribute in some way or
             provide feedback or event ideas. (Yay! 🎉) You can email us at{" "}
-            <Link underline="hover" href="mailto:contact@slocountycoders.com">
+            <Link
+              component={NextLink}
+              underline="hover"
+              href="mailto:contact@slocountycoders.com"
+            >
               contact@slocountycoders.com
             </Link>{" "}
-            or message us in our private Slack channel.
+            or message us on Discord (link is in the Meetup comments/discussion
+            section, email if you need help finding it!).
           </Typography>
         </Paper>
       </Layout>

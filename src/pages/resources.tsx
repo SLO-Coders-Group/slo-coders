@@ -1,8 +1,15 @@
-import { Box, Paper, Typography, useMediaQuery, useTheme } from "@mui/material";
+import {
+  Box,
+  Paper,
+  Typography,
+  useMediaQuery,
+  useTheme,
+  Link,
+} from "@mui/material";
 import type { NextPage } from "next";
 import Head from "next/head";
 import { Layout } from "../components/layout";
-import { Link } from "../components/link";
+import NextLink from "next/link";
 import { LearningResourcesList } from "../components/listings/learning-resources-list";
 import { BusinessesWithCodersList } from "../components/listings/businesses-with-coders-list";
 import { CoworkingSpacesList } from "../components/listings/coworking-spaces-list";
@@ -188,6 +195,7 @@ const LearningResourcesPage: NextPage = () => {
             If you would like to contribute new data, modify existing listings,
             or report a mistake, please{" "}
             <Link
+              component={NextLink}
               underline="hover"
               href="https://github.com/SLO-Coders-Group/slo-coders/tree/main/src/data"
               target="_blank"
@@ -196,10 +204,15 @@ const LearningResourcesPage: NextPage = () => {
             </Link>
             {", "}
             email us at{" "}
-            <Link underline="hover" href="mailto:contact@slocountycoders.com">
+            <Link
+              component={NextLink}
+              underline="hover"
+              href="mailto:contact@slocountycoders.com"
+            >
               contact@slocountycoders.com
             </Link>
-            , or message us in our private Slack channel.
+            , or message us on Discord (link is in the Meetup
+            comments/discussion section, email if you need help finding it!).
           </Typography>
         </Paper>
       </Layout>

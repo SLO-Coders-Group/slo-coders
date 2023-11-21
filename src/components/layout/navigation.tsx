@@ -7,7 +7,6 @@ import {
   Typography,
   useMediaQuery,
   useTheme,
-  Link as MuiLink,
   Link,
 } from "@mui/material";
 import NextLink from "next/link";
@@ -54,6 +53,7 @@ export const Navigation: FC = () => {
           sx={{ display: "inline-flex", position: "relative" }}
         >
           <Link
+            component={NextLink}
             underline="hover"
             sx={{ whiteSpace: "nowrap" }}
             color="inherit"
@@ -69,6 +69,7 @@ export const Navigation: FC = () => {
           sx={{ display: "inline-flex", position: "relative" }}
         >
           <Link
+            component={NextLink}
             color="inherit"
             href="/events"
             underline="hover"
@@ -84,6 +85,7 @@ export const Navigation: FC = () => {
           sx={{ display: "inline-flex", position: "relative" }}
         >
           <Link
+            component={NextLink}
             color="inherit"
             href="https://www.meetup.com/slocountycoders/?action=join"
             target="_blank"
@@ -99,14 +101,14 @@ export const Navigation: FC = () => {
           color="inherit"
           sx={{ display: "inline-flex", position: "relative" }}
         >
-          <MuiLink
+          <Link
             color="inherit"
             onClick={handleClick}
             underline="hover"
             sx={{ whiteSpace: "nowrap", cursor: "pointer" }}
           >
             Resources
-          </MuiLink>
+          </Link>
         </Typography>
         <Menu
           disableAutoFocusItem
@@ -123,15 +125,19 @@ export const Navigation: FC = () => {
           }}
         >
           <MenuItem onClick={handleClose}>
-            <NextLink href="/businesses-with-coders">
+            <Link component={NextLink} href="/businesses-with-coders">
               Businesses with Coders
-            </NextLink>
+            </Link>
           </MenuItem>
           <MenuItem onClick={handleClose}>
-            <NextLink href="/coworking-spaces">Coworking Spaces</NextLink>
+            <Link component={NextLink} href="/coworking-spaces">
+              Coworking Spaces
+            </Link>
           </MenuItem>
           <MenuItem onClick={handleClose}>
-            <NextLink href="/learning-resources">Learning Resources</NextLink>
+            <Link component={NextLink} href="/learning-resources">
+              Learning Resources
+            </Link>
           </MenuItem>
         </Menu>
       </Box>

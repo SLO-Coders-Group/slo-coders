@@ -7,9 +7,10 @@ import {
   ListItem,
   Typography,
   useMediaQuery,
+  Link,
 } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
-import { Link } from "../link";
+import NextLink from "next/link";
 // import InstagramIcon from "@mui/icons-material/Instagram";
 // import { MeetupIcon } from "../icons/meetup.icon";
 // import { LinkIcon } from "../link-icon";
@@ -62,7 +63,12 @@ export const Footer: FC = () => {
             Sponsors
           </Box>
         </Typography>
-        <Link underline="hover" href="https://softec.org/" target="_blank">
+        <Link
+          component={NextLink}
+          underline="hover"
+          href="https://softec.org/"
+          target="_blank"
+        >
           <Image
             alt="Softec"
             src="/images/softec-logo.png"
@@ -72,7 +78,11 @@ export const Footer: FC = () => {
         </Link>
         <Typography variant="body2" component="p" m={3}>
           Want to become a sponsor? Email us at{" "}
-          <Link underline="hover" href="mailto:contact@slocountycoders.com">
+          <Link
+            component={NextLink}
+            underline="hover"
+            href="mailto:contact@slocountycoders.com"
+          >
             contact@slocountycoders.com
           </Link>
           .
