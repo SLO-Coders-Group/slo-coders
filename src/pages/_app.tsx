@@ -7,7 +7,6 @@ import CssBaseline from "@mui/material/CssBaseline";
 import { CacheProvider, EmotionCache } from "@emotion/react";
 import theme from "../styles/theme";
 import createEmotionCache from "../components/create-emotion-cache";
-import "@fontsource/oswald";
 import "../styles/globals.css";
 import { Settings } from "luxon";
 

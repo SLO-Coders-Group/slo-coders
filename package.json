@@ -15,9 +15,7 @@
     "format:fix": "prettier --write .",
     "format:check": "prettier --check .",
     "type": "tsc --noEmit",
-    "validate": "yarn run validate:check",
-    "validate:check": "yarn run audit && yarn run format:check && yarn run lint && yarn run type && yarn run build",
-    "validate:fix": "yarn run audit && yarn run format:fix && yarn run lint && yarn run type && yarn run build"
+    "validate": "yarn run audit && yarn run format:fix && yarn run lint && yarn run type && yarn run build"
   },
   "packageManager": "yarn@4.0.2",
   "dependencies": {
@@ -25,8 +23,6 @@
     "@emotion/react": "~11.11.1",
     "@emotion/server": "~11.11.0",
     "@emotion/styled": "~11.11.0",
-    "@fontsource/fira-code": "~5.0.15",
-    "@fontsource/oswald": "~5.0.17",
     "@mui/icons-material": "~5.14.18",
     "@mui/material": "~5.14.18",
     "clsx": "~2.0.0",

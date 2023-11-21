@@ -1,5 +1,12 @@
 import { grey } from "@mui/material/colors";
 import { createTheme } from "@mui/material/styles";
+import { Oswald } from "next/font/google";
+import { Fira_Code } from "next/font/google";
+
+// If loading a variable font, you don't need to specify the font weight
+const oswald = Oswald({ subsets: ["latin"] });
+// If loading a variable font, you don't need to specify the font weight
+const firaCode = Fira_Code({ subsets: ["latin"] });
 
 export const scrollDivStyles = {
   borderTop: `1px solid ${grey[500]}`,
@@ -41,8 +48,8 @@ export const scrollDivStyles = {
 const primaryColor = "#F16E42";
 const secondaryColor = "#009476";
 
-const codeFont = `"Fira Code", monospace`;
-const sanSerifFont = `Oswald, Arial, Helvetica, sans-serif`;
+const codeFont = firaCode.style.fontFamily;
+const sanSerifFont = oswald.style.fontFamily;
 
 const black = "#000";
 

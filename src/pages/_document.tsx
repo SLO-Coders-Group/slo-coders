@@ -36,11 +36,6 @@ export default class MyDocument extends Document {
             href="favicon/favicon-16x16.png"
           />
           <link key="manifest" rel="manifest" href="favicon/site.webmanifest" />
-          <link
-            key="font"
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,700&display=swap"
-          />
           {/* Inject MUI styles first to match with the prepend: true configuration. */}
           {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
           {(this.props as any).emotionStyleTags}
