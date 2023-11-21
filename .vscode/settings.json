@@ -11,11 +11,5 @@
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
   "prettier.configPath": ".prettierrc",
-  "jestrunner.configPath": "jest.config.js",
-  "jestrunner.enableYarnPnpSupport": true,
-  "jestrunner.jestCommand": "yarn run test",
-  "jestrunner.yarnPnpCommand": "yarn-3.2.3.cjs",
-  "jest.showTerminalOnLaunch": true,
-  "jest.autoRun": "off",
   "prettier.prettierPath": "node_modules/prettier"
 }

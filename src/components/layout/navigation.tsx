@@ -102,7 +102,6 @@ export const Navigation: FC = () => {
           sx={{ display: "inline-flex", position: "relative" }}
         >
           <Link
-            component={NextLink}
             color="inherit"
             onClick={handleClick}
             underline="hover"
@@ -126,15 +125,19 @@ export const Navigation: FC = () => {
           }}
         >
           <MenuItem onClick={handleClose}>
-            <NextLink href="/businesses-with-coders">
+            <Link component={NextLink} href="/businesses-with-coders">
               Businesses with Coders
-            </NextLink>
+            </Link>
           </MenuItem>
           <MenuItem onClick={handleClose}>
-            <NextLink href="/coworking-spaces">Coworking Spaces</NextLink>
+            <Link component={NextLink} href="/coworking-spaces">
+              Coworking Spaces
+            </Link>
           </MenuItem>
           <MenuItem onClick={handleClose}>
-            <NextLink href="/learning-resources">Learning Resources</NextLink>
+            <Link component={NextLink} href="/learning-resources">
+              Learning Resources
+            </Link>
           </MenuItem>
         </Menu>
       </Box>
