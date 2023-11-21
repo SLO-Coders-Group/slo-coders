@@ -21,7 +21,7 @@
     "validate:check": "yarn run audit && yarn run format:check && yarn run lint && yarn run type && yarn run test && yarn run build",
     "validate:fix": "yarn run audit && yarn run format:fix && yarn run lint && yarn run type && yarn run test && yarn run build"
   },
-  "packageManager": "yarn@3.2.3",
+  "packageManager": "yarn@4.0.2",
   "dependencies": {
     "@emotion/cache": "~11.10.3",
     "@emotion/react": "~11.10.4",
