@@ -1,10 +1,10 @@
 import { DateTime } from "luxon";
-import { Box, Grid, Typography } from "@mui/material";
+import { Box, Grid, Typography, Link } from "@mui/material";
 import { grey } from "@mui/material/colors";
 import { FC } from "react";
 import { jobPostings } from "../../data/job-postings";
 import { scrollDivStyles } from "../../styles/theme";
-import { Link } from "../link";
+import NextLink from "next/link";
 
 export const JobPostingsList: FC = () => {
   return (
@@ -28,7 +28,7 @@ export const JobPostingsList: FC = () => {
               .sort(
                 (a, b) =>
                   (b[1].datePosted?.toMillis() ?? 0) -
-                  (a[1].datePosted?.toMillis() ?? 0)
+                  (a[1].datePosted?.toMillis() ?? 0),
               )
               .map(([key]) => {
                 const {
@@ -46,6 +46,7 @@ export const JobPostingsList: FC = () => {
                     </Typography>
                     <Typography variant="body2" component="p">
                       <Link
+                        component={NextLink}
                         underline="hover"
                         color="secondary"
                         href={url}
@@ -67,7 +68,7 @@ export const JobPostingsList: FC = () => {
                             component="span"
                           >
                             {datePosted?.toLocaleString(
-                              DateTime.DATE_MED_WITH_WEEKDAY
+                              DateTime.DATE_MED_WITH_WEEKDAY,
                             ) ?? "It's a mystery! "}
                           </Typography>
                           {" - "}

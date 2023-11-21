@@ -6,9 +6,10 @@ import {
   Typography,
   useMediaQuery,
   useTheme,
+  Link,
 } from "@mui/material";
 import { SloCountyCodersLogoIcon } from "../icons/slo-county-coders-logo.icon";
-import { Link } from "../link";
+import NextLink from "next/link";
 
 export const Header: FC = () => {
   const theme = useTheme();
@@ -27,8 +28,8 @@ export const Header: FC = () => {
           xsBreakpoint || smBreakpoint
             ? 2
             : mdBreakpoint || lgBreakpoint
-            ? 7
-            : 12,
+              ? 7
+              : 12,
         py: 3,
         mt: 6,
         mb: 2,
@@ -46,26 +47,26 @@ export const Header: FC = () => {
           xsBreakpoint || smBreakpoint
             ? 3
             : mdBreakpoint || lgBreakpoint
-            ? 5
-            : 7
+              ? 5
+              : 7
         }
         rowSpacing={
           xsBreakpoint || smBreakpoint
             ? 1
             : mdBreakpoint || lgBreakpoint
-            ? 2
-            : 3
+              ? 2
+              : 3
         }
       >
         <Grid item>
-          <Link href="/">
+          <Link href="/" component={NextLink}>
             <SloCountyCodersLogoIcon
               fontSize={
                 xsBreakpoint || smBreakpoint
                   ? 120
                   : mdBreakpoint || lgBreakpoint
-                  ? 150
-                  : 180
+                    ? 150
+                    : 180
               }
             />
           </Link>
@@ -76,8 +77,8 @@ export const Header: FC = () => {
               xsBreakpoint || smBreakpoint
                 ? "h3"
                 : mdBreakpoint || lgBreakpoint
-                ? "h2"
-                : "h1"
+                  ? "h2"
+                  : "h1"
             }
             component="h1"
             color="primary"

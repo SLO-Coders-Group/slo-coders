@@ -14,34 +14,34 @@ describe("test BusinessesWithCodersList", () => {
       expect(
         within(amazonSection).getByRole("link", {
           name: /www.amazon.jobs\/.../i,
-        })
+        }),
       ).toHaveAttribute(
         "href",
-        "https://www.amazon.jobs/en/locations/san-luis-obispo-california"
+        "https://www.amazon.jobs/en/locations/san-luis-obispo-california",
       );
 
       expect(
         within(amazonSection).getByRole("link", {
           name: /san luis obispo/i,
-        })
+        }),
       ).toHaveAttribute("href", "https://goo.gl/maps/y6827rKwnhNPpJ6m7");
 
       expect(
         within(amazonSection).getByRole("link", {
           name: /glassdoor reviews/i,
-        })
+        }),
       ).toHaveAttribute(
         "href",
-        "https://www.glassdoor.com/Reviews/Amazon-Reviews-E6036.htm"
+        "https://www.glassdoor.com/Reviews/Amazon-Reviews-E6036.htm",
       );
 
       expect(
         within(amazonSection).getByRole("link", {
           name: /linkedin jobs/i,
-        })
+        }),
       ).toHaveAttribute(
         "href",
-        "https://www.linkedin.com/company/amazon/jobs/"
+        "https://www.linkedin.com/company/amazon/jobs/",
       );
     }
   });

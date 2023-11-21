@@ -1,7 +1,7 @@
-import { IconButton, darken, Typography } from "@mui/material";
+import { IconButton, darken, Typography, Link } from "@mui/material";
 import { ReactElement } from "react";
 import { UrlType } from "../data/data.types";
-import { Link } from "./link";
+import NextLink from "next/link";
 
 export function LinkIcon({
   icon,
@@ -18,6 +18,7 @@ export function LinkIcon({
 }) {
   return (
     <Link
+      component={NextLink}
       underline="hover"
       href={href}
       target="_blank"

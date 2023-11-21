@@ -1,9 +1,16 @@
 import { FC, ReactNode } from "react";
-import { AppBar, Box, Paper, Typography, useMediaQuery } from "@mui/material";
+import {
+  AppBar,
+  Box,
+  Paper,
+  Typography,
+  useMediaQuery,
+  Link,
+} from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import { Footer } from "./footer";
 import { Header } from "./header";
-import { Link } from "../link";
+import NextLink from "next/link";
 // import { Navigation } from "./navigation";
 
 interface Props {
@@ -72,8 +79,8 @@ export const Layout: FC<Props> = ({ children, link, tagline }) => {
               xsBreakpoint || smBreakpoint
                 ? "h6"
                 : mdBreakpoint || lgBreakpoint
-                ? "h5"
-                : "h4"
+                  ? "h5"
+                  : "h4"
             }
             component="h2"
             sx={{ width: "100%", textAlign: "center" }}
@@ -90,8 +97,8 @@ export const Layout: FC<Props> = ({ children, link, tagline }) => {
             xsBreakpoint || smBreakpoint
               ? 2
               : mdBreakpoint || lgBreakpoint
-              ? 7
-              : 12,
+                ? 7
+                : 12,
           py: 10,
           mb: 6,
           // wrapper style
@@ -129,8 +136,8 @@ export const Layout: FC<Props> = ({ children, link, tagline }) => {
               xsBreakpoint || smBreakpoint
                 ? "h6"
                 : mdBreakpoint || lgBreakpoint
-                ? "h5"
-                : "h4"
+                  ? "h5"
+                  : "h4"
             }
             component="h2"
             sx={{ width: "100%", textAlign: "center" }}
@@ -139,11 +146,21 @@ export const Layout: FC<Props> = ({ children, link, tagline }) => {
               {"🌴 "}
             </Box>
             {link === "Home" ? (
-              <Link href="/" underline="hover" color="secondary">
+              <Link
+                component={NextLink}
+                href="/"
+                underline="hover"
+                color="secondary"
+              >
                 {"Back to SLO County Coders"}
               </Link>
             ) : (
-              <Link href="/resources" underline="hover" color="secondary">
+              <Link
+                component={NextLink}
+                href="/resources"
+                underline="hover"
+                color="secondary"
+              >
                 Local resources
               </Link>
             )}
