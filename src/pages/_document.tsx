@@ -3,38 +3,12 @@ import Document, { Html, Head, Main, NextScript } from "next/document";
 import createEmotionServer from "@emotion/server/create-instance";
 import theme from "../styles/theme";
 import createEmotionCache from "../components/create-emotion-cache";
-import Script from "next/script";
 
 export default class MyDocument extends Document {
   render() {
     return (
       <Html lang="en">
         <Head>
-          <Script
-            id="google-analytics-1"
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=G-8YH73YEWW4"
-          />
-          <Script id="google-analytics-2">
-            {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'G-8YH73YEWW4');
-          `}
-          </Script>
-
-          <Script id="google-tag-manager">
-            {`
-            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-            })(window,document,'script','dataLayer','GTM-PX4GG7CS');
-          `}
-          </Script>
-
           {/* PWA primary color */}
           <meta
             key="theme-color"
@@ -67,12 +41,6 @@ export default class MyDocument extends Document {
           {(this.props as any).emotionStyleTags}
         </Head>
         <body>
-          {`
-              <!-- Google Tag Manager (noscript) -->
-              <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PX4GG7CS"
-              height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-              <!-- End Google Tag Manager (noscript) -->
-            `}
           <Main />
           <NextScript />
         </body>
