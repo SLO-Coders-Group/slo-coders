@@ -1,5 +1,6 @@
 import * as React from "react";
 import Head from "next/head";
+import Script from "next/script";
 import { AppProps } from "next/app";
 import { ThemeProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
@@ -33,6 +34,22 @@ export default function MyApp(properties: MyAppProperties) {
           content="initial-scale=1, width=device-width"
         />
       </Head>
+
+      {/* Global site tag (gtag.js) - Google Analytics */}
+      <Script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-8YH73YEWW4"
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-8YH73YEWW4');
+        `}
+      </Script>
 
       <ThemeProvider theme={theme}>
         <CssBaseline />
