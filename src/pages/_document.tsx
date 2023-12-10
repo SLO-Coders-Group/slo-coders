@@ -11,6 +11,7 @@ export default class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
+          {/* google analytics */}
           <Script
             strategy="afterInteractive"
             id="google-analytics-1"
@@ -19,12 +20,22 @@ export default class MyDocument extends Document {
           />
           <Script strategy="afterInteractive" id="google-analytics-2">
             {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
 
-            gtag('config', 'G-8YH73YEWW4');
-          `}
+              gtag('config', 'G-8YH73YEWW4');
+            `}
+          </Script>
+
+          {/* google tag manager */}
+          <Script strategy="afterInteractive" id="google-analytics-2">
+            {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+              new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+              j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+              'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+              })(window,document,'script','dataLayer','GTM-PX4GG7CS');
+            `}
           </Script>
 
           {/* PWA primary color */}
