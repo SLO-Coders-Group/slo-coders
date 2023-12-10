@@ -11,7 +11,8 @@ export default class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          <Script strategy="afterInteractive"
+          <Script
+            strategy="afterInteractive"
             id="google-analytics-1"
             async
             src="https://www.googletagmanager.com/gtag/js?id=G-8YH73YEWW4"
