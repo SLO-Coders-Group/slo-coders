@@ -1,14 +1,32 @@
 import * as React from "react";
+import { GoogleTagManager } from "@next/third-parties/google";
 import Document, { Html, Head, Main, NextScript } from "next/document";
 import createEmotionServer from "@emotion/server/create-instance";
 import theme from "../styles/theme";
 import createEmotionCache from "../components/create-emotion-cache";
+import Script from "next/script";
 
 export default class MyDocument extends Document {
   render() {
     return (
       <Html lang="en">
         <Head>
+          <Script
+            strategy="afterInteractive"
+            id="google-analytics-1"
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-8YH73YEWW4"
+          />
+          <Script strategy="afterInteractive" id="google-analytics-2">
+            {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-8YH73YEWW4');
+          `}
+          </Script>
+
           {/* PWA primary color */}
           <meta
             key="theme-color"
@@ -41,6 +59,7 @@ export default class MyDocument extends Document {
           {(this.props as any).emotionStyleTags}
         </Head>
         <body>
+          <GoogleTagManager gtmId="GTM-PX4GG7CS" />
           <Main />
           <NextScript />
         </body>
