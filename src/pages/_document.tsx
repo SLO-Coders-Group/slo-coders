@@ -16,7 +16,7 @@ export function addStructuredData(page: "home" | "resources" = "home") {
           "image": ["https://www.slocountycoders.com/favicon/android-chrome-512x512.png"],
           "url": "https://www.slocountycoders.com/resources/",
           "logo": "https://www.slocountycoders.com/favicon/favicon-32x32.png",
-          "description": "A community of coders, developers, and programmers gathering for friendship, support, fun, and inspiration.",
+          "description": "Resources for coders in San Luis Obispo county - Businesses with Coders in SLO, Local learning Resources, Coworking Spaces, and Job Postings.",
           "email": "contact@slocountycoders.com"
         }`,
     };
@@ -67,12 +67,6 @@ export default class MyDocument extends Document {
               })(window,document,'script','dataLayer','GTM-PX4GG7CS');
             `}
           </Script>
-
-          <script
-            type="application/ld+json"
-            dangerouslySetInnerHTML={addStructuredData()}
-            key="product-jsonld"
-          />
 
           {/* PWA primary color */}
           <meta

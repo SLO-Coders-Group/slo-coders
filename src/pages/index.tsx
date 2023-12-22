@@ -5,6 +5,7 @@ import Head from "next/head";
 import { Layout } from "../components/layout";
 import NextLink from "next/link";
 import { Event } from "../components/event";
+import { addStructuredData } from "./_document";
 
 const HomePage: NextPage = () => {
   const theme = useTheme();
@@ -13,19 +14,38 @@ const HomePage: NextPage = () => {
 
   return (
     <>
-      <Head>
-        <title key="title">SLO County Coders</title>
-        <meta
-          key="description"
-          name="description"
-          content="A group of coders, developers, and programmers in San Luis Obispo county gathering for friendship, support, fun, and inspiration."
-        />
-        <link
-          key="canonical"
-          rel="canonical"
-          href="https://www.slocountycoders.com/"
-        />
-      </Head>
+    <Head>
+      <title key="title">
+        SLO County Coders | A group of coders in San Luis Obispo
+      </title>
+      <meta
+        key="og-title"
+        property="og:title"
+        content="A group of coders in San Luis Obispo"
+      />
+      <meta
+        key="description"
+        name="description"
+        content="A community of coders, developers, and programmers gathering for friendship, support, fun, and inspiration."
+      />
+      <meta
+        key="og-description"
+        property="og:description"
+        content="A community of coders, developers, and programmers gathering for friendship, support, fun, and inspiration."
+      />
+      <link
+        key="canonical"
+        rel="canonical"
+        href="https://www.slocountycoders.com/"
+      />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={addStructuredData("home")}
+        key="product-jsonld"
+      />
+    </Head>
+
       <Layout
         tagline="A group of coders in San Luis Obispo county"
         link="Resources"

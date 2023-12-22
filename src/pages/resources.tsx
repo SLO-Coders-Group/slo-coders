@@ -43,7 +43,7 @@ const LearningResourcesPage: NextPage = () => {
         <link
           key="canonical"
           rel="canonical"
-          href="https://www.slocountycoders.com/resources"
+          href="https://www.slocountycoders.com/resources/"
         />
 
         <script
