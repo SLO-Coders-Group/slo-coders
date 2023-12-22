@@ -6,7 +6,22 @@ import theme from "../styles/theme";
 import createEmotionCache from "../components/create-emotion-cache";
 import Script from "next/script";
 
-function addStructuredData() {
+export function addStructuredData(page: 'home' | 'resources' = 'home') {
+  if(page === 'resources') {
+    return {
+      __html: `{
+          "@context": "https://schema.org",
+          "@type": "Article",
+          "headline": "Resources for coders in San Luis Obispo county",
+          "image": ["https://www.slocountycoders.com/favicon/android-chrome-512x512.png"],
+          "url": "https://www.slocountycoders.com/resources/",
+          "logo": "https://www.slocountycoders.com/favicon/favicon-32x32.png",
+          "description": "A community of coders, developers, and programmers gathering for friendship, support, fun, and inspiration.",
+          "email": "contact@slocountycoders.com"
+        }`,
+    };
+  }
+
   return {
     __html: `{
         "@context": "https://schema.org",

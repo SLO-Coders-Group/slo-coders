@@ -14,6 +14,7 @@ import { LearningResourcesList } from "../components/listings/learning-resources
 import { BusinessesWithCodersList } from "../components/listings/businesses-with-coders-list";
 import { CoworkingSpacesList } from "../components/listings/coworking-spaces-list";
 import { JobPostingsList } from "../components/listings/job-postings-list";
+import { addStructuredData } from "./_document";
 
 const LearningResourcesPage: NextPage = () => {
   const theme = useTheme();
@@ -23,16 +24,32 @@ const LearningResourcesPage: NextPage = () => {
   return (
     <>
       <Head>
-        <title key="title">Resources • SLO County Coders</title>
+        <title key="title">Resources | SLO County Coders</title>
+        <meta
+        key="og-title"
+          property="og:title"
+          content="Resources for coders in San Luis Obispo county"
+        />
         <meta
           key="description"
           name="description"
           content="Resources for coders in San Luis Obispo county - Businesses with Coders in SLO, Local learning Resources, Coworking Spaces, and Job Postings."
         />
+        <meta
+        key="og-description"
+          property="og:description"
+          content="Businesses with Coders in SLO, Local learning Resources, Coworking Spaces, and Job Postings."
+        />
         <link
           key="canonical"
           rel="canonical"
           href="https://www.slocountycoders.com/resources"
+        />
+
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={addStructuredData('resources')}
+          key="product-jsonld"
         />
       </Head>
       <Layout

@@ -26,13 +26,15 @@ export default function MyApp(properties: MyAppProperties) {
     <CacheProvider value={emotionCache}>
       <Head>
         <title key="title">SLO County Coders | A group of coders in San Luis Obispo</title>
-        <meta property="og:site_name" content="SLO County Coders" />
+        <meta key="og-site-name" property="og:site_name" content="SLO County Coders" />
         <meta
+        key="og-title"
           property="og:title"
           content="A group of coders in San Luis Obispo"
         />
 
         <meta
+        key="og-image"
           property="og:image"
           content="https://www.slocountycoders.com/favicon/android-chrome-512x512.png"
         />
@@ -43,6 +45,7 @@ export default function MyApp(properties: MyAppProperties) {
           content="A community of coders, developers, and programmers gathering for friendship, support, fun, and inspiration."
         />
         <meta
+        key="og-description"
           property="og:description"
           content="A community of coders, developers, and programmers gathering for friendship, support, fun, and inspiration."
         />
@@ -53,7 +56,7 @@ export default function MyApp(properties: MyAppProperties) {
           content="initial-scale=1, width=device-width"
         />
 
-        <meta property="og:locale" content="en_US" />
+        <meta key="og-locale" property="og:locale" content="en_US" />
       </Head>
 
       <ThemeProvider theme={theme}>
