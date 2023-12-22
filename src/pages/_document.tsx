@@ -6,6 +6,21 @@ import theme from "../styles/theme";
 import createEmotionCache from "../components/create-emotion-cache";
 import Script from "next/script";
 
+function addStructuredData() {
+  return {
+    __html: `{
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "image": ["https://www.slocountycoders.com/favicon/android-chrome-512x512.png"],
+        "url": "https://www.slocountycoders.com/",
+        "logo": "https://www.slocountycoders.com/favicon/favicon-32x32.png",
+        "name": "SLO County Coders",
+        "description": "A community of coders, developers, and programmers gathering for friendship, support, fun, and inspiration.",
+        "email": "contact@slocountycoders.com"
+      }`,
+  };
+}
+
 export default class MyDocument extends Document {
   render() {
     return (
@@ -37,6 +52,12 @@ export default class MyDocument extends Document {
               })(window,document,'script','dataLayer','GTM-PX4GG7CS');
             `}
           </Script>
+
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={addStructuredData()}
+            key="product-jsonld"
+          />
 
           {/* PWA primary color */}
           <meta
