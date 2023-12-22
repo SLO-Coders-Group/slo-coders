@@ -6,8 +6,8 @@ import theme from "../styles/theme";
 import createEmotionCache from "../components/create-emotion-cache";
 import Script from "next/script";
 
-export function addStructuredData(page: 'home' | 'resources' = 'home') {
-  if(page === 'resources') {
+export function addStructuredData(page: "home" | "resources" = "home") {
+  if (page === "resources") {
     return {
       __html: `{
           "@context": "https://schema.org",

@@ -26,7 +26,7 @@ const LearningResourcesPage: NextPage = () => {
       <Head>
         <title key="title">Resources | SLO County Coders</title>
         <meta
-        key="og-title"
+          key="og-title"
           property="og:title"
           content="Resources for coders in San Luis Obispo county"
         />
@@ -36,7 +36,7 @@ const LearningResourcesPage: NextPage = () => {
           content="Resources for coders in San Luis Obispo county - Businesses with Coders in SLO, Local learning Resources, Coworking Spaces, and Job Postings."
         />
         <meta
-        key="og-description"
+          key="og-description"
           property="og:description"
           content="Businesses with Coders in SLO, Local learning Resources, Coworking Spaces, and Job Postings."
         />
@@ -48,7 +48,7 @@ const LearningResourcesPage: NextPage = () => {
 
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={addStructuredData('resources')}
+          dangerouslySetInnerHTML={addStructuredData("resources")}
           key="product-jsonld"
         />
       </Head>
