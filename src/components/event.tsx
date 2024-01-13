@@ -2,44 +2,32 @@ import { Box, Link, Typography, useTheme } from "@mui/material";
 
 type EventProps = {
   title: string;
-  when: string;
-  city: string;
+  when: string[];
   details: string;
 };
 
 export const Event = (props: EventProps) => {
   const theme = useTheme();
-  const { title, when, city, details } = props;
+  const { title, when, details } = props;
 
   return (
     <>
       <Typography variant="h6" component="h4" mb={0.5}>
         {title}
       </Typography>
-      <Typography variant="body2" component="p" mb={0}>
-        <Box
+
+{when.map((item, index) => (
+      <Typography variant="body2" component="p" mb={when.length-1 === index ? 1 : 0} key={item}>
+          <Box
           component="span"
           sx={{
             display: "inline",
-            fontWeight: theme.typography.fontWeightRegular,
+            // fontWeight: theme.typography.fontWeightRegular,
           }}
-        >
-          When:{" "}
-        </Box>
-        {when}
-      </Typography>
-      <Typography variant="body2" component="p" mb={1}>
-        <Box
-          component="span"
-          sx={{
-            display: "inline",
-            fontWeight: theme.typography.fontWeightRegular,
-          }}
-        >
-          Where:{" "}
-        </Box>
-        {city}
-      </Typography>
+        >{item}</Box>
+      </Typography>))}
+
+
       <Typography
         variant="body2"
         component="p"

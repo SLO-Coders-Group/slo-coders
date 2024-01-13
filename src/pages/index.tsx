@@ -14,37 +14,37 @@ const HomePage: NextPage = () => {
 
   return (
     <>
-    <Head>
-      <title key="title">
-        SLO County Coders | A group of coders in San Luis Obispo
-      </title>
-      <meta
-        key="og-title"
-        property="og:title"
-        content="A group of coders in San Luis Obispo"
-      />
-      <meta
-        key="description"
-        name="description"
-        content="A community of coders, developers, and programmers gathering for friendship, support, fun, and inspiration."
-      />
-      <meta
-        key="og-description"
-        property="og:description"
-        content="A community of coders, developers, and programmers gathering for friendship, support, fun, and inspiration."
-      />
-      <link
-        key="canonical"
-        rel="canonical"
-        href="https://www.slocountycoders.com/"
-      />
+      <Head>
+        <title key="title">
+          SLO County Coders | A group of coders in San Luis Obispo
+        </title>
+        <meta
+          key="og-title"
+          property="og:title"
+          content="A group of coders in San Luis Obispo"
+        />
+        <meta
+          key="description"
+          name="description"
+          content="A community of coders, developers, and programmers gathering for friendship, support, fun, and inspiration."
+        />
+        <meta
+          key="og-description"
+          property="og:description"
+          content="A community of coders, developers, and programmers gathering for friendship, support, fun, and inspiration."
+        />
+        <link
+          key="canonical"
+          rel="canonical"
+          href="https://www.slocountycoders.com/"
+        />
 
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={addStructuredData("home")}
-        key="product-jsonld"
-      />
-    </Head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={addStructuredData("home")}
+          key="product-jsonld"
+        />
+      </Head>
 
       <Layout
         tagline="A group of coders in San Luis Obispo county"
@@ -154,21 +154,16 @@ const HomePage: NextPage = () => {
 
           <Event
             title="Shop Talk"
-            when="Third Monday of every month from 5:30 pm to 6:30 pm"
-            city="San Luis Obispo"
-            details="Shop Talk is our nightly monthly gathering with a different topic or presentation each time. Afterwards there will be a general discussion, where we can “talk shop” and get to know each other."
+            when={["Third Monday of every month from 5:30 pm to 6:30 pm"]}
+            details="Shop Talk is a casual monthly gathering held after work, featuring a different topic or presentation each time. This allows us to 'talk shop' and foster meaningful discussions, building inspiration and connection."
           />
           <Event
             title="Code &amp; Coffee"
-            when="Second Saturday of every month from 10 am to 11:30 am"
-            city="San Luis Obispo"
-            details="A very casual Saturday morning working session where we get together to code and chat about code. Be inspired to work on a fun side project, or chat about some new skills you learned."
-          />
-          <Event
-            title="Coffee Break"
-            when="First Thursday of every month from 8 am to 9 am"
-            city="San Luis Obispo"
-            details="Coffee Break is a relaxing pre-work morning get-together where we enjoy good conversation, each other's company, and our favorite morning beverages. Fun conversation starters could be a coding bug you are stuck on, a new technology that just came out, your favorite way to get organized, etc."
+            when={[
+              "First Thursday of every month from 8 am to 9 am",
+              "Second Saturday of every month from 10 am to 11:30 am",
+            ]}
+            details="A very casual Saturday morning get-together where we chat about all things coding. Come mingle with some fellow developers while enjoying a morning beverage."
           />
 
           <Typography

@@ -163,7 +163,7 @@ const LearningResourcesPage: NextPage = () => {
           </Paper>
         </Box>
 
-        <Typography
+        {/* <Typography
           variant={xsBreakpoint || smBreakpoint ? "h5" : "h4"}
           component="h2"
           color="primary"
@@ -197,7 +197,7 @@ const LearningResourcesPage: NextPage = () => {
           >
             <JobPostingsList />
           </Paper>
-        </Box>
+        </Box> */}
 
         <Paper
           sx={{
