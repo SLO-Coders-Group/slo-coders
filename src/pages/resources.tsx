@@ -227,14 +227,7 @@ const LearningResourcesPage: NextPage = () => {
             >
               contact@slocountycoders.com
             </Link>
-            , or message us on Discord (link is in the{" "}
-            <Link
-              target="_blank"
-              href="https://www.meetup.com/slocountycoders/#discussions-section"
-            >
-              Meetup comments/discussion section
-            </Link>
-            , email if you need help finding it!).
+            .
           </Typography>
         </Paper>
       </Layout>
