@@ -13,7 +13,6 @@ import NextLink from "next/link";
 import { LearningResourcesList } from "../components/listings/learning-resources-list";
 import { BusinessesWithCodersList } from "../components/listings/businesses-with-coders-list";
 import { CoworkingSpacesList } from "../components/listings/coworking-spaces-list";
-import { JobPostingsList } from "../components/listings/job-postings-list";
 import { addStructuredData } from "./_document";
 
 const LearningResourcesPage: NextPage = () => {
@@ -163,42 +162,6 @@ const LearningResourcesPage: NextPage = () => {
           </Paper>
         </Box>
 
-        {/* <Typography
-          variant={xsBreakpoint || smBreakpoint ? "h5" : "h4"}
-          component="h2"
-          color="primary"
-          align="center"
-          mt={8}
-          mb={4}
-          sx={{
-            color: theme.palette.common.white,
-          }}
-        >
-          <Box
-            component="span"
-            sx={{
-              display: "inline-block",
-              borderBottom: `1px solid #eddbcc`,
-              px: 1.5,
-            }}
-          >
-            Job postings
-          </Box>
-        </Typography>
-        <Box>
-          <Paper
-            sx={{
-              backgroundColor: "#FFF",
-              borderRadius: "10px",
-              color: "#000",
-              padding: 3,
-              height: "100%",
-            }}
-          >
-            <JobPostingsList />
-          </Paper>
-        </Box> */}
-
         <Paper
           sx={{
             backgroundColor: "#FFF",
@@ -227,14 +190,7 @@ const LearningResourcesPage: NextPage = () => {
             >
               contact@slocountycoders.com
             </Link>
-            , or message us on Discord (link is in the{" "}
-            <Link
-              target="_blank"
-              href="https://www.meetup.com/slocountycoders/#discussions-section"
-            >
-              Meetup comments/discussion section
-            </Link>
-            , email if you need help finding it!).
+            .
           </Typography>
         </Paper>
       </Layout>

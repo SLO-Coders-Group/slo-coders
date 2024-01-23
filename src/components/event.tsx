@@ -16,17 +16,23 @@ export const Event = (props: EventProps) => {
         {title}
       </Typography>
 
-{when.map((item, index) => (
-      <Typography variant="body2" component="p" mb={when.length-1 === index ? 1 : 0} key={item}>
+      {when.map((item, index) => (
+        <Typography
+          variant="body2"
+          component="p"
+          mb={when.length - 1 === index ? 1 : 0}
+          key={item}
+        >
           <Box
-          component="span"
-          sx={{
-            display: "inline",
-            // fontWeight: theme.typography.fontWeightRegular,
-          }}
-        >{item}</Box>
-      </Typography>))}
-
+            component="span"
+            sx={{
+              display: "inline",
+            }}
+          >
+            &#11049;{item}
+          </Box>
+        </Typography>
+      ))}
 
       <Typography
         variant="body2"

@@ -31,4 +31,6 @@ export type UrlType = `${"https" | "http"}://${string}`;
 
 export type GoogleMapsUrl =
   | `https://goo.gl/maps/${string}`
-  | `https://g.page/${string}?share`;
+  | `https://g.page/${string}?share`
+  | `https://maps.app.goo.gl/${string}`
+  | `https://www.google.com/maps/place/${string}`;

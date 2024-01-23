@@ -21,6 +21,16 @@ export const coworkingSpaces: { [key in string]: CoworkingSpacesType } = {
       },
     ],
   },
+  officeHours: {
+    displayName: "Office Hours",
+    websiteUrl: "https://www.myofficehours.co/",
+    googleMapsLocations: [
+      {
+        cityName: "San Luis Obispo",
+        googleMapsUrl: "https://maps.app.goo.gl/dE2FKyifhKhsjE8n6",
+      },
+    ],
+  },
   theSandbox: {
     displayName: "THE SANDBOX",
     websiteUrl: "https://thesandboxpaso.com/",

@@ -176,23 +176,61 @@ const HomePage: NextPage = () => {
           </Typography>
 
           <Typography variant="body2" component="p">
-            If you share the drive and would like to contribute in some way or
-            provide feedback or event ideas. (Yay! 🎉) You can email us at{" "}
+            If you would like to contribute, offer feedback, or suggest event
+            ideas, feel free to reach out to us via email at{" "}
             <Link
               component={NextLink}
               underline="hover"
               href="mailto:contact@slocountycoders.com"
             >
               contact@slocountycoders.com
-            </Link>{" "}
-            or message us on Discord (link is in the{" "}
-            <Link
-              target="_blank"
-              href="https://www.meetup.com/slocountycoders/#discussions-section"
-            >
-              Meetup comments/discussion section
             </Link>
-            , email if you need help finding it!).
+            !
+          </Typography>
+        </Paper>
+
+        <Paper
+          id="contact"
+          sx={{
+            backgroundColor: "#FFF",
+            borderRadius: "10px",
+            color: "#000",
+            padding: 3,
+            mt: 8,
+          }}
+        >
+          <Typography variant="h6" component="h4" mb={1}>
+            Contact us on Discord
+          </Typography>
+
+          <Typography mb={0.5}>
+            We ❤️ our Discord community. It&apos;s a great place to share a dev
+            article or ask for coding help.
+          </Typography>
+          <Typography variant="body2" component="p">
+            Are you a coder?{" "}
+            <Link
+              underline="hover"
+              href="https://www.meetup.com/slocountycoders/#discussions-section"
+              target="_blank"
+            >
+              Get the Discord invite link from Meetup.
+            </Link>
+          </Typography>
+
+          <Typography variant="body2" component="p" mb={1}>
+            Not a coder?{" "}
+            <Link
+              underline="hover"
+              href="mailto:discord@slocountycoders.com"
+              target="_blank"
+            >
+              Send us a Discord message via email.
+            </Link>
+          </Typography>
+          <Typography>
+            Are you looking for a coder? Send an email message to our Discord
+            with all the details!
           </Typography>
         </Paper>
       </Layout>
