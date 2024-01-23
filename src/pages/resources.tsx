@@ -13,7 +13,6 @@ import NextLink from "next/link";
 import { LearningResourcesList } from "../components/listings/learning-resources-list";
 import { BusinessesWithCodersList } from "../components/listings/businesses-with-coders-list";
 import { CoworkingSpacesList } from "../components/listings/coworking-spaces-list";
-import { JobPostingsList } from "../components/listings/job-postings-list";
 import { addStructuredData } from "./_document";
 
 const LearningResourcesPage: NextPage = () => {
@@ -162,42 +161,6 @@ const LearningResourcesPage: NextPage = () => {
             <CoworkingSpacesList />
           </Paper>
         </Box>
-
-        {/* <Typography
-          variant={xsBreakpoint || smBreakpoint ? "h5" : "h4"}
-          component="h2"
-          color="primary"
-          align="center"
-          mt={8}
-          mb={4}
-          sx={{
-            color: theme.palette.common.white,
-          }}
-        >
-          <Box
-            component="span"
-            sx={{
-              display: "inline-block",
-              borderBottom: `1px solid #eddbcc`,
-              px: 1.5,
-            }}
-          >
-            Job postings
-          </Box>
-        </Typography>
-        <Box>
-          <Paper
-            sx={{
-              backgroundColor: "#FFF",
-              borderRadius: "10px",
-              color: "#000",
-              padding: 3,
-              height: "100%",
-            }}
-          >
-            <JobPostingsList />
-          </Paper>
-        </Box> */}
 
         <Paper
           sx={{

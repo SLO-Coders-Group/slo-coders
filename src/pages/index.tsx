@@ -190,7 +190,7 @@ const HomePage: NextPage = () => {
         </Paper>
 
         <Paper
-         id="contact"
+          id="contact"
           sx={{
             backgroundColor: "#FFF",
             borderRadius: "10px",
@@ -199,23 +199,28 @@ const HomePage: NextPage = () => {
             mt: 8,
           }}
         >
-        <Typography variant="h6" component="h4" mb={1}>
-          Contact us on Discord
-        </Typography>
+          <Typography variant="h6" component="h4" mb={1}>
+            Contact us on Discord
+          </Typography>
 
-        <Typography  mb={.5}>
-          We ❤️ our Discord community. It&apos;s a great place to share a dev article or ask for coding help.
-        </Typography>
-        <Typography variant="body2" component="p" >
-          Are you a coder? <Link
-            underline="hover"
-            href="https://www.meetup.com/slocountycoders/#discussions-section"
-            target="_blank"
-          >Get the Discord invite link from Meetup.</Link>
-        </Typography>
+          <Typography mb={0.5}>
+            We ❤️ our Discord community. It&apos;s a great place to share a dev
+            article or ask for coding help.
+          </Typography>
+          <Typography variant="body2" component="p">
+            Are you a coder?{" "}
+            <Link
+              underline="hover"
+              href="https://www.meetup.com/slocountycoders/#discussions-section"
+              target="_blank"
+            >
+              Get the Discord invite link from Meetup.
+            </Link>
+          </Typography>
 
           <Typography variant="body2" component="p" mb={1}>
-            Not a coder? <Link
+            Not a coder?{" "}
+            <Link
               underline="hover"
               href="mailto:discord@slocountycoders.com"
               target="_blank"
@@ -223,9 +228,10 @@ const HomePage: NextPage = () => {
               Send us a Discord message via email.
             </Link>
           </Typography>
-        <Typography  >
-         Are you looking for a coder? Send an email message to our Discord with all the details!
-        </Typography>
+          <Typography>
+            Are you looking for a coder? Send an email message to our Discord
+            with all the details!
+          </Typography>
         </Paper>
       </Layout>
     </>
