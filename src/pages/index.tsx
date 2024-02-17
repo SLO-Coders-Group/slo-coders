@@ -200,7 +200,7 @@ const HomePage: NextPage = () => {
           }}
         >
           <Typography variant="h6" component="h4" mb={1}>
-            Contact us on Discord
+            Connect
           </Typography>
 
           <Typography mb={0.5}>
@@ -214,8 +214,9 @@ const HomePage: NextPage = () => {
               href="https://www.meetup.com/slocountycoders/#discussions-section"
               target="_blank"
             >
-              Get the Discord invite link from Meetup.
-            </Link>
+              Get the invite link from Meetup
+            </Link>{" "}
+            (must be logged in), and join our Discord server!
           </Typography>
 
           <Typography variant="body2" component="p" mb={1}>
@@ -225,8 +226,9 @@ const HomePage: NextPage = () => {
               href="mailto:discord@slocountycoders.com"
               target="_blank"
             >
-              Send us a Discord message via email.
-            </Link>
+              Send an email to discord@slocountycoders.com
+            </Link>{" "}
+            and it will post an announcement to the group on our Discord server.
           </Typography>
           <Typography>
             Are you looking for a coder? Send an email message to our Discord

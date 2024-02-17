@@ -29,7 +29,7 @@ export const Event = (props: EventProps) => {
               display: "inline",
             }}
           >
-            &#11049;{item}
+            &#11049; {item}
           </Box>
         </Typography>
       ))}
