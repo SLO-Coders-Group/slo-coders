@@ -93,7 +93,7 @@ export const Header: FC = () => {
               sx={{
                 fontFamily: theme.typography.fontFamily,
                 letterSpacing: "normal",
-                display: "inline-block",
+                display: "block",
               }}
             >
               Coders
