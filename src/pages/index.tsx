@@ -200,39 +200,23 @@ const HomePage: NextPage = () => {
           }}
         >
           <Typography variant="h6" component="h4" mb={1}>
-            Connect
+            Connect on Discord
           </Typography>
 
           <Typography mb={0.5}>
-            We ❤️ our Discord community. It&apos;s a great place to share a dev
-            article or ask for coding help.
+            We ❤️ our Discord community! It&apos;s a great place to share a dev
+            article, ask for some coding advice, or ask about meeting for a coding session.
           </Typography>
           <Typography variant="body2" component="p">
-            Are you a coder?{" "}
+            Get{" "}
             <Link
               underline="hover"
               href="https://www.meetup.com/slocountycoders/#discussions-section"
               target="_blank"
             >
-              Get the invite link from Meetup
+              the invite link from Meetup
             </Link>{" "}
-            (must be logged in), and join our Discord server!
-          </Typography>
-
-          <Typography variant="body2" component="p" mb={1}>
-            Not a coder?{" "}
-            <Link
-              underline="hover"
-              href="mailto:discord@slocountycoders.com"
-              target="_blank"
-            >
-              Send an email to discord@slocountycoders.com
-            </Link>{" "}
-            and it will post an announcement to the group on our Discord server.
-          </Typography>
-          <Typography>
-            Are you looking for a coder? Send an email message to our Discord
-            with all the details!
+            (must be logged in).
           </Typography>
         </Paper>
       </Layout>

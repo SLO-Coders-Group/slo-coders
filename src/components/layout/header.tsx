@@ -83,22 +83,17 @@ export const Header: FC = () => {
             component="h1"
             color="primary"
             align="center"
+            sx={{
+              textTransform: "none",
+            }}
           >
-            <Box
-              component="span"
-              sx={{
-                textTransform: "none",
-              }}
-            >
-              SLO County{" "}
-            </Box>
+            SLO County
             <Box
               component="span"
               sx={{
                 fontFamily: theme.typography.fontFamily,
                 letterSpacing: "normal",
-                textTransform: "none",
-                display: "block",
+                display: "inline-block",
               }}
             >
               Coders
