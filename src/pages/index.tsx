@@ -205,7 +205,8 @@ const HomePage: NextPage = () => {
 
           <Typography mb={0.5}>
             We ❤️ our Discord community! It&apos;s a great place to share a dev
-            article, ask for some coding advice, or ask about meeting for a coding session.
+            article, ask for some coding advice, or ask about meeting for a
+            coding session.
           </Typography>
           <Typography variant="body2" component="p">
             Get{" "}
