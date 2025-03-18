@@ -489,4 +489,18 @@ export const businessesWithCoders: {
       },
     ],
   },
+  milcgroup: {
+    displayName: "Milc Group",
+    websiteDisplayName: "milcgroup.com",
+    websiteUrl: "https://www.milcgroup.com/",
+    glassdoorReviewsUrl:
+      "https://www.glassdoor.com/Reviews/Milc-Group-Reviews-E7021268.htm",
+    linkedInJobsUrl: "https://www.linkedin.com/company/milcgroup/jobs/",
+    googleMapsLocations: [
+      {
+        cityName: "San Luis Obispo",
+        googleMapsUrl: "https://maps.app.goo.gl/MimhdRnP12dtB2HY9",
+      },
+    ],
+  },
 };
