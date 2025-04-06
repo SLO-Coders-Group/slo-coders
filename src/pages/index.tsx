@@ -153,16 +153,21 @@ const HomePage: NextPage = () => {
           </Typography>
 
           <Event
-            title="Shop Talk"
-            when={["Third Monday of every month from 5:30 pm to 6:30 pm"]}
-            details="Shop Talk is a casual monthly gathering held after work, featuring a different topic or presentation each time. This allows us to 'talk shop' and foster meaningful discussions, building inspiration and connection."
+            title="Coders &amp; Coffee"
+            day={"Second Saturday"}
+            time={"9:30 am to 10:30 am"}
+            details="A very casual Saturday morning get-together where we chat about all things coding. Come mingle with some fellow developers while enjoying a morning beverage."
           />
           <Event
-            title="Code &amp; Coffee"
-            when={[
-              "First Thursday of every month from 8 am to 9 am",
-              "Second Saturday of every month from 10 am to 11:30 am",
-            ]}
+            title="Shop Talk"
+            day={"Third Monday"}
+            time={"5:30 pm to 6:30 pm"}
+            details="An informal monthly meetup in a conference room where we 'talk shop' about all things coding. It's a great chance to connect with fellow developers in SLO. Whether you're a beginner or pro, everyone is welcome to join the conversation and share their experiences."
+          />
+          <Event
+            title="Coders &amp; Coffee"
+            day={"Fourth Friday"}
+            time={"8 am to 9 am"}
             details="A very casual Saturday morning get-together where we chat about all things coding. Come mingle with some fellow developers while enjoying a morning beverage."
           />
 
@@ -176,16 +181,15 @@ const HomePage: NextPage = () => {
           </Typography>
 
           <Typography variant="body2" component="p">
-            If you would like to contribute, offer feedback, or suggest event
-            ideas, feel free to reach out to us via email at{" "}
-            <Link
-              component={NextLink}
-              underline="hover"
-              href="mailto:contact@slocountycoders.com"
-            >
-              contact@slocountycoders.com
+            Stay updated, so you never miss out on an event. Subscribe to our
+            calendar to see all the events right on your device:{" "}
+            <Link href="https://calendar.google.com/calendar/ical/contact%40slocountycoders.com/public/basic.ics">
+              iCal
+            </Link>{" "}
+            or{" "}
+            <Link href="https://calendar.google.com/calendar/embed?src=contact%40slocountycoders.com&ctz=America%2FLos_Angeles">
+              Google Calendar
             </Link>
-            !
           </Typography>
         </Paper>
 
