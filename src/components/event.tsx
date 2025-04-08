@@ -2,13 +2,14 @@ import { Box, Link, Typography, useTheme } from "@mui/material";
 
 type EventProps = {
   title: string;
-  when: string[];
+  time: string;
+  day: string;
   details: string;
 };
 
 export const Event = (props: EventProps) => {
   const theme = useTheme();
-  const { title, when, details } = props;
+  const { title, day, time, details } = props;
 
   return (
     <>
@@ -16,23 +17,34 @@ export const Event = (props: EventProps) => {
         {title}
       </Typography>
 
-      {when.map((item, index) => (
-        <Typography
-          variant="body2"
-          component="p"
-          mb={when.length - 1 === index ? 1 : 0}
-          key={item}
+      <Typography variant="body2" component="p" mb={1}>
+        <Box
+          component="span"
+          sx={{
+            display: "inline",
+            fontWeight: "400",
+          }}
         >
-          <Box
-            component="span"
-            sx={{
-              display: "inline",
-            }}
-          >
-            &#11049; {item}
-          </Box>
-        </Typography>
-      ))}
+          &#11049; {day}
+        </Box>
+        <Box
+          component="span"
+          sx={{
+            display: "inline",
+          }}
+        >
+          {` of every month from `}
+        </Box>
+        <Box
+          component="span"
+          sx={{
+            display: "inline",
+            fontWeight: "400",
+          }}
+        >
+          {time}
+        </Box>
+      </Typography>
 
       <Typography
         variant="body2"
