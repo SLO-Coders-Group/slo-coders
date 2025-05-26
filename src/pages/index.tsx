@@ -3,7 +3,6 @@ import type { NextPage } from "next";
 import { useTheme } from "@mui/material/styles";
 import Head from "next/head";
 import { Layout } from "../components/layout";
-import NextLink from "next/link";
 import { Event } from "../components/event";
 import { addStructuredData } from "./_document";
 
