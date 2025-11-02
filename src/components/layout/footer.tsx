@@ -1,5 +1,4 @@
 import { FC } from "react";
-import Image from "next/image";
 import {
   Box,
   Grid,
@@ -7,10 +6,8 @@ import {
   ListItem,
   Typography,
   useMediaQuery,
-  Link,
 } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
-import NextLink from "next/link";
 // import InstagramIcon from "@mui/icons-material/Instagram";
 // import { MeetupIcon } from "../icons/meetup.icon";
 // import { LinkIcon } from "../link-icon";
@@ -32,57 +29,6 @@ export const Footer: FC = () => {
 
   return (
     <>
-      <Box
-        sx={{
-          backgroundColor: theme.palette.common.white,
-          width: "100%",
-          px: 8,
-          py: 3,
-          boxShadow: `0 0 0 4px ${theme.palette.secondary.main}, 0 0 0 7px white, 0 0 0 10px black`,
-          color: theme.palette.common.black,
-          textAlign: "center",
-        }}
-      >
-        <Typography
-          variant={xsBreakpoint || smBreakpoint ? "h6" : "h5"}
-          component="p"
-          color="primary"
-          align="center"
-          mb={3}
-        >
-          <Box
-            component="span"
-            sx={{
-              display: "inline-block",
-              px: 1.5,
-              mx: 0.5,
-              color: theme.palette.primary.main,
-              borderBottom: `1px solid ${theme.palette.common.black}`,
-            }}
-          >
-            Sponsors
-          </Box>
-        </Typography>
-        <Link underline="hover" href="https://softec.org/" target="_blank">
-          <Image
-            alt="Softec"
-            src="/images/softec-logo.png"
-            width={255}
-            height={150}
-          />
-        </Link>
-        <Typography variant="body2" component="p" m={3}>
-          Want to become a sponsor? Email us at{" "}
-          <Link
-            component={NextLink}
-            underline="hover"
-            href="mailto:contact@slocountycoders.com"
-          >
-            contact@slocountycoders.com
-          </Link>
-          .
-        </Typography>
-      </Box>
       <Box
         sx={{
           backgroundColor: theme.palette.common.white,

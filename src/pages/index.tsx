@@ -157,12 +157,12 @@ const HomePage: NextPage = () => {
             time={"9:30 am to 10:30 am"}
             details="A very casual Saturday morning get-together where we chat about all things coding. Come mingle with some fellow developers while enjoying a morning beverage."
           />
-          <Event
+          {/* <Event
             title="Shop Talk"
             day={"Third Monday"}
             time={"5:30 pm to 6:30 pm"}
             details="An informal monthly meetup in a conference room where we 'talk shop' about all things coding. It's a great chance to connect with fellow developers in SLO. Whether you're a beginner or pro, everyone is welcome to join the conversation and share their experiences."
-          />
+          /> */}
           <Event
             title="Coders &amp; Coffee"
             day={"Fourth Friday"}

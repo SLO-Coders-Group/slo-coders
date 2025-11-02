@@ -161,7 +161,7 @@ export const Layout: FC<Props> = ({ children, link, tagline }) => {
                 underline="hover"
                 color="secondary"
               >
-                Local resources
+                View local resources
               </Link>
             )}
             <Box component="span" whiteSpace={"nowrap"}>
