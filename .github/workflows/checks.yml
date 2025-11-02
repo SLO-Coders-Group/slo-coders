@@ -5,9 +5,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-node@v4
-      - uses: bahmutov/npm-install@v1
-      - run: yarn run audit
+        with:
+          node-version: "22"
+
+      - name: Enable Corepack
+        run: corepack enable
+
+      - name: Prepare and activate Yarn 4.9.2
+        run: corepack prepare yarn@4.9.2 --activate
+
+      - run: yarn install --immutable
       - run: yarn run format:check
       - run: yarn run lint
       - run: yarn run type
