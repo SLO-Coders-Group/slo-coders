@@ -16,7 +16,7 @@ export function addStructuredData(page: "home" | "resources" = "home") {
           "image": ["https://www.slocountycoders.com/favicon/android-chrome-512x512.png"],
           "url": "https://www.slocountycoders.com/resources/",
           "logo": "https://www.slocountycoders.com/favicon/favicon-32x32.png",
-          "description": "Resources for coders in San Luis Obispo county - Businesses with Coders in SLO, Local learning Resources, Coworking Spaces, and Job Postings.",
+          "description": "Resources for coders in San Luis Obispo county - Businesses with Coders in SLO and Coding Spots.",
           "email": "contact@slocountycoders.com"
         }`,
     };
