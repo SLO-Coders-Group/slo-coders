@@ -1,12 +1,12 @@
 import { Box, Grid, Typography, Link } from "@mui/material";
 import { FC } from "react";
-import { coworkingSpaces } from "../../data/coworking-spaces";
+import { codingSpaces } from "../../data/coding-spaces";
 import { LinkIcon } from "../link-icon";
 import RoomIcon from "@mui/icons-material/Room";
 import { grey } from "@mui/material/colors";
 import { scrollDivStyles } from "../../styles/theme";
 
-export const CoworkingSpacesList: FC = () => {
+export const CodingSpacesList: FC = () => {
   return (
     <Box
       sx={{
@@ -15,55 +15,55 @@ export const CoworkingSpacesList: FC = () => {
       }}
     >
       <Typography variant="h6" component="h4">
-        Shared workspaces
+        Best Coding Spots in SLO County
       </Typography>
       <Typography variant="body2" component="p" mb={2}>
-        Places to cowork in San Luis Obispo county.
+        Our favorite places in SLO County for coding or remote work.
       </Typography>
 
       <Box sx={scrollDivStyles}>
         <Grid container spacing={3} pb={2}>
-          {Object.entries(coworkingSpaces)
+          {Object.entries(codingSpaces)
             .sort((a, b) => (a[1].displayName > b[1].displayName ? -1 : 1))
             .map(([key, value]) => {
-              const {
-                displayName,
-                websiteUrl,
-                websiteDisplayName,
-                googleMapsLocations,
-              } = value;
+              const { displayName, websiteUrl, cityNames } = value;
 
               return (
                 <Grid item key={key} xs={12} sm={6} md={4} xl={3}>
                   <Typography variant="body1" component="h4">
                     {displayName}
                   </Typography>
-                  <Typography variant="body2" component="p">
+
+                  <Typography
+                    component="p"
+                    color="text.secondary"
+                    sx={{
+                      fontSize: 13,
+                    }}
+                  >
+                    {cityNames.join(", ")}
+                  </Typography>
+
+                  <Typography
+                    variant="body1"
+                    component="p"
+                    noWrap
+                    color="secondary.main"
+                  >
                     <Link
                       underline="hover"
-                      color="secondary"
+                      color="inherit"
                       href={websiteUrl}
                       target="_blank"
                     >
-                      {websiteDisplayName ||
+                      {
                         websiteUrl
                           .replace(/^https?:\/\//, "")
                           .replace(/\/$/, "")
-                          .split("?")[0]}
+                          .split("?")[0]
+                      }
                     </Link>
                   </Typography>
-                  {/* get better icons and use svgs and SvgIcon from MUI */}
-                  {googleMapsLocations &&
-                    googleMapsLocations.map((googleMapsLocations) => (
-                      <LinkIcon
-                        key={`${key}-url`}
-                        href={googleMapsLocations.googleMapsUrl}
-                        text={`${googleMapsLocations.cityName}`}
-                        fontSize={16}
-                        iconButtonSize="small"
-                        icon={<RoomIcon fontSize="inherit" color="inherit" />}
-                      />
-                    ))}
                 </Grid>
               );
             })}

@@ -20,17 +20,4 @@ export type SloCitiesType =
   | "Shandon"
   | "Templeton";
 
-export type GlassdoorReviewUrlType =
-  `https://www.glassdoor.com/Reviews/${string}.htm`;
-
-export type LinkedInJobsUrlType =
-  | `https://www.linkedin.com/jobs/search/${string}`
-  | `https://www.linkedin.com/${"school" | "company"}/${string}/jobs/`;
-
 export type UrlType = `${"https" | "http"}://${string}`;
-
-export type GoogleMapsUrl =
-  | `https://goo.gl/maps/${string}`
-  | `https://g.page/${string}?share`
-  | `https://maps.app.goo.gl/${string}`
-  | `https://www.google.com/maps/place/${string}`;
