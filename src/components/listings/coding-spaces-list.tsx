@@ -1,8 +1,6 @@
 import { Box, Grid, Typography, Link } from "@mui/material";
 import { FC } from "react";
 import { codingSpaces } from "../../data/coding-spaces";
-import { LinkIcon } from "../link-icon";
-import RoomIcon from "@mui/icons-material/Room";
 import { grey } from "@mui/material/colors";
 import { scrollDivStyles } from "../../styles/theme";
 
