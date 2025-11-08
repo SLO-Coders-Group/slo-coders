@@ -72,6 +72,10 @@ const theme = createTheme({
       default: black,
       paper: black,
     },
+    text: {
+      primary: "#000",
+      secondary: primaryColor,
+    },
   },
   typography: {
     fontFamily: codeFont,

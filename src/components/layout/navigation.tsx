@@ -129,8 +129,8 @@ export const Navigation: FC = () => {
             </Link>
           </MenuItem>
           <MenuItem onClick={handleClose}>
-            <Link component={NextLink} href="/coworking-spaces">
-              Coworking Spaces
+            <Link component={NextLink} href="/coding-spaces">
+              Coding spots
             </Link>
           </MenuItem>
           <MenuItem onClick={handleClose}>

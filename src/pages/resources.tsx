@@ -12,7 +12,7 @@ import { Layout } from "../components/layout";
 import NextLink from "next/link";
 import { LearningResourcesList } from "../components/listings/learning-resources-list";
 import { BusinessesWithCodersList } from "../components/listings/businesses-with-coders-list";
-import { CoworkingSpacesList } from "../components/listings/coworking-spaces-list";
+import { CodingSpacesList } from "../components/listings/coding-spaces-list";
 import { addStructuredData } from "./_document";
 
 const LearningResourcesPage: NextPage = () => {
@@ -90,7 +90,7 @@ const LearningResourcesPage: NextPage = () => {
           </Paper>
         </Box>
 
-        <Typography
+        {/* <Typography
           variant={xsBreakpoint || smBreakpoint ? "h5" : "h4"}
           component="h2"
           color="primary"
@@ -111,8 +111,8 @@ const LearningResourcesPage: NextPage = () => {
           >
             Learning Resources
           </Box>
-        </Typography>
-        <Box>
+        </Typography> */}
+        {/* <Box>
           <Paper
             sx={{
               backgroundColor: "#FFF",
@@ -124,7 +124,7 @@ const LearningResourcesPage: NextPage = () => {
           >
             <LearningResourcesList />
           </Paper>
-        </Box>
+        </Box> */}
 
         <Typography
           variant={xsBreakpoint || smBreakpoint ? "h5" : "h4"}
@@ -145,7 +145,7 @@ const LearningResourcesPage: NextPage = () => {
               px: 1.5,
             }}
           >
-            Coworking Spaces
+            Coding spots
           </Box>
         </Typography>
         <Box>
@@ -158,7 +158,7 @@ const LearningResourcesPage: NextPage = () => {
               height: "100%",
             }}
           >
-            <CoworkingSpacesList />
+            <CodingSpacesList />
           </Paper>
         </Box>
 
