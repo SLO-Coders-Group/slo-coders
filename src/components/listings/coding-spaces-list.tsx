@@ -22,7 +22,7 @@ export const CodingSpacesList: FC = () => {
       <Box sx={scrollDivStyles}>
         <Grid container spacing={3} pb={2}>
           {Object.entries(codingSpaces)
-            .sort((a, b) => b[1].displayName.localeCompare(a[1].displayName))
+            .sort((a, b) => a[1].displayName.localeCompare(b[1].displayName))
             .map(([key, value]) => {
               const { displayName, websiteUrl, cityNames } = value;
 
