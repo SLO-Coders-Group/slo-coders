@@ -1,4 +1,4 @@
-import { Box, Grid, Typography, Link } from "@mui/material";
+import { Box, Grid, Typography, Link, Theme } from "@mui/material";
 import { FC } from "react";
 import { codingSpaces } from "../../data/coding-spaces";
 import { grey } from "@mui/material/colors";
@@ -28,7 +28,14 @@ export const CodingSpacesList: FC = () => {
 
               return (
                 <Grid item key={key} xs={12} sm={6} md={4} xl={3}>
-                  <Typography variant="body1" component="h4">
+                  <Typography
+                    variant="body2"
+                    component="h5"
+                    sx={{
+                      fontWeight: (theme: Theme) =>
+                        theme.typography.fontWeightRegular,
+                    }}
+                  >
                     {displayName}
                   </Typography>
 
